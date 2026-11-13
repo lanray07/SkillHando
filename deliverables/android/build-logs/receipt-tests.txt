@@ -1,0 +1,8 @@
+test_refunded_or_mismatched_purchase_is_invalid (test_server.ReceiptVerificationTest) ... ok
+test_rejects_bad_identifier_without_contacting_amazon (test_server.ReceiptVerificationTest) ... ok
+test_valid_entitlement_and_sandbox_address (test_server.ReceiptVerificationTest) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 1.577s
+
+OK

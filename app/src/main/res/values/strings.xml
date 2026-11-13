@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SkillHando</string>
+    <string name="reminder_title">Time for a little practice</string>
+    <string name="reminder_body">Open SkillHando to pick up where you left off.</string>
+    <string name="reminder_channel">Practice reminders</string>
+    <string name="snooze">Snooze for an hour</string>
+</resources>

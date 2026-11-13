@@ -1,0 +1,437 @@
+[
+  {
+    "id": "speaking",
+    "title": "Percakapan Publik",
+    "description": "Tjelaskan sebuah ide dengan titik yang jelas, contoh konkrit dan akhir.",
+    "rubric": [
+      "Ketelusan",
+      "Pakai",
+      "Struktur"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "1 menit pengenalan",
+        "objective": "Mengantar diri ke kelompok baru dengan satu detail yang dapat mereka ingat.",
+        "materials": "Satu jam dan tiga kata pada satu nota",
+        "steps": [
+          "Tuliskan nama, alasan untuk berada di sana dan satu detail tertentu.",
+          "Mengirimkan pengenalan sekali dan waktu.",
+          "Cobalah sekali lagi dengan istirahat sebelum detail yang memuaskan."
+        ],
+        "criterion": "Mendengar dapat mengulangi tujuan dan satu detail dalam satu menit.",
+        "prompt": "Di mana Anda tergesa-gesa atau kehilangan tempat Anda?",
+        "experiment": "Tetap skrip dan hanya mengubah panjang istirahat.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Tjelaskan ini kepada pemula",
+        "objective": "Mengubah proses yang biasa menjadi penjelasan singkat siapa pun dapat mengikuti.",
+        "materials": "Sebuah item yang dikenal dan satu timer",
+        "steps": [
+          "Tentukan hasilnya terlebih dahulu.",
+          "Tentukan tiga langkah dan tunjukkan satu.",
+          "Tanyakan seseorang untuk mengalihkan langkah-langkah atau mengalihkan mereka dari ingatan setelah istirahat."
+        ],
+        "criterion": "Tiga langkah itu baik dan masing-masing dimulai dengan tindakan yang jelas.",
+        "prompt": "Langkah apa yang seorang pemula akan meminta Anda untuk menjelaskan lagi?",
+        "experiment": "Tukar satu kalimat abstrak untuk contoh yang konkrit.",
+        "minutes": 10
+      },
+      {
+        "id": "extend",
+        "title": "Jawab pertanyaan pertemuan",
+        "objective": "Mengirim rekomendasi ringkas dan menjawab kemungkinan pengesahan.",
+        "materials": "Sebuah keputusan dan satu waktu",
+        "steps": [
+          "Tuliskan keputusan dalam satu kalimat.",
+          "Bicara selama sembilan puluh detik menggunakan rekomendasi, bukti dan trade-off Anda.",
+          "Jawab satu keberatan yang boleh diandalkan dengan keras tanpa mengulangi pembukaan Anda."
+        ],
+        "criterion": "Seorang pendengar dapat memisahkan rekomendasi, bukti dan trade-off Anda.",
+        "prompt": "Apa yang menentang menunjukkan jurang dalam penjelasan Anda?",
+        "experiment": "Siapkan contoh yang berbeda sambil mengikuti rekomendasi yang sama.",
+        "minutes": 15
+      }
+    ]
+  },
+  {
+    "id": "communication",
+    "title": "Komunikasi",
+    "description": "Ambil pendengaran, permintaan yang jelas dan feedback yang berguna.",
+    "rubric": [
+      "spesifikasi",
+      "Mendengarkan",
+      "Tone"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Refleksi sebelum mengulangi",
+        "objective": "dengan tepat mencerminkan titik utama orang lain.",
+        "materials": "Seorang mitra yang bersedia atau klip yang singkat",
+        "steps": [
+          "Mendengarkan selama satu menit tanpa merancang jawaban Anda.",
+          "Simpati titik utama dalam satu kalimat.",
+          "Tanyakan pertanyaan yang netral dan ulangi ringkasan Anda."
+        ],
+        "criterion": "Ringkasan kedua Anda menangkap satu detail yang Anda rindukan pada awalnya.",
+        "prompt": "Apa yang Anda lakukan sebelum mengajukan pertanyaan?",
+        "experiment": "Tetap topik dan minta follow-up yang lebih terbuka.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Buat permintaan yang jelas",
+        "objective": "Meminta tindakan khusus dengan konteks dan batas waktu.",
+        "materials": "Kertas atau aplikasi nota",
+        "steps": [
+          "Pilih permintaan yang realistis.",
+          "Tulis tindakan, alasan dan timing dalam garis terpisah.",
+          "Baca dengan keras dan lepaskan kata-kata yang mengabaikan tindakan."
+        ],
+        "criterion": "Penerima dapat mengidentifikasi tindakan dan memutuskan bagaimana untuk bertindak balas.",
+        "prompt": "Apa yang bisa ditafsirkan oleh seseorang dalam dua cara?",
+        "experiment": "Langkah ini dialihkan ke ayat pertama dan membandingkannya.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "photo",
+    "title": "Foto yang",
+    "description": "Gunakan bingkai dan cahaya untuk membuat subjek mudah dibaca.",
+    "rubric": [
+      "Subjek ketelusan",
+      "Frame yang",
+      "Cahaya"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Membangun satu subjek",
+        "objective": "Gunakan latar belakang yang sengaja untuk memisahkan satu subjek.",
+        "materials": "Kamera dan objek sehari-hari",
+        "steps": [
+          "Buat foto awal di mata.",
+          "Bergerak di sekitar objek sampai latar belakang menyederhanakan.",
+          "Tangkap bingkai lain dan lihat keduanya sebagai miniatur."
+        ],
+        "criterion": "Subjek ini tetap dapat dibaca di subtitle kedua.",
+        "prompt": "Apa elemen latar belakang yang Anda buang dan apa yang berubah?",
+        "experiment": "Tetap tahan eksposur dan bingkai stabil saat Anda hanya mengubah ketinggian kamera.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Temukan lampu jendela lembut",
+        "objective": "Perbandingan cahaya langsung dan reflektif pada objek yang sama.",
+        "materials": "Sebuah objek, jendela dan kertas putih",
+        "steps": [
+          "Letakkan objek di sebelah lampu jendela tidak langsung.",
+          "Gambar sisi bayangan.",
+          "Pegang kertas putih di sebelah jendela dan ulangi dari tempat yang sama."
+        ],
+        "criterion": "Kedua bingkai menunjukkan apa yang reflektor berubah di sisi bayangan.",
+        "prompt": "Apa detail yang menjadi lebih mudah untuk dilihat?",
+        "experiment": "Pindah kertas setengah jauh dan bandingkan.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "drawing",
+    "title": "menggambar",
+    "description": "Membuat benda-benda sehari-hari dapat diidentifikasi melalui bentuk dan proporsi.",
+    "rubric": [
+      "Bentuk",
+      "proporsi",
+      "Line kontrol"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Dibangun dari bentuk sederhana",
+        "objective": "Menggambar objek dengan membandingkan bentuk terbesarnya.",
+        "materials": "kertas, pensil dan mug",
+        "steps": [
+          "Gunakan rektangle dan ellipse untuk mengunci di mug.",
+          "Bandingkan lebarnya dengan ketinggian sebelum menambahkan handuk.",
+          "Menggambar versi kedua menggunakan pandangan yang sama."
+        ],
+        "criterion": "Handuk Anda menyertai mug pada dua titik sengaja.",
+        "prompt": "Perbandingan apa yang berubah antara lukisan?",
+        "experiment": "Gunakan lebar tali sebagai unit untuk setiap pengukuran lainnya.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Menggambarkan ruang negatif",
+        "objective": "Gunakan ruang di sekitar objek untuk memeriksa proporsi.",
+        "materials": "kertas, pensil dan kursi",
+        "steps": [
+          "Menggambarkan sudut luar dari satu sudut pandang.",
+          "Lakukan ruang di antara kaki dan di bawah kursi.",
+          "Bandingkan ruang-ruang itu di depan kursi dan pertimbangkan kembali dua baris."
+        ],
+        "criterion": "Jarak antara kaki memiliki bentuk yang sengaja dan ukuran relatif.",
+        "prompt": "Ruang mana yang paling membantu Anda memperbaiki objek?",
+        "experiment": "Periksa jarak terbesar terlebih dahulu sebelum menggambar detail apa pun.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "cooking",
+    "title": "Masakan dasar",
+    "description": "Mengatur bahan-bahan dan berlatih keseimbangan rasa dengan latihan non-cook.",
+    "rubric": [
+      "Persiapan",
+      "Konsistensi",
+      "Keseimbangan Flavio"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Menetapkan stasiun makanan dingin",
+        "objective": "Siapkan bahan dan alat-alat sesuai dengan kebutuhan Anda.",
+        "materials": "Bagian yang dapat dicuci, handuk bersih dan bahan-bahan yang siap dimakan",
+        "steps": [
+          "Cuci tangan dan membersihkan permukaan kerja.",
+          "Masukkan bahan-bahan dalam perintah yang akan Anda gunakan.",
+          "Mengumpulkan makanan ringan dan catat setiap kali Anda harus berhenti untuk item yang hilang."
+        ],
+        "criterion": "Coba selanjutnya bisa berjalan tanpa mencari bahan.",
+        "prompt": "Apa yang bisa Anda lakukan dengan disusun yang lebih baik?",
+        "experiment": "Menggerakkan bahan yang paling sering digunakan paling dekat dengan Anda.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Perbandingan dua pakaian sederhana",
+        "objective": "Coba coba bagaimana satu bahan yang berbeda mengubah keseimbangan.",
+        "materials": "Makanan-makanan aman, bawang, minyak dan jus lemon jika sesuai untuk Anda",
+        "steps": [
+          "Mulai dengan jumlah minyak yang sama dalam dua bola.",
+          "Tambahkan sedikit lemon yang diukur ke yang pertama dan sedikit lebih banyak ke yang kedua.",
+          "Coba secara terpisah dengan tongkat bersih dan tulis yang Anda suka."
+        ],
+        "criterion": "Catatan Anda menggambarkan perbedaan tanpa menggunakan hanya ‘lebih baik’.",
+        "prompt": "Apa yang membuat perubahan asam lebih banyak tentang rasa?",
+        "experiment": "Gunakan versi favorit sebagai garis dasar dan ubah satu bahan.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "writing",
+    "title": "Penulisan Kreatif",
+    "description": "Gunakan detail dan revisi untuk membuat adegan hidup.",
+    "rubric": [
+      "spesifikasi",
+      "Fokus",
+      "RITM"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Menulis tempat dalam tiga makna",
+        "objective": "Biarkan detail spesifik menetapkan tempat tanpa menamakan.",
+        "materials": "Kertas atau aplikasi nota",
+        "steps": [
+          "Pilih tempat yang nyata atau dibayangkan.",
+          "Tuliskan tiga pengamatan singkat dari tiga makna.",
+          "Hapus nama lokasi dan menggantikan adjektif umum dengan detail."
+        ],
+        "criterion": "Seorang pembaca dapat mengindikasikan sesuatu tentang setting dari detail.",
+        "prompt": "Detail apa yang paling mudah untuk dibayangkan?",
+        "experiment": "Tetaplah adegan dan ganti satu detail pandangan dengan suara.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Memotong sebuah adegan ke titik putarnya",
+        "objective": "Pertimbangkan sebuah adegan singkat di sekitar saat sesuatu berubah.",
+        "materials": "Rencana dari sekitar 150 kata",
+        "steps": [
+          "Menerangkan saat karakter memutuskan atau menemukan sesuatu.",
+          "Menghapus satu ayat yang menunda saat itu.",
+          "Baca kedua versi dengan keras dan pilih satu dengan perubahan yang lebih jelas."
+        ],
+        "criterion": "Perubahan ini dapat diidentifikasi tanpa penjelasan tambahan.",
+        "prompt": "Apa yang membuat perubahan pada pemotongan?",
+        "experiment": "Pindah satu detail sensorik ke tepat sebelum titik putar.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "digital",
+    "title": "Literasi Digital",
+    "description": "Membangun keyakinan mengatur file dan mengevaluasi spreadsheets kecil.",
+    "rubric": [
+      "Ketersediaan",
+      "ketepatan",
+      "Repeatability"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Membangun sistem pendaftaran praktik",
+        "objective": "Buat folder dan nama konvensyen yang dapat Anda gunakan lagi.",
+        "materials": "1 file manager dan 3 file sampel yang tidak berbahaya",
+        "steps": [
+          "Buat folder yang disebut Praktik dan dua subfolders dengan tujuan.",
+          "Renamai setiap sampel menggunakan pola tanggal dan tema yang konsisten.",
+          "Cobalah untuk mendapatkan satu dari pencarian dan satu dari folder yang mengandungnya."
+        ],
+        "criterion": "Tiga sampel mudah dibedakan tanpa membuka mereka.",
+        "prompt": "Apa nama filen yang akan bermakna enam bulan dari sekarang?",
+        "experiment": "Gunakan pola nama yang lebih pendek dan ulangi tugas pengambilan.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Periksa seluruh skema",
+        "objective": "Buat tabel sederhana dan periksa hasil secara independen.",
+        "materials": "Aplikasi spreadsheet dan lima jumlah fiksi",
+        "steps": [
+          "Masukkan lima angka di samping lima label.",
+          "Gunakan SUM untuk total dan verifikasi secara mental atau dengan kalkulator.",
+          "Perubahan jumlah dan periksa bagaimana hasilnya berubah."
+        ],
+        "criterion": "Total update oleh perubahan yang tepat yang dibuat pada input.",
+        "prompt": "Apa kesalahan yang akan memegang cek independen Anda?",
+        "experiment": "Masukkan baris keenam dan periksa apakah formula mencakupnya.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "organisation",
+    "title": "Organisasi pribadi",
+    "description": "Buat daftar yang penuh dengan tindakan yang sesuai dengan waktu yang Anda miliki.",
+    "rubric": [
+      "Prioritas",
+      "spesifikasi",
+      "Fasilitas"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Pilih tindakan pertama besok",
+        "objective": "Siapkan tindakan yang dapat Anda mulai dalam waktu lima menit.",
+        "materials": "Buku atau daftar tugas Anda",
+        "steps": [
+          "Tuliskan tiga hal yang bersaing untuk perhatian Anda.",
+          "Pilih yang paling banyak efek jika tertunda.",
+          "Menjelaskan tindakan pertama yang terlihat dan memutuskan kapan untuk melakukannya."
+        ],
+        "criterion": "Anda bisa memulai tanpa membuat keputusan lain.",
+        "prompt": "Apa yang bisa mencegah Anda dari memulai?",
+        "experiment": "Letakkan satu item yang diperlukan di mana Anda akan melihatnya.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Perbandingan anggaran dengan realiti",
+        "objective": "Meningkatkan anggaran perencanaan dengan mengamati waktu nyata.",
+        "materials": "1 jam dan 2 pekerjaan sederhana",
+        "steps": [
+          "Menilai masing-masing pekerjaan secara terpisah.",
+          "Tunggu waktu dan tulis semua gangguan.",
+          "Update anggaran Anda dan tambahkan buffer untuk bagian yang tidak pasti."
+        ],
+        "criterion": "Penilaian yang diperbaharui menjelaskan perbedaan tertentu.",
+        "prompt": "Apakah tugas atau penghentian mengambil waktu lebih lama dari yang diharapkan?",
+        "experiment": "Mengukur waktu setup secara terpisah selama percobaan berikutnya.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "diy",
+    "title": "Home DIY yang",
+    "description": "Membangun kebiasaan pengukuran dan perencanaan yang aman dengan bahan-bahan buatan.",
+    "rubric": [
+      "Pengukuran",
+      "Perencanaan",
+      "Repeatability"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Mengukur sebelum memotong",
+        "objective": "Periksa mock-up sebelum membeli atau menyesuaikan apa pun.",
+        "materials": "Kartu, pengawal, pensil dan perhiasan karpet pecahan",
+        "steps": [
+          "Mengukur objek kecil dua kali dari tepi referensi yang sama.",
+          "Tanda pengukuran pada papan.",
+          "Potong papan dengan potongan berlapis dan periksa sesuai."
+        ],
+        "criterion": "Model papan sesuai dengan ukuran yang diinginkan dalam toleransi yang ditandai.",
+        "prompt": "Pengukuran mana yang paling sulit untuk diulang?",
+        "experiment": "Tanda batas referensi sebelum Anda mengukur.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Membuat rencana layout yang dapat dihapus",
+        "objective": "Bandingkan perintah sebelum menggerakkan sesuatu yang berat.",
+        "materials": "kertas, penguasa dan pensil",
+        "steps": [
+          "Menggambar tablet sebagai rektangle.",
+          "Memotong bentuk kertas untuk mewakili tiga objek ringan.",
+          "Cobalah dua tataletak dan ketahui yang meninggalkan area kerja yang paling jelas."
+        ],
+        "criterion": "Rencana Anda meningkatkan akses ke setidaknya satu item yang digunakan secara teratur.",
+        "prompt": "Apa yang membuat layout sulit?",
+        "experiment": "Cobalah posisi yang berbeda untuk item itu dan bandingkan ruang yang tersisa.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "problem",
+    "title": "Masalah-masalah yang diatasi setiap hari",
+    "description": "Cobalah untuk menguji satu penjelasan sekaligus dan membandingkan hasil yang dapat dilihat.",
+    "rubric": [
+      "Definisi",
+      "Desain Ujian",
+      "bukti"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Ujian 1 Perubahan",
+        "objective": "Tentukan gangguan kecil yang berulang dan menguji satu penyebab yang mungkin.",
+        "materials": "Sebuah notebook dan masalah harian berisiko rendah",
+        "steps": [
+          "Menjelaskan kapan masalah terjadi dan apa yang Anda perhatikan.",
+          "Daftar dua penyebab yang mungkin dan pilih salah satu untuk diuji.",
+          "Perubahan satu hal dan bandingkan hasil dengan pola biasa."
+        ],
+        "criterion": "Rekor Anda membedakan apa yang Anda perhatikan dari apa yang Anda ambil.",
+        "prompt": "Apa lagi yang bisa menjelaskan hasilnya?",
+        "experiment": "Ulangi tes yang sama sebelum mengubah variabel lain.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Perbandingan dua pilihan dengan benar",
+        "objective": "Gunakan kriteria yang konsisten untuk memilih antara dua pilihan praktis.",
+        "materials": "Kertas dan pilihan harian",
+        "steps": [
+          "Tuliskan dua pilihan yang dapat dilakukan.",
+          "Pilih tiga kriteria sebelum menjaringkan salah satu opsi.",
+          "Menilai kedua pilihan dan mengidentifikasi kriteria mana yang dapat mengubah keputusan Anda."
+        ],
+        "criterion": "Setiap skor memiliki alasan singkat dan skala yang sama digunakan untuk kedua opsi.",
+        "prompt": "Apa yang tergantung pada bukti yang paling lemah?",
+        "experiment": "Mengumpulkan satu fakta yang dapat mengubah skor yang paling lemah.",
+        "minutes": 10
+      }
+    ]
+  }
+]

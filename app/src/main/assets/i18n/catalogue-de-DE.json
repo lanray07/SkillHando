@@ -1,0 +1,437 @@
+[
+  {
+    "id": "speaking",
+    "title": "öffentliche Rede",
+    "description": "Erklären Sie eine Idee mit einem klaren Punkt, einem konkreten Beispiel und einem Ende.",
+    "rubric": [
+      "Klarheit",
+      "Packen",
+      "Struktur"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Ein Minute Einführung",
+        "objective": "Geben Sie sich in eine neue Gruppe mit einem Detail, den Sie sich erinnern können.",
+        "materials": "Ein Timer und drei Wörter auf einer Note",
+        "steps": [
+          "Schreiben Sie einen Namen, einen Grund, um da zu sein, und einen bestimmten Detail.",
+          "Legen Sie die Einführung einmal und mal.",
+          "Versuchen Sie erneut mit einer Pause vor dem memorablen Detail."
+        ],
+        "criterion": "Der Hörgerät kann Ihr Ziel und ein Detail innerhalb von einer Minute wiederholen.",
+        "prompt": "Wo hast du dich versucht oder deine Stelle verloren?",
+        "experiment": "Halten Sie das Skript und ändern Sie nur die Länge der Pause.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Erklären Sie es einem Anfänger",
+        "objective": "Umwandeln Sie einen vertrauten Prozess in eine kurze Erklärung, die jeder folgen kann.",
+        "materials": "Ein bekanntes Element und ein Timer",
+        "steps": [
+          "Das Ergebnis erst einmal festlegen.",
+          "Erklären Sie drei Schritte und zeigen Sie einen.",
+          "Bitte jemanden, die Schritte zu rückgängigen oder sie nach einer Pause aus dem Gedächtnis zu rückgängigen."
+        ],
+        "criterion": "Die drei Schritte sind in Ordnung und jeder beginnt mit einer klaren Aktion.",
+        "prompt": "Welches Schritt würde ein Anfänger Sie bitten, wieder zu erklären?",
+        "experiment": "Wechseln Sie eine abstrakte Satz für ein konkretes Beispiel.",
+        "minutes": 10
+      },
+      {
+        "id": "extend",
+        "title": "Antworten auf eine Sitzungsfrage",
+        "objective": "Erteilen Sie eine kurze Empfehlung und antworten Sie auf eine mögliche Folge.",
+        "materials": "Eine aktuelle Entscheidung und eine Zeitplanung",
+        "steps": [
+          "Schreiben Sie die Entscheidung in einer Satzung.",
+          "Sprechen Sie 90 Sekunden mit Ihrer Empfehlung, Beweise und Trade-off.",
+          "Antworten Sie auf eine plausible Widerstand harten, ohne wiederholen Sie Ihre Öffnung."
+        ],
+        "criterion": "Ein Hörgerät kann Ihre Empfehlung, Beweise und Trade-off trennen.",
+        "prompt": "Welche Vorwürfe hat einen Lücken in Ihrer Erklärung ausgesetzt?",
+        "experiment": "Bereiten Sie ein anderes Beispiel vor, während Sie die gleiche Empfehlung halten.",
+        "minutes": 15
+      }
+    ]
+  },
+  {
+    "id": "communication",
+    "title": "Kommunikation",
+    "description": "Üben Sie das Listen, klare Anfragen und nützliche Feedback.",
+    "rubric": [
+      "Spezifität",
+      "Listen zu",
+      "Ton"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Reflex vor der Wiederholung",
+        "objective": "Genau reflektieren die Hauptpunkte einer anderen Person.",
+        "materials": "Ein williger Partner oder kurze Sprechende Clip",
+        "steps": [
+          "Lernen Sie eine Minute ohne Ihre Antwort zu planen.",
+          "Zusammenfassung des Hauptpunkts in einer einzigen Satzung.",
+          "Fragen Sie eine neutrale Frage und überprüfen Sie Ihre Zusammenfassung."
+        ],
+        "criterion": "Ihre zweite Zusammenfassung erfährt einen Detail, den Sie zuerst verpasst haben.",
+        "prompt": "Welche Vorstellung habt ihr gemacht, bevor ihr die Frage gestellt habt?",
+        "experiment": "Halten Sie das Thema und bitten Sie um eine offene Folge.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Eine klare Anfrage machen",
+        "objective": "Bitte eine konkrete Aktion mit Kontext und Frist.",
+        "materials": "Papier oder eine Note App",
+        "steps": [
+          "Wählen Sie eine kleine, realistische Anfrage.",
+          "Schreiben Sie die Aktion, die Reaktion und die Zeit in getrennten Zeilen.",
+          "Lesen Sie es laut und entfernen Sie Worte, die die Aktion verblassen."
+        ],
+        "criterion": "Der Empfänger kann die Aktion identifizieren und entscheiden, wie er reagiert.",
+        "prompt": "Was könnte jemand noch in zwei Wege interpretieren?",
+        "experiment": "Verlegen Sie die Aktion auf die erste Satz und vergleichen Sie sie.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "photo",
+    "title": "Fotos",
+    "description": "Verwenden Sie Frame und Licht, um das Thema leicht zu lesen.",
+    "rubric": [
+      "Subject Klarheit",
+      "Frame",
+      "Licht"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Frame ein einziges Thema",
+        "objective": "Verwenden Sie eine absichtliche Hintergrund, um ein Thema zu trennen.",
+        "materials": "Ein Foto und ein Alltag Objekt",
+        "steps": [
+          "Erstellen Sie ein erstes Bild auf Augenzweich.",
+          "Bewegt sich um das Objekt, bis die Hintergrund vereinfacht wird.",
+          "Fangen Sie ein anderes Rahmen ein und schauen Sie sich beide als Tinder an."
+        ],
+        "criterion": "Das Thema bleibt im zweiten Thumbnail gelesen.",
+        "prompt": "Welches Hintergrundelement haben Sie entfernt und was geändert?",
+        "experiment": "Halten Sie die Exposition und die Frame steil, während Sie nur die Kamerahöhe ändern.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Finden Sie Soft Fensterlicht",
+        "objective": "Vergleichen Sie direkte und reflektierte Licht auf dem gleichen Objekt.",
+        "materials": "Ein Objekt, ein Fenster und ein weißes Papier",
+        "steps": [
+          "Stellen Sie das Objekt neben indirekten Fensterlicht.",
+          "Fotografieren Sie die Schattenseite.",
+          "Halten Sie das weiße Papier gegenüber dem Fenster und wiederholen Sie es von dem gleichen Punkt."
+        ],
+        "criterion": "Beide Frame zeigen, was der Reflektor auf der Schattenseite verändert hat.",
+        "prompt": "Welche Details werden einfacher zu sehen?",
+        "experiment": "Vermeiden Sie das Papier halb so weit wie möglich und vergleichen Sie es.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "drawing",
+    "title": "Zeichnen",
+    "description": "Machen Sie die täglichen Objekte durch Form und Proportion erkennbar.",
+    "rubric": [
+      "Form",
+      "Verhältnis",
+      "Line Kontrolle"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Erbaut aus einfachen Formen",
+        "objective": "Zeigen Sie ein Objekt, indem Sie seine größten Formen vergleichen.",
+        "materials": "Papier, Penis und ein MUG",
+        "steps": [
+          "Verwenden Sie einen Rechteck und einen Ellipse, um in der Mug zu blockieren.",
+          "Vergleichen Sie seine Breite zu seiner Höhe, bevor Sie die Handschuh hinzufügen.",
+          "Zeichnen Sie eine zweite Version mit dem gleichen Ausblick."
+        ],
+        "criterion": "Ihre Handschuhe verbindet den Mug auf zwei absichtlichen Punkten.",
+        "prompt": "Welche Verhältnisse sind zwischen den Zeichnungen geändert?",
+        "experiment": "Verwenden Sie die Rimmbreite als Einheit für jede andere Messung.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Die negative Weltraum schneiden",
+        "objective": "Verwenden Sie Räume um ein Objekt, um Proportionen zu überprüfen.",
+        "materials": "Papier, Penis und ein Stuhl",
+        "steps": [
+          "Schieben Sie den äußeren Kontur aus einem Blickwinkel.",
+          "Schieben Sie die Räume zwischen den Beinen und unter dem Sitz.",
+          "Vergleichen Sie diese Räume gegen den Stuhl und überprüfen Sie zwei Linien."
+        ],
+        "criterion": "Die Lücken zwischen den Beinen haben eine absichtliche Form und relative Größe.",
+        "prompt": "Welcher Raum hat Ihnen am meisten das Objekt korrigiert?",
+        "experiment": "Prüfen Sie zunächst den größten Abstand, bevor Sie alle Details entwerfen.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "cooking",
+    "title": "Kochen Grundlagen",
+    "description": "Organisieren Sie die Zutaten und üben Sie den Geschmacksaufwand mit nicht kochenden Übungen aus.",
+    "rubric": [
+      "Vorbereitung",
+      "Konsistenz",
+      "Flavier Balance"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Ein Kühlschrankstation aufstellen",
+        "objective": "Ordnen Sie die Inhaltsstoffe und Werkzeuge in der Reihenfolge, die Sie benötigen.",
+        "materials": "Eine waschbare Oberfläche, saubere Werkzeuge und bereit zu essen Zutaten",
+        "steps": [
+          "Waschen Sie Ihre Hände und reinigen Sie die Arbeitsoberfläche.",
+          "Lassen Sie die Zutaten in der Reihenfolge aus, in der Sie sie verwenden.",
+          "Sammeln Sie ein kleines Snack und beachten Sie jedes Mal, wenn Sie für ein fehlendes Element aufhören müssen."
+        ],
+        "criterion": "Die nächste Versuchung kann ohne einen Bestandteil suchen.",
+        "prompt": "Welche Unterbrechung können Sie mit einem besseren Layout entfernen?",
+        "experiment": "Vermeiden Sie die häufigsten verwendeten Zutaten am nächsten zu Ihnen.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Vergleiche zwei einfache Kleidungssätze",
+        "objective": "Taste wie sich die Variation eines Zutaten den Gleichgewicht ändert.",
+        "materials": "Lebensmittelsicherer Bogen, Spuren, Öl und Zitronensaft, wenn für Sie geeignet",
+        "steps": [
+          "Beginnen Sie mit gleicher Menge Öl in zwei Kugeln.",
+          "Holen Sie eine kleine gemessene Menge von Limon zum ersten und ein wenig mehr zum zweiten hinzu.",
+          "Taste separat mit sauberen Spuren und schreibe, was du bevorzugt hast."
+        ],
+        "criterion": "Ihre Notizen beschreiben den Unterschied ohne nur „Besser“ zu verwenden.",
+        "prompt": "Was hat mehr Sauerstoffwechsel über den Geschmack gemacht?",
+        "experiment": "Verwenden Sie die bevorzugte Version als Basis und ändern Sie einen Zutaten.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "writing",
+    "title": "Kreative Schreib",
+    "description": "Verwenden Sie konkrete Details und Revision, um eine Szenen lebendig zu machen.",
+    "rubric": [
+      "Spezifität",
+      "Fokussierung",
+      "Rhythmus"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Schreiben Sie einen Platz in drei Sinne",
+        "objective": "Lassen Sie spezifische Details einen Ort festlegen, ohne ihn zu nennen.",
+        "materials": "Papier oder eine Note App",
+        "steps": [
+          "Wählen Sie einen echten oder vorstellbaren Ort.",
+          "Schreiben Sie drei kurze Beobachtungen aus drei Sinne.",
+          "Entfernen Sie den Ortnamen und ersetzen Sie eine allgemeine Adjektive mit einem Detail."
+        ],
+        "criterion": "Ein Leser kann etwas über die Setup aus den Details nachgeben.",
+        "prompt": "Welche Details war es einfacher zu vorstellen?",
+        "experiment": "Halten Sie die Szene und ersetzen Sie einen Blick-Detail mit einem Sound.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Schneiden Sie eine Szene zu ihrem Umkehrspunkt",
+        "objective": "Überprüfen Sie eine kurze Szene um das Moment, in dem sich etwas ändert.",
+        "materials": "Ein Entwurf von ca. 150 Wörtern",
+        "steps": [
+          "Unterzeichnen Sie den Moment, an dem ein Charakter entscheidet oder etwas entdeckt.",
+          "Entfernen Sie eine Satz, die diesen Moment verzögert.",
+          "Lesen Sie beide Versionen laut und wählen Sie die mit einer klareren Änderung."
+        ],
+        "criterion": "Die Überprüfung macht die Änderung identifizierbar, ohne eine Erklärung hinzuzufügen.",
+        "prompt": "Was hat die Schnittänderung über die Pauschal geführt?",
+        "experiment": "Bewegt einen sensoren Detail direkt vor dem Umkehrspunkt.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "digital",
+    "title": "Digitale Literatur",
+    "description": "Erstellen Sie Vertrauen, die Dateien zu organisieren und kleine Spreadsheets zu validieren.",
+    "rubric": [
+      "Findenbarkeit",
+      "Genauigkeit",
+      "Wiederholbarkeit"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Ein praktisches Dateisystem bauen",
+        "objective": "Erstellen Sie eine Ordner und benennen Sie die Konvention, die Sie erneut verwenden können.",
+        "materials": "Ein Datei-Manager und drei schädliche Probendateien",
+        "steps": [
+          "Erstellen Sie eine Ordnung namens Praktika und zwei Unterfolder nach Zweck.",
+          "Rename jedes Muster mit einem konsistenten Datum und Thema-Patron.",
+          "Versuchen Sie, einen aus der Suche und einen aus seiner enthaltenen Ordner zu erfassen."
+        ],
+        "criterion": "Alle drei Muster sind ohne sie zu öffnen leicht zu unterscheiden.",
+        "prompt": "Welches Filenamen würde sechs Monate später noch sinnvoll sein?",
+        "experiment": "Verwenden Sie einen kürzeren Namensmuster und wiederholen Sie die Erholungsarbeit.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Überprüfen Sie einen Gesamtverbreitungsblatt",
+        "objective": "Erstellen Sie eine einfache Tabelle und prüfen Sie das Ergebnis unabhängig.",
+        "materials": "Eine Spreadsheet-App und fünf fiktive Summen",
+        "steps": [
+          "Geben Sie fünf Mengen neben fünf Etiketten ein.",
+          "Verwenden Sie SUM für das Gesamt und überprüfen Sie es mentalerweise oder mit einem Kalkulator.",
+          "Ändern Sie eine Menge und überprüfen Sie, wie sich das Ergebnis ändert."
+        ],
+        "criterion": "Die Gesamtupdates durch die genaue Änderung des Eingangs.",
+        "prompt": "Welche Fehler würde Ihr unabhängiges Check-Fang ergreifen?",
+        "experiment": "Geben Sie eine sechste Reihe ein und überprüfen Sie, ob die Formel sie enthält.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "organisation",
+    "title": "Persönliche Organisation",
+    "description": "Verwandeln Sie eine umfassende Liste in Aktionen, die den Zeit, den Sie haben, passen.",
+    "rubric": [
+      "Priorität",
+      "Spezifität",
+      "Feasibility"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Wählen Sie die erste Aktion von morgen",
+        "objective": "Bereiten Sie eine Aktion vor, die Sie in fünf Minuten beginnen können.",
+        "materials": "Papier oder Ihre Aufgabenliste",
+        "steps": [
+          "Schreiben Sie drei Dinge, die für Ihre Aufmerksamkeit konkurrieren.",
+          "Wählen Sie die mit den größten Konsequenzen, wenn es verzögert ist.",
+          "Beschreiben Sie die erste sichtbare Aktion und entscheiden Sie, wann Sie es tun sollen."
+        ],
+        "criterion": "Sie können beginnen, ohne eine andere Entscheidung zu treffen.",
+        "prompt": "Was kann dich davon abhalten, zu beginnen?",
+        "experiment": "Stellen Sie ein gewünschtes Element, wo Sie es sehen werden.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Vergleich von Schätzungen mit der Realität",
+        "objective": "Verbessern Sie eine Planungs-Schätzung durch die Beobachtung der tatsächlichen Zeit.",
+        "materials": "Ein Timer und zwei einfache Aufgaben",
+        "steps": [
+          "Bewerten Sie jede Stelle separat.",
+          "Zeit die Stellen und schreibt jede Unterbrechung ab.",
+          "Aktualisieren Sie Ihre Schätzung und fügen Sie einen Buffer für den unsicheren Teil hinzu."
+        ],
+        "criterion": "Ihre überprüfte Schätzung erklärt einen spezifischen Unterschied.",
+        "prompt": "Hat die Aufgabe oder die Unterbrechung länger dauert als erwartet?",
+        "experiment": "Messen Sie die Einstellungszeit separat während des nächsten Versuchs.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "diy",
+    "title": "Grundstück Home DIY",
+    "description": "Erstellen Sie sichere Mess- und Planungsgewohnheiten mit Werkstoffen.",
+    "rubric": [
+      "Messung",
+      "Planung",
+      "Wiederholbarkeit"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Messung vor dem Schneiden",
+        "objective": "Überprüfen Sie einen Mock-up, bevor Sie etwas kaufen oder passen.",
+        "materials": "Karton, Ruler, Penis und Blunt-Kraft-Schiffschnitzer",
+        "steps": [
+          "Messen Sie ein kleines Objekt zweimal vom gleichen Referenzrand.",
+          "Markieren Sie die Messungen auf der Karte.",
+          "Schneiden Sie die Kartenkarte mit bluntem Schnitt und überprüfen Sie die Fähigkeit."
+        ],
+        "criterion": "Das Kartendelmodell entspricht der gewünschten Größe innerhalb Ihrer markierten Toleranz.",
+        "prompt": "Welche Messung war am schwierigsten zu wiederholen?",
+        "experiment": "Markieren Sie den Referenzrand, bevor Sie messen.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Erstellen Sie einen entfernten Layout-Plan",
+        "objective": "Vergleichen Sie die Vereinbarungen, bevor Sie etwas Schweres bewegen.",
+        "materials": "Papier, ein Herrscher und ein Penil",
+        "steps": [
+          "Schieben Sie eine Tabletop als Rechteck.",
+          "Abschneiden Sie Papierform, um drei leichte Objekte zu repräsentieren.",
+          "Versuchen Sie zwei Layouts und identifizieren Sie den, der die klarste Arbeitsfläche verlassen."
+        ],
+        "criterion": "Ihr Plan verbessert den Zugang zu mindestens einem regelmäßig verwendeten Element.",
+        "prompt": "Welches Element hat die Layout schwierig gemacht?",
+        "experiment": "Versuchen Sie eine andere Position für diesen Artikel und vergleichen Sie den übrigen Raum.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "problem",
+    "title": "Alltagsprobleme lösen",
+    "description": "Prüfen Sie eine Erklärung zu einer Zeit und vergleichen Sie beobachtbare Ergebnisse.",
+    "rubric": [
+      "Definition",
+      "Testdesign",
+      "Beweise"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Test 1 Veränderung",
+        "objective": "Definieren Sie eine kleine wiederkehrende Unruhen und testen Sie eine mögliche Ursache.",
+        "materials": "Ein Notebook und ein tägliches Problem mit niedriger Risiko",
+        "steps": [
+          "Beschreiben Sie, wann das Problem passiert und was Sie beobachten.",
+          "Liste zwei mögliche Ursachen und wähle eine zum Test.",
+          "Ändern Sie eine Sache und vergleichen Sie das Ergebnis mit dem üblichen Muster."
+        ],
+        "criterion": "Ihr Aufzeichnung unterscheidet, was ihr beobachtet habt, von dem, was ihr abgeschlossen habt.",
+        "prompt": "Was könnte das Ergebnis noch erklären?",
+        "experiment": "Wiederholen Sie den gleichen Test, bevor Sie eine andere Variable ändern.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Vergleichen Sie zwei Optionen fair",
+        "objective": "Verwenden Sie konsequent Kriterien, um zwischen zwei praktischen Optionen zu wählen.",
+        "materials": "Papier und tägliche Wahl",
+        "steps": [
+          "Liste zwei möglicher Optionen.",
+          "Wählen Sie drei Kriterien aus, bevor Sie eine Option bewerten.",
+          "Beide Optionen bewerten und bestimmen, welches Kriterium Ihre Entscheidung ändern könnte."
+        ],
+        "criterion": "Jede Score hat einen kurzen Grund und die gleiche Skala wird für beide Optionen verwendet.",
+        "prompt": "Welches Ergebnis hängt von den schwachen Beweisen ab?",
+        "experiment": "Sammeln Sie eine Tatsache, die das schwache Punkt ändern könnte.",
+        "minutes": 10
+      }
+    ]
+  }
+]

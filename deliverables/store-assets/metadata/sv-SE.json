@@ -1,0 +1,33 @@
+{
+  "appTitle": "SkillHando - Praktiska färdigheter i praktiken",
+  "shortDescription": "Bygg praktiska färdigheter med vägledda utmaningar, självbedömningar och en privat praktikportfölj.",
+  "longDescription": "Välj en praktisk färdighet och arbeta genom en kort guidad utmaning. Försök en tydlig talande introduktion, öva fotoramming, eller organisera en uppsättning filer. Spela in vad du försökte och vad du observerade, sedan återgå till samma övning för att jämföra dina försök. Din lokala övning tränare föreslår en övning att upprepa eller en ny att prova. Browse de bundna utmaningarna, hålla övning anteckningar och spåra din framsteg offline. Talande vägledning och röstkommandon beror på taltjänster som finns på din enhet.",
+  "featureBullets": [
+    "Öva med 21 ledda utmaningar genom tio praktiska färdigheter.",
+    "Jämför självbedömningar och observationer från upprepade försök.",
+    "Håll foton, ljudinspelningar och reflektioner i en privat portfölj på enheten.",
+    "Ställ in veckovisa mål och använd en övningstimmar.",
+    "Använd den bundna katalogen och lokala praxis rekommendationer offline."
+  ],
+  "keywords": [
+    "Praktiska färdigheter",
+    "Överlägsen talarpraktik",
+    "Träningsförmåga Tracker",
+    "Offline lärande utmaningar",
+    "Övning Timer",
+    "Lärande mål",
+    "Praktiska portföljer"
+  ],
+  "releaseNotes": "Första utgivningen med vägledande praxis, självbedömning och en privat portfölj.",
+  "screenshotHeadlines": [
+    "Lär dig praktiska färdigheter",
+    "Plan 1 förändras för att försöka",
+    "Hitta din nästa utmaning",
+    "Få röstguided instruktioner",
+    "Jämför dina försök",
+    "Håll bevis på praxis",
+    "Ta dina utmaningar offline",
+    "Öva på egen takt"
+  ],
+  "status": "Draft pending native review and store verification"
+}

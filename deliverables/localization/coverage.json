@@ -1,0 +1,135 @@
+{
+  "en-GB": {
+    "status": "source",
+    "interface": 277,
+    "changed": 0,
+    "skills": 10,
+    "challenges": 21
+  },
+  "en-US": {
+    "status": "draft_pending_native_review",
+    "interface": 277,
+    "changed": 9,
+    "skills": 10,
+    "challenges": 21
+  },
+  "en-AU": {
+    "status": "draft_pending_native_review",
+    "interface": 277,
+    "changed": 0,
+    "skills": 10,
+    "challenges": 21
+  },
+  "es-ES": {
+    "status": "draft_pending_native_review",
+    "interface": 277,
+    "changed": 276,
+    "skills": 10,
+    "challenges": 21
+  },
+  "es-419": {
+    "status": "draft_pending_native_review",
+    "interface": 277,
+    "changed": 276,
+    "skills": 10,
+    "challenges": 21
+  },
+  "fr-FR": {
+    "status": "draft_pending_native_review",
+    "interface": 277,
+    "changed": 273,
+    "skills": 10,
+    "challenges": 21
+  },
+  "fr-CA": {
+    "status": "draft_pending_native_review",
+    "interface": 277,
+    "changed": 273,
+    "skills": 10,
+    "challenges": 21
+  },
+  "de-DE": {
+    "status": "draft_pending_native_review",
+    "interface": 277,
+    "changed": 269,
+    "skills": 10,
+    "challenges": 21
+  },
+  "it-IT": {
+    "status": "draft_pending_native_review",
+    "interface": 277,
+    "changed": 277,
+    "skills": 10,
+    "challenges": 21
+  },
+  "pt-BR": {
+    "status": "draft_pending_native_review",
+    "interface": 277,
+    "changed": 276,
+    "skills": 10,
+    "challenges": 21
+  },
+  "pt-PT": {
+    "status": "draft_pending_native_review",
+    "interface": 277,
+    "changed": 276,
+    "skills": 10,
+    "challenges": 21
+  },
+  "nl-NL": {
+    "status": "draft_pending_native_review",
+    "interface": 277,
+    "changed": 268,
+    "skills": 10,
+    "challenges": 21
+  },
+  "pl-PL": {
+    "status": "draft_pending_native_review",
+    "interface": 277,
+    "changed": 274,
+    "skills": 10,
+    "challenges": 21
+  },
+  "sv-SE": {
+    "status": "draft_pending_native_review",
+    "interface": 277,
+    "changed": 273,
+    "skills": 10,
+    "challenges": 21
+  },
+  "ja-JP": {
+    "status": "draft_pending_native_review",
+    "interface": 277,
+    "changed": 277,
+    "skills": 10,
+    "challenges": 21
+  },
+  "hi-IN": {
+    "status": "draft_pending_native_review",
+    "interface": 277,
+    "changed": 277,
+    "skills": 10,
+    "challenges": 21
+  },
+  "ar": {
+    "status": "draft_pending_native_review",
+    "interface": 277,
+    "changed": 277,
+    "skills": 10,
+    "challenges": 21
+  },
+  "tr-TR": {
+    "status": "draft_pending_native_review",
+    "interface": 277,
+    "changed": 276,
+    "skills": 10,
+    "challenges": 21
+  },
+  "id-ID": {
+    "status": "draft_pending_native_review",
+    "interface": 277,
+    "changed": 275,
+    "skills": 10,
+    "challenges": 21
+  }
+}

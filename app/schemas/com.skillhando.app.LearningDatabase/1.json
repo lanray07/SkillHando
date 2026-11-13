@@ -1,0 +1,344 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "008cb30dd226b64f49faf95ba362e8e0",
+    "entities": [
+      {
+        "tableName": "attempts",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `skill` TEXT NOT NULL, `challenge` TEXT NOT NULL, `finishedAt` INTEGER NOT NULL, `seconds` INTEGER NOT NULL, `complete` INTEGER NOT NULL, `ratingValues` TEXT NOT NULL, `reflection` TEXT NOT NULL, `nextChange` TEXT NOT NULL, `notes` TEXT NOT NULL, `observation` TEXT NOT NULL, `baseline` TEXT NOT NULL, `experiment` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "skill",
+            "columnName": "skill",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "challenge",
+            "columnName": "challenge",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "finishedAt",
+            "columnName": "finishedAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "seconds",
+            "columnName": "seconds",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "complete",
+            "columnName": "complete",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ratingValues",
+            "columnName": "ratingValues",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "reflection",
+            "columnName": "reflection",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nextChange",
+            "columnName": "nextChange",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "notes",
+            "columnName": "notes",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "observation",
+            "columnName": "observation",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "baseline",
+            "columnName": "baseline",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "experiment",
+            "columnName": "experiment",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_attempts_skill",
+            "unique": false,
+            "columnNames": [
+              "skill"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_attempts_skill` ON `${TABLE_NAME}` (`skill`)"
+          },
+          {
+            "name": "index_attempts_finishedAt",
+            "unique": false,
+            "columnNames": [
+              "finishedAt"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_attempts_finishedAt` ON `${TABLE_NAME}` (`finishedAt`)"
+          }
+        ]
+      },
+      {
+        "tableName": "drafts",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`slot` INTEGER NOT NULL, `id` TEXT NOT NULL, `skill` TEXT NOT NULL, `challenge` TEXT NOT NULL, `targetMinutes` INTEGER NOT NULL, `elapsed` INTEGER NOT NULL, `runningSince` INTEGER, `boot` INTEGER NOT NULL, `notes` TEXT NOT NULL, `phase` TEXT NOT NULL, `baseline` TEXT NOT NULL, `change` TEXT NOT NULL, PRIMARY KEY(`slot`))",
+        "fields": [
+          {
+            "fieldPath": "slot",
+            "columnName": "slot",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "skill",
+            "columnName": "skill",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "challenge",
+            "columnName": "challenge",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "targetMinutes",
+            "columnName": "targetMinutes",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "elapsed",
+            "columnName": "elapsed",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "runningSince",
+            "columnName": "runningSince",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "boot",
+            "columnName": "boot",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "notes",
+            "columnName": "notes",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "phase",
+            "columnName": "phase",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "baseline",
+            "columnName": "baseline",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "change",
+            "columnName": "change",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "slot"
+          ]
+        }
+      },
+      {
+        "tableName": "pathways",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`skill` TEXT NOT NULL, `paused` INTEGER NOT NULL, `startedAt` INTEGER NOT NULL, PRIMARY KEY(`skill`))",
+        "fields": [
+          {
+            "fieldPath": "skill",
+            "columnName": "skill",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "paused",
+            "columnName": "paused",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "startedAt",
+            "columnName": "startedAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "skill"
+          ]
+        }
+      },
+      {
+        "tableName": "goals",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `label` TEXT NOT NULL, `weeklySessions` INTEGER NOT NULL, `createdAt` INTEGER NOT NULL, `paused` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "label",
+            "columnName": "label",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "weeklySessions",
+            "columnName": "weeklySessions",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdAt",
+            "columnName": "createdAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "paused",
+            "columnName": "paused",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "evidence",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `attemptId` TEXT NOT NULL, `name` TEXT NOT NULL, `kind` TEXT NOT NULL, `fileName` TEXT NOT NULL, PRIMARY KEY(`id`), FOREIGN KEY(`attemptId`) REFERENCES `attempts`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "attemptId",
+            "columnName": "attemptId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kind",
+            "columnName": "kind",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fileName",
+            "columnName": "fileName",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_evidence_attemptId",
+            "unique": false,
+            "columnNames": [
+              "attemptId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_evidence_attemptId` ON `${TABLE_NAME}` (`attemptId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "attempts",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "attemptId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '008cb30dd226b64f49faf95ba362e8e0')"
+    ]
+  }
+}

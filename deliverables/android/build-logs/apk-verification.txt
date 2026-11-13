@@ -1,0 +1,2 @@
+app-debug.apk	12258820	b22bbe6ccb1eaba2d2e1855c9bb499bfd44da0d5e3da6d7707a13dbd866d98b0	19 locale dictionaries and catalogues
+app-release-unsigned.apk	8779643	978d15b3ce4e1d55b4d64db3df79d46fbcff81ec25220ad09a9c9b4e44b7d708	19 locale dictionaries and catalogues

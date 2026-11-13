@@ -1,0 +1,437 @@
+[
+  {
+    "id": "speaking",
+    "title": "Public speaking",
+    "description": "Explain an idea with a clear point, a concrete example and an ending.",
+    "rubric": [
+      "Clarity",
+      "Pacing",
+      "Structure"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "A one-minute introduction",
+        "objective": "Introduce yourself to a new group with one detail they can remember.",
+        "materials": "A timer and three words on a note",
+        "steps": [
+          "Write a name, a reason for being there and one specific detail.",
+          "Deliver the introduction once and time it.",
+          "Try again with a pause before the memorable detail."
+        ],
+        "criterion": "The listener can repeat your purpose and one detail within one minute.",
+        "prompt": "Where did you rush or lose your place?",
+        "experiment": "Keep the script and change only the length of the pause.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Explain it to a beginner",
+        "objective": "Turn a familiar process into a short explanation anyone can follow.",
+        "materials": "A familiar item and a timer",
+        "steps": [
+          "State the outcome first.",
+          "Explain three steps and demonstrate one.",
+          "Ask someone to retell the steps or retell them from memory after a break."
+        ],
+        "criterion": "The three steps are in order and each starts with a clear action.",
+        "prompt": "Which step would a beginner ask you to explain again?",
+        "experiment": "Swap one abstract phrase for a concrete example.",
+        "minutes": 10
+      },
+      {
+        "id": "extend",
+        "title": "Answer a meeting question",
+        "objective": "Deliver a concise recommendation and respond to a likely follow-up.",
+        "materials": "A current decision and a timer",
+        "steps": [
+          "Write the decision in one sentence.",
+          "Speak for ninety seconds using your recommendation, evidence and trade-off.",
+          "Answer one plausible objection aloud without repeating your opening."
+        ],
+        "criterion": "A listener can separate your recommendation, evidence and trade-off.",
+        "prompt": "Which objection exposed a gap in your explanation?",
+        "experiment": "Prepare one different example while keeping the same recommendation.",
+        "minutes": 15
+      }
+    ]
+  },
+  {
+    "id": "communication",
+    "title": "Communication",
+    "description": "Practise listening, clear requests and useful feedback.",
+    "rubric": [
+      "Specificity",
+      "Listening",
+      "Tone"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Reflect before replying",
+        "objective": "Accurately reflect another person's main point.",
+        "materials": "A willing partner or short spoken clip",
+        "steps": [
+          "Listen for one minute without planning your reply.",
+          "Summarise the main point in a single sentence.",
+          "Ask a neutral question and revise your summary."
+        ],
+        "criterion": "Your second summary captures one detail you missed initially.",
+        "prompt": "What assumption did you make before asking the question?",
+        "experiment": "Keep the topic and ask a more open follow-up.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Make a clear request",
+        "objective": "Ask for a specific action with context and a deadline.",
+        "materials": "Paper or a notes app",
+        "steps": [
+          "Choose a small realistic request.",
+          "Write the action, reason and timing in separate lines.",
+          "Read it aloud and remove words that obscure the action."
+        ],
+        "criterion": "The recipient can identify the action and decide how to respond.",
+        "prompt": "What could someone still interpret in two ways?",
+        "experiment": "Move the action to the first sentence and compare.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "photo",
+    "title": "Photography",
+    "description": "Use framing and light to make the subject easy to read.",
+    "rubric": [
+      "Subject clarity",
+      "Framing",
+      "Light"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Frame a single subject",
+        "objective": "Use a deliberate background to separate one subject.",
+        "materials": "A camera and an everyday object",
+        "steps": [
+          "Make an initial photo at eye level.",
+          "Move around the object until the background simplifies.",
+          "Capture another frame and look at both as thumbnails."
+        ],
+        "criterion": "The subject stays legible in the second thumbnail.",
+        "prompt": "Which background element did you remove and what changed?",
+        "experiment": "Hold exposure and framing steady while you change only the camera height.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Find soft window light",
+        "objective": "Compare direct and reflected light on the same object.",
+        "materials": "An object, a window and white paper",
+        "steps": [
+          "Place the object beside indirect window light.",
+          "Photograph the shadow side.",
+          "Hold white paper opposite the window and repeat from the same spot."
+        ],
+        "criterion": "Both frames show what the reflector changed on the shadow side.",
+        "prompt": "Which details became easier to see?",
+        "experiment": "Move the paper half as far away and compare.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "drawing",
+    "title": "Drawing",
+    "description": "Make everyday objects recognisable through shape and proportion.",
+    "rubric": [
+      "Shape",
+      "Proportion",
+      "Line control"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Build from simple shapes",
+        "objective": "Draw an object by comparing its largest shapes.",
+        "materials": "Paper, pencil and a mug",
+        "steps": [
+          "Use a rectangle and an ellipse to block in the mug.",
+          "Compare its width to its height before adding the handle.",
+          "Draw a second version using the same viewpoint."
+        ],
+        "criterion": "Your handle joins the mug at two deliberate points.",
+        "prompt": "Which proportion changed between drawings?",
+        "experiment": "Use the rim width as the unit for every other measurement.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Draw the negative space",
+        "objective": "Use spaces around an object to check proportions.",
+        "materials": "Paper, pencil and a chair",
+        "steps": [
+          "Sketch the outer contour from one viewpoint.",
+          "Draw the spaces between the legs and under the seat.",
+          "Compare those spaces against the chair and revise two lines."
+        ],
+        "criterion": "The gaps between legs have a deliberate shape and relative size.",
+        "prompt": "Which space helped you correct the object most?",
+        "experiment": "Check the largest gap first before drawing any details.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "cooking",
+    "title": "Cooking fundamentals",
+    "description": "Organise ingredients and practise flavour balance with no-cook exercises.",
+    "rubric": [
+      "Preparation",
+      "Consistency",
+      "Flavour balance"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Set up a cold snack station",
+        "objective": "Arrange ingredients and utensils in the order you need them.",
+        "materials": "A washable surface, clean utensils and ready-to-eat ingredients",
+        "steps": [
+          "Wash your hands and clear the work surface.",
+          "Lay out ingredients in the order you will use them.",
+          "Assemble a small snack and note each time you had to stop for a missing item."
+        ],
+        "criterion": "The next attempt can run without looking for an ingredient.",
+        "prompt": "Which interruption could you remove with a better layout?",
+        "experiment": "Move the most frequently used ingredient closest to you.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Compare two simple dressings",
+        "objective": "Taste how varying one ingredient changes balance.",
+        "materials": "Food-safe bowls, spoons, oil and lemon juice if suitable for you",
+        "steps": [
+          "Start with equal amounts of oil in two bowls.",
+          "Add a small measured amount of lemon to the first and a little more to the second.",
+          "Taste separately with clean spoons and write which you prefer."
+        ],
+        "criterion": "Your notes describe the difference without using only ‘better’.",
+        "prompt": "What did more acid change about the flavour?",
+        "experiment": "Use the preferred version as a baseline and change one ingredient.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "writing",
+    "title": "Creative writing",
+    "description": "Use concrete details and revision to make a scene vivid.",
+    "rubric": [
+      "Specificity",
+      "Focus",
+      "Rhythm"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Write a place in three senses",
+        "objective": "Let specific details establish a place without naming it.",
+        "materials": "Paper or a notes app",
+        "steps": [
+          "Choose a real or imagined place.",
+          "Write three short observations from three senses.",
+          "Remove the place name and replace a general adjective with a detail."
+        ],
+        "criterion": "A reader can infer something about the setting from the details.",
+        "prompt": "Which detail was easiest to imagine?",
+        "experiment": "Keep the scene and replace one sight detail with a sound.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Cut a scene to its turning point",
+        "objective": "Revise a short scene around the moment something changes.",
+        "materials": "A draft of around 150 words",
+        "steps": [
+          "Underline the moment a character decides or discovers something.",
+          "Remove one sentence that delays that moment.",
+          "Read both versions aloud and pick the one with a clearer change."
+        ],
+        "criterion": "The revision makes the change identifiable without adding explanation.",
+        "prompt": "What did the cut change about the pacing?",
+        "experiment": "Move one sensory detail to just before the turning point.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "digital",
+    "title": "Digital literacy",
+    "description": "Build confidence organising files and validating small spreadsheets.",
+    "rubric": [
+      "Findability",
+      "Accuracy",
+      "Repeatability"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Build a practice filing system",
+        "objective": "Create a folder and naming convention you can use again.",
+        "materials": "A file manager and three harmless sample files",
+        "steps": [
+          "Make a folder called Practice and two subfolders by purpose.",
+          "Rename each sample using a consistent date and topic pattern.",
+          "Try to retrieve one from search and one from its containing folder."
+        ],
+        "criterion": "All three samples are easy to distinguish without opening them.",
+        "prompt": "Which filename would still make sense six months from now?",
+        "experiment": "Use one shorter naming pattern and repeat the retrieval task.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Verify a spreadsheet total",
+        "objective": "Create a simple table and check the result independently.",
+        "materials": "A spreadsheet app and five fictional amounts",
+        "steps": [
+          "Enter five amounts next to five labels.",
+          "Use SUM for the total and verify it mentally or with a calculator.",
+          "Change one amount and check how the result changes."
+        ],
+        "criterion": "The total updates by the exact change made to the input.",
+        "prompt": "What mistake would your independent check catch?",
+        "experiment": "Insert a sixth row and check whether the formula includes it.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "organisation",
+    "title": "Personal organisation",
+    "description": "Turn a crowded list into actions that fit the time you have.",
+    "rubric": [
+      "Prioritisation",
+      "Specificity",
+      "Feasibility"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Choose tomorrow’s first action",
+        "objective": "Prepare an action you can start in five minutes.",
+        "materials": "Paper or your task list",
+        "steps": [
+          "Write three things competing for your attention.",
+          "Select the one with the greatest consequence if delayed.",
+          "Describe the first visible action and decide when to do it."
+        ],
+        "criterion": "You can start without making another decision.",
+        "prompt": "What might prevent you from getting started?",
+        "experiment": "Place one required item where you will see it.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Compare estimates with reality",
+        "objective": "Improve a planning estimate by observing the actual time.",
+        "materials": "A timer and two simple chores",
+        "steps": [
+          "Estimate each chore separately.",
+          "Time the chores and write down any interruptions.",
+          "Update your estimate and add a buffer for the uncertain part."
+        ],
+        "criterion": "Your revised estimate explains a specific difference.",
+        "prompt": "Did the task or the interruption take longer than expected?",
+        "experiment": "Measure setup time separately during the next attempt.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "diy",
+    "title": "Basic home DIY",
+    "description": "Build safe measurement and planning habits with craft materials.",
+    "rubric": [
+      "Measurement",
+      "Planning",
+      "Repeatability"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Measure before cutting",
+        "objective": "Check a mock-up before buying or fitting anything.",
+        "materials": "Cardboard, ruler, pencil and blunt craft scissors",
+        "steps": [
+          "Measure a small object twice from the same reference edge.",
+          "Mark the measurements on cardboard.",
+          "Cut the cardboard with blunt scissors and check the fit."
+        ],
+        "criterion": "The cardboard model matches the intended size within your marked tolerance.",
+        "prompt": "Which measurement was hardest to repeat?",
+        "experiment": "Mark the reference edge before you measure.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Make a removable layout plan",
+        "objective": "Compare arrangements before moving anything heavy.",
+        "materials": "Paper, a ruler and pencil",
+        "steps": [
+          "Sketch a tabletop as a rectangle.",
+          "Cut paper shapes to represent three lightweight objects.",
+          "Try two layouts and identify the one that leaves the clearest work area."
+        ],
+        "criterion": "Your plan improves access to at least one regularly used item.",
+        "prompt": "Which item made the layout difficult?",
+        "experiment": "Try a different position for that item and compare remaining space.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "problem",
+    "title": "Everyday problem-solving",
+    "description": "Test one explanation at a time and compare observable outcomes.",
+    "rubric": [
+      "Definition",
+      "Test design",
+      "Evidence"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Test one change",
+        "objective": "Define a small recurring nuisance and test one possible cause.",
+        "materials": "A notebook and a low-risk everyday problem",
+        "steps": [
+          "Describe when the issue happens and what you observe.",
+          "List two possible causes and choose one to test.",
+          "Change one thing and compare the result to the usual pattern."
+        ],
+        "criterion": "Your record distinguishes what you observed from what you inferred.",
+        "prompt": "What else might explain the result?",
+        "experiment": "Repeat the same test before changing another variable.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Compare two options fairly",
+        "objective": "Use consistent criteria to choose between two practical options.",
+        "materials": "Paper and an everyday choice",
+        "steps": [
+          "List two feasible options.",
+          "Select three criteria before scoring either option.",
+          "Score both options and identify which criterion could change your decision."
+        ],
+        "criterion": "Each score has a short reason and the same scale is used for both options.",
+        "prompt": "Which score depends on the weakest evidence?",
+        "experiment": "Gather one fact that could change the weakest score.",
+        "minutes": 10
+      }
+    ]
+  }
+]

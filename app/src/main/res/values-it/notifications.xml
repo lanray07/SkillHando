@@ -1,0 +1,6 @@
+<resources>
+    <string name="reminder_title">È ora di fare pratica</string>
+    <string name="reminder_body">Apri SkillHando per riprendere da dove eri.</string>
+    <string name="reminder_channel">Promemoria di pratica</string>
+    <string name="snooze">Rimanda di un’ora</string>
+</resources>

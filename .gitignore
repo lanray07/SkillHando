@@ -1,0 +1,23 @@
+.gradle/
+.kotlin/
+**/build/
+local.properties
+*.jks
+*.keystore
+.env
+!*.env.example
+app/src/main/assets/AppstoreAuthenticationKey.pem
+.translation-cache/
+__pycache__/
+# Intermediate build output and host-specific diagnostics
+deliverables/android/build-logs/artifacts.txt
+deliverables/android/build-logs/debug.txt
+deliverables/android/build-logs/dependencies.txt
+deliverables/android/build-logs/emulator-*.txt
+deliverables/android/build-logs/fire-first.txt
+deliverables/android/build-logs/gradle*.txt
+deliverables/android/build-logs/package.txt
+deliverables/android/build-logs/rebuild.txt
+deliverables/android/build-logs/release.txt
+deliverables/android/build-logs/sdk-licenses.txt
+deliverables/localization-generation.log

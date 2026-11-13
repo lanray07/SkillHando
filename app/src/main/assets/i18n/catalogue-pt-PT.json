@@ -1,0 +1,437 @@
+[
+  {
+    "id": "speaking",
+    "title": "Publicidade fala",
+    "description": "Explique uma ideia com um ponto claro, um exemplo concreto e um final.",
+    "rubric": [
+      "Claridade",
+      "Pacote",
+      "Estrutura"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Uma introdução de 1 minuto",
+        "objective": "Entre em um novo grupo com um detalhe que eles podem lembrar.",
+        "materials": "Um tempo e três palavras em uma nota",
+        "steps": [
+          "Escreva um nome, uma razão para estar lá e um detalhe específico.",
+          "Entregue a introdução uma vez e uma vez.",
+          "Tente novamente com uma pausa antes do detalhe memorável."
+        ],
+        "criterion": "O ouvinte pode repetir seu objetivo e um detalhe em um minuto.",
+        "prompt": "Onde você se apressa ou perde seu lugar?",
+        "experiment": "Mantenha o script e apenas mude a duração da pausa.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Explica isso para um iniciante",
+        "objective": "Converse um processo familiar em uma breve explicação quem pode seguir.",
+        "materials": "Um item familiar e um horário",
+        "steps": [
+          "Primeiro coloque o resultado.",
+          "Explique três passos e demonstre um.",
+          "Peça a alguém que retire os passos ou retire-os da memória após uma pausa."
+        ],
+        "criterion": "Os três passos estão em ordem e cada um começa com uma ação clara.",
+        "prompt": "Qual passo um iniciante lhe pediria para explicar novamente?",
+        "experiment": "Troque uma frase abstrata para um exemplo concreto.",
+        "minutes": 10
+      },
+      {
+        "id": "extend",
+        "title": "Responder a uma pergunta de reunião",
+        "objective": "Entregue uma recomendação concisa e responda a uma possível continuação.",
+        "materials": "Uma decisão atual e um horário",
+        "steps": [
+          "Escreva a decisão em uma frase.",
+          "Fale por noventa segundos usando sua recomendação, evidência e trade-off.",
+          "Responda uma objeção plausível com voz alta sem repetir a sua abertura."
+        ],
+        "criterion": "Um ouvinte pode separar sua recomendação, evidência e trade-off.",
+        "prompt": "Qual a objeção que expôs uma lacuna na sua explicação?",
+        "experiment": "Prepare um exemplo diferente, ao mesmo tempo que siga a mesma recomendação.",
+        "minutes": 15
+      }
+    ]
+  },
+  {
+    "id": "communication",
+    "title": "Comunicação",
+    "description": "Praticar a escuta, pedidos claros e feedback útil.",
+    "rubric": [
+      "especificidade",
+      "ouvir",
+      "Tone"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Reflexão antes de replicar",
+        "objective": "Refletir com precisão o ponto principal de outra pessoa.",
+        "materials": "Um parceiro desejado ou clipe falado curto",
+        "steps": [
+          "Ouça por um minuto sem planejar sua resposta.",
+          "Resumindo o ponto principal em uma única frase.",
+          "Pergunte uma pergunta neutra e revise seu resumo."
+        ],
+        "criterion": "Seu segundo resumo capta um detalhe que você perdeu inicialmente.",
+        "prompt": "Que suposição fez antes de fazer a pergunta?",
+        "experiment": "Mantenha o tema e peça um acompanhamento mais aberto.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Faça uma solicitação clara",
+        "objective": "Solicite uma ação específica com contexto e prazo.",
+        "materials": "Papel ou um aplicativo de notas",
+        "steps": [
+          "Escolha uma pequena demanda realista.",
+          "Escreva a ação, a razão e o tempo em linhas separadas.",
+          "Leia com voz alta e remova palavras que obscureçam a ação."
+        ],
+        "criterion": "O destinatário pode identificar a ação e decidir como responder.",
+        "prompt": "O que alguém poderia interpretar de duas maneiras?",
+        "experiment": "Mova a ação para a primeira frase e compare.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "photo",
+    "title": "Fotografia",
+    "description": "Use o quadro e a luz para tornar o assunto fácil de ler.",
+    "rubric": [
+      "Subjetivo claridade",
+      "Frameagem",
+      "Luzes"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Frame um único tema",
+        "objective": "Use um fundo deliberado para separar um assunto.",
+        "materials": "Uma câmera e um objeto diário",
+        "steps": [
+          "Faça uma foto inicial no nível do olho.",
+          "Mova-se em torno do objeto até que o fundo simplifique.",
+          "Capture outro quadro e olhe para ambos como miniaturas."
+        ],
+        "criterion": "O assunto permanece lido no segundo detalhe.",
+        "prompt": "Que elemento de fundo você removeu e o que mudou?",
+        "experiment": "Mantenha a exposição e o frame estável enquanto você muda apenas a altura da câmera.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Encontre luz de janela suave",
+        "objective": "Compare a luz direta e refletida no mesmo objeto.",
+        "materials": "Um objeto, uma janela e um papel branco",
+        "steps": [
+          "Colocar o objeto junto à luz de janela indireta.",
+          "Fotografiar o lado da sombra.",
+          "Mantenha o papel branco em frente à janela e repita do mesmo ponto."
+        ],
+        "criterion": "Ambos os quadros mostram o que o reflector mudou no lado da sombra.",
+        "prompt": "Quais detalhes tornaram-se mais fáceis de ver?",
+        "experiment": "Mova o papel a metade da distância e compare.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "drawing",
+    "title": "desenho",
+    "description": "Faça os objetos diários reconhecíveis através da forma e da proporção.",
+    "rubric": [
+      "Forma",
+      "Proporção",
+      "Linha de controle"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Construído em formas simples",
+        "objective": "Desenhe um objeto comparando as suas maiores formas.",
+        "materials": "Papel, pênis e um mug",
+        "steps": [
+          "Use um rectangular e um ellipse para bloquear no mug.",
+          "Compare a largura com a altura antes de adicionar a manobra.",
+          "Desenhe uma segunda versão usando o mesmo ponto de vista."
+        ],
+        "criterion": "Sua mão se une ao mug em dois pontos deliberados.",
+        "prompt": "Qual a proporção que mudou entre os desenhos?",
+        "experiment": "Use a largura do ramo como unidade para cada outra medição.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Desligue o espaço negativo",
+        "objective": "Use espaços em torno de um objeto para verificar as proporções.",
+        "materials": "Papel, papel e uma cadeira",
+        "steps": [
+          "Escreva o conto exterior de um ponto de vista.",
+          "Desligue os espaços entre as pernas e debaixo do assento.",
+          "Compare esses espaços contra a cadeira e revise duas linhas."
+        ],
+        "criterion": "As lacunas entre as pernas têm uma forma deliberada e tamanho relativo.",
+        "prompt": "Qual espaço ajudou você a corrigir o objeto mais?",
+        "experiment": "Verifique a maior lacuna primeiro antes de desenhar qualquer detalhe.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "cooking",
+    "title": "Cozinhas Fundamentais",
+    "description": "Organize ingredientes e pratique o equilíbrio do sabor com exercícios sem cozinhar.",
+    "rubric": [
+      "Preparação",
+      "Consistência",
+      "Balanço de flavour"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Construa uma estação de snack frio",
+        "objective": "Arranja os ingredientes e utensílios na ordem que você precisa deles.",
+        "materials": "Uma superfície lavável, utensílios limpos e ingredientes prontos para comer",
+        "steps": [
+          "Lavar as mãos e limpar a superfície de trabalho.",
+          "Deixe os ingredientes na ordem que você usará.",
+          "Colocar um pequeno prato e notar cada vez que você teve que parar por um item perdido."
+        ],
+        "criterion": "A próxima tentativa pode correr sem procurar um ingrediente.",
+        "prompt": "Que interrupção você poderia remover com um layout melhor?",
+        "experiment": "Move o ingrediente mais frequentemente usado mais perto de você.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Compare duas roupas simples",
+        "objective": "Tente como a variação de um ingrediente muda o equilíbrio.",
+        "materials": "Bolsas, espinhos, óleo e suco de limão se adequado para você",
+        "steps": [
+          "Começa com a mesma quantidade de óleo em dois bolos.",
+          "Adicione uma pequena quantidade de limão para a primeira e um pouco mais para a segunda.",
+          "Taste separadamente com espinhos limpos e escreva o que você prefere."
+        ],
+        "criterion": "As notas descrevem a diferença sem usar apenas “melhor”.",
+        "prompt": "O que mais mudou o ácido sobre o sabor?",
+        "experiment": "Use a versão preferida como base e mude um ingrediente.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "writing",
+    "title": "Escrever criativo",
+    "description": "Use detalhes concretos e revisões para tornar uma cena vivida.",
+    "rubric": [
+      "especificidade",
+      "Foco",
+      "Rítmico"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Escreva um lugar em três sentidos",
+        "objective": "Deixe detalhes específicos estabelecer um lugar sem nomeá-lo.",
+        "materials": "Papel ou um aplicativo de notas",
+        "steps": [
+          "Escolha um lugar real ou imaginado.",
+          "Escreva três observações curtas de três sentidos.",
+          "Remova o nome do local e substitui um adjetivo geral com um detalhe."
+        ],
+        "criterion": "Um leitor pode inferir algo sobre o layout dos detalhes.",
+        "prompt": "Qual detalhe foi mais fácil de imaginar?",
+        "experiment": "Mantenha a cena e substitua um detalhe de olhar com um som.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Cortes de uma cena para seu ponto de viragem",
+        "objective": "Revise uma cena curta ao redor do momento em que algo muda.",
+        "materials": "Um projeto de cerca de 150 palavras",
+        "steps": [
+          "Sublinha o momento em que um personagem decide ou descobre algo.",
+          "Remova uma frase que retarda esse momento.",
+          "Leia as duas versões com voz alta e escolha a uma com uma mudança mais clara."
+        ],
+        "criterion": "A revisão torna a mudança identificável sem acrescentar explicações.",
+        "prompt": "O que mudou a cortina sobre o pacing?",
+        "experiment": "Mova um detalhe sensorial para apenas antes do ponto de viragem.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "digital",
+    "title": "Literatura Digital",
+    "description": "Construa confiança na organização de arquivos e validação de pequenos discos.",
+    "rubric": [
+      "A possibilidade de encontrar",
+      "Precisão",
+      "Repetibilidade"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Construir um sistema de arquivo prático",
+        "objective": "Crie uma pasta e nomear a convenção que você pode usar novamente.",
+        "materials": "Um gerente de arquivos e três arquivos de amostra inofensivos",
+        "steps": [
+          "Faça uma pasta chamada Prática e dois subfólus por finalidade.",
+          "Renome cada amostra usando um padrão de data e tópico consistente.",
+          "Tente recuperar um da pesquisa e um da pasta que contém."
+        ],
+        "criterion": "As três amostras são fáceis de distinguir sem abrir.",
+        "prompt": "Qual o nome que ainda vai ter sentido seis meses a partir de agora?",
+        "experiment": "Use um padrão de nomeamento mais curto e repita a tarefa de recuperação.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Verifique um total de espalhados",
+        "objective": "Crie uma tabela simples e veja o resultado de forma independente.",
+        "materials": "Um aplicativo de folha de espelho e cinco quantidades ficcionais",
+        "steps": [
+          "Entre cinco quantidades ao lado de cinco rótulos.",
+          "Use SUM para o total e verificar mentalmente ou com um calculador.",
+          "Mude uma quantidade e veja como o resultado muda."
+        ],
+        "criterion": "A atualização total pela mudança exata feita na entrada.",
+        "prompt": "Qual o erro que você pode fazer com o seu check-in independente?",
+        "experiment": "Insira uma sexta linha e verifique se a fórmula inclui.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "organisation",
+    "title": "Organização pessoal",
+    "description": "Torne uma lista em massa em ações que se encaixam no tempo que você tem.",
+    "rubric": [
+      "Prioridade",
+      "especificidade",
+      "Facilidade"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Escolha a primeira ação de amanhã",
+        "objective": "Prepare uma ação que você pode começar em cinco minutos.",
+        "materials": "Papel ou sua lista de tarefas",
+        "steps": [
+          "Escreva três coisas que concorrem para a sua atenção.",
+          "Escolha o que tem a maior consequência se atrasado.",
+          "Descreva a primeira ação visível e decide quando fazê-lo."
+        ],
+        "criterion": "Você pode começar sem tomar outra decisão.",
+        "prompt": "O que pode impedir que você comece?",
+        "experiment": "Colocar um item necessário onde você vai vê-lo.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Compare estimativas com a realidade",
+        "objective": "Melhorar a estimativa de planejamento observando o tempo real.",
+        "materials": "Um tempo e dois postos simples",
+        "steps": [
+          "Estimar cada função separadamente.",
+          "Tempo de trabalho e escrever qualquer interrupção.",
+          "Atualize sua estimativa e adicione um buffer para a parte incerta."
+        ],
+        "criterion": "Sua estimativa revisada explica uma diferença específica.",
+        "prompt": "A tarefa ou a interrupção demorou mais tempo do que o esperado?",
+        "experiment": "Mide o tempo de configuração separadamente durante a próxima tentativa.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "diy",
+    "title": "Home Dicas DIY",
+    "description": "Construa hábitos de medição e planejamento seguros com materiais artificiais.",
+    "rubric": [
+      "Medir",
+      "Planejamento",
+      "Repetibilidade"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Medir antes de cortar",
+        "objective": "Verifique um mock-up antes de comprar ou ajustar qualquer coisa.",
+        "materials": "Cartão, guia, caneta e blunt craft scissors",
+        "steps": [
+          "Medir um objeto pequeno duas vezes do mesmo limite de referência.",
+          "Marque as medições no cartão.",
+          "Corte o cartão com escudos de azulejos e veja o que se encaixa."
+        ],
+        "criterion": "O modelo do cartão de papel corresponde ao tamanho pretendido dentro da sua tolerância marcada.",
+        "prompt": "Qual é a medida mais difícil de repetir?",
+        "experiment": "Marque o limiar de referência antes de medir.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Faça um plano de layout removível",
+        "objective": "Compare as ordens antes de mover qualquer coisa pesada.",
+        "materials": "Papel, um governador e um pênis",
+        "steps": [
+          "Escate um tablet como um rectangulo.",
+          "Cortes de papel para representar três objetos ligeiros.",
+          "Tente dois layouts e identifique o que deixa a área de trabalho mais clara."
+        ],
+        "criterion": "Seu plano melhora o acesso a pelo menos um item usado regularmente.",
+        "prompt": "Qual item tornou o layout difícil?",
+        "experiment": "Tente uma posição diferente para esse item e compare o espaço restante.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "problem",
+    "title": "Resolução diária de problemas",
+    "description": "Teste uma explicação em um momento e compare os resultados observáveis.",
+    "rubric": [
+      "Definição",
+      "Design de teste",
+      "evidência"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Testando uma mudança",
+        "objective": "Define uma pequena inquietação recorrente e teste uma possível causa.",
+        "materials": "Um notebook e um problema de baixo risco diário",
+        "steps": [
+          "Descreva quando o problema acontece e o que você observa.",
+          "Lista duas possíveis causas e escolha uma para testar.",
+          "Mude uma coisa e compare o resultado com o padrão habitual."
+        ],
+        "criterion": "O seu registro distingue o que você observou do que você concluiu.",
+        "prompt": "O que mais pode explicar o resultado?",
+        "experiment": "Repita o mesmo teste antes de mudar outra variável.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Compare duas opções de forma justa",
+        "objective": "Use critérios consistentes para escolher entre duas opções práticas.",
+        "materials": "O papel e a escolha diária",
+        "steps": [
+          "Confira duas opções possíveis.",
+          "Escolha três critérios antes de marcar qualquer opção.",
+          "Sabe quais são as opções e identifica qual critério pode mudar sua decisão."
+        ],
+        "criterion": "Cada pontuação tem uma razão curta e a mesma escala é usada para ambas as opções.",
+        "prompt": "Qual é o resultado que depende das evidências mais fracas?",
+        "experiment": "Coletar um fato que poderia mudar o ponto mais fraco.",
+        "minutes": 10
+      }
+    ]
+  }
+]

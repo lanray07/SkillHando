@@ -1,0 +1,6 @@
+<resources>
+    <string name="reminder_title">Et si vous repreniez votre pratique ?</string>
+    <string name="reminder_body">Ouvrez SkillHando pour reprendre votre exercice.</string>
+    <string name="reminder_channel">Rappels de pratique</string>
+    <string name="snooze">Reporter d’une heure</string>
+</resources>

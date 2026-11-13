@@ -1,0 +1,33 @@
+{
+  "appTitle": "SkillHando – Practical Skills Practice",
+  "shortDescription": "Build practical skills with guided challenges, self-assessments and a private practice portfolio.",
+  "longDescription": "Choose a practical skill and work through a short guided challenge. Try a clear speaking introduction, practise photo framing, or organise a set of files. Record what you tried and what you observed, then return to the same exercise to compare your attempts. Your local practice coach suggests an exercise to repeat or a new one to try. Browse the bundled challenges, keep practice notes and track your progress offline. Spoken guidance and voice commands depend on the speech services available on your device.",
+  "featureBullets": [
+    "Practise with 21 guided challenges across ten practical skills.",
+    "Compare self-assessments and observations from repeated attempts.",
+    "Keep photographs, audio recordings and reflections in a private on-device portfolio.",
+    "Set weekly goals and use a practice timer.",
+    "Use the bundled catalogue and local practice recommendations offline."
+  ],
+  "keywords": [
+    "practical skills",
+    "public speaking practice",
+    "skill practice tracker",
+    "offline learning challenges",
+    "practice timer",
+    "learning goals",
+    "practice portfolio"
+  ],
+  "releaseNotes": "First release with guided practice, self-assessment and a private portfolio.",
+  "screenshotHeadlines": [
+    "Learn practical skills",
+    "Plan one change to try",
+    "Find your next challenge",
+    "Get voice-guided instructions",
+    "Compare your attempts",
+    "Keep evidence of practice",
+    "Take your challenges offline",
+    "Practise at your own pace"
+  ],
+  "status": "Draft pending native review and store verification"
+}

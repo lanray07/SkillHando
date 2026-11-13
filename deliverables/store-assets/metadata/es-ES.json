@@ -1,0 +1,33 @@
+{
+  "appTitle": "SkillHando - Prácticas de habilidades prácticas",
+  "shortDescription": "Construcción de habilidades prácticas con desafíos guiados, autoevaluaciones y un portfolio de prácticas privadas.",
+  "longDescription": "Seleccione una habilidad práctica y trabaja a través de un breve desafío guiado. Trate una introducción clara de habla, practica el marcado de fotos, o organiza un conjunto de archivos. Recordar lo que intentaste y lo que observaste, luego regresar al mismo ejercicio para comparar tus intentos. Su entrenador de práctica local sugiera un ejercicio para repetir o un nuevo para probar. Navega los desafíos envueltos, mantiene las notas de práctica y rastrear tu progreso en línea. Guía de habla y comandos de voz dependen de los servicios de habla disponibles en tu dispositivo.",
+  "featureBullets": [
+    "Practicar con 21 retos guiados a través de diez habilidades prácticas.",
+    "Compara las evaluaciones de sí mismos y las observaciones de los intentos repetidos.",
+    "Mantener fotografías, grabaciones de audio y reflexiones en un portfolio privado de dispositivos.",
+    "Establecer objetivos semanales y utilizar un horario de prácticas.",
+    "Utilice el catálogo y las recomendaciones de prácticas locales en línea."
+  ],
+  "keywords": [
+    "Habilidades prácticas",
+    "Prácticas de habla pública",
+    "Prácticas de Tracker",
+    "Desafíos de aprendizaje offline",
+    "TIME de la práctica",
+    "Objetivos de aprendizaje",
+    "Portfolio de prácticas"
+  ],
+  "releaseNotes": "Primero lanzamiento con práctica guiada, autoevaluación y una cartera privada.",
+  "screenshotHeadlines": [
+    "Aprender habilidades prácticas",
+    "Plan 1 cambio para intentar",
+    "Encuentra tu siguiente desafío",
+    "Obtenga instrucciones guiadas por voz",
+    "Compare tus intentos",
+    "Mantener pruebas de la práctica",
+    "Toma tus desafíos offline",
+    "Practicar a tu propio ritmo"
+  ],
+  "status": "Draft pending native review and store verification"
+}

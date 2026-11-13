@@ -1,0 +1,33 @@
+{
+  "appTitle": "SkillHando - La pratique des compétences pratiques",
+  "shortDescription": "Construisez des compétences pratiques avec des défis guidés, des auto-évaluations et un portefeuille de pratiques privées.",
+  "longDescription": "Choisissez une compétence pratique et travaillez à travers un court défi guidé. Essayez une introduction claire, pratiquez le cadre photo, ou organisez un ensemble de fichiers. Enregistrez ce que vous avez essayé et ce que vous avez observé, puis revenez à l'exercice même pour comparer vos tentatives. Votre entraîneur de pratique local suggère un exercice à répéter ou un nouveau à essayer. Browse les défis liés, gardez des notes de pratique et suivez votre progrès en ligne. Les instructions et les commandes vocales parlées dépendent des services de parole disponibles sur votre appareil.",
+  "featureBullets": [
+    "Pratiquez avec 21 défis guidés sur dix compétences pratiques.",
+    "Comparez les évaluations et les observations des tentatives répétées.",
+    "Gardez les photos, les enregistrements audio et les réflexions dans un portefeuille privé sur un appareil.",
+    "Définissez des objectifs hebdomadaires et utilisez un timing d'entraînement.",
+    "Utilisez le catalogue et les recommandations de pratique locales en ligne."
+  ],
+  "keywords": [
+    "Les compétences pratiques",
+    "La pratique de la parole publique",
+    "Le tracker pratique",
+    "Défis d’apprentissage offline",
+    "Les horaires de pratique",
+    "Objectifs d’apprentissage",
+    "Le portefeuille pratique"
+  ],
+  "releaseNotes": "Première édition avec une pratique guidée, une auto-évaluation et un portefeuille privé.",
+  "screenshotHeadlines": [
+    "Apprendre les compétences pratiques",
+    "Plan 1 changement à essayer",
+    "Trouvez votre prochain défi",
+    "Obtenez des instructions vocales",
+    "Comparez vos tentatives",
+    "Gardez des preuves de la pratique",
+    "Prenez vos défis hors ligne",
+    "Pratiquez à votre propre rythme"
+  ],
+  "status": "Draft pending native review and store verification"
+}

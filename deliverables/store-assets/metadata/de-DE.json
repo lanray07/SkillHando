@@ -1,0 +1,33 @@
+{
+  "appTitle": "SkillHando - praktische Fähigkeiten Praxis",
+  "shortDescription": "Bauen Sie praktische Fähigkeiten mit geführten Herausforderungen, Selbstbewertungen und einem privaten Praktika-Portfolio.",
+  "longDescription": "Wählen Sie eine praktische Fähigkeit und arbeiten Sie durch eine kurze geführte Herausforderung. Versuchen Sie eine klare Sprech-Introduction, üben Sie Foto-Framing, oder organisieren Sie eine Reihe von Dateien. Aufzeichnen Sie, was Sie versucht haben und was Sie beobachtet haben, dann zurück zu dem gleichen Übungs, um Ihre Versuche zu vergleichen. Ihr lokales Übungstrainer schlägt eine Übung zu wiederholen oder eine neue zu versuchen. Browse die verbundenen Herausforderungen, halten Sie die Übungsnoten und verfolgen Sie Ihre Fortschritte offline. Sprachende Führung und Stimmordungen hängen von den Sprachdienste auf Ihrem Gerät ab.",
+  "featureBullets": [
+    "Praktieren Sie mit 21 geführten Herausforderungen über zehn praktische Fähigkeiten.",
+    "Vergleichen Sie Selbstbewertungen und Beobachtungen aus wiederholten Versuchen.",
+    "Halten Sie Fotos, Audioaufnahmen und Reflexionen in einem privaten Gerätportfolio.",
+    "Setzen Sie wöchentliche Ziele und verwenden Sie eine Übungszeit.",
+    "Verwenden Sie den verbundenen Katalog und lokale Übungsempfehlungen offline."
+  ],
+  "keywords": [
+    "praktische Fähigkeiten",
+    "Öffentlich sprechende Praxis",
+    "Übungsfähigkeit Tracker",
+    "Offline Lernen Herausforderungen",
+    "Übung Timer",
+    "Lernziele",
+    "Praktizierung Portfolio"
+  ],
+  "releaseNotes": "Erste Release mit geführter Praxis, Selbstbewertung und einem privaten Portfolio.",
+  "screenshotHeadlines": [
+    "Lernen Sie praktische Fähigkeiten",
+    "Plan 1 Änderung zu versuchen",
+    "Finden Sie Ihre nächste Herausforderung",
+    "Erhalten Sie Voice-Guided-Anweisungen",
+    "Vergleichen Sie Ihre Versuche",
+    "Beweise der Praxis halten",
+    "Lassen Sie Ihre Herausforderungen offline",
+    "Üben Sie in Ihrem eigenen Tempo"
+  ],
+  "status": "Draft pending native review and store verification"
+}

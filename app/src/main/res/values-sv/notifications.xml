@@ -1,0 +1,6 @@
+<resources>
+    <string name="reminder_title">Dags att öva en stund</string>
+    <string name="reminder_body">Öppna SkillHando för att fortsätta.</string>
+    <string name="reminder_channel">Övningspåminnelser</string>
+    <string name="snooze">Påminn om en timme</string>
+</resources>

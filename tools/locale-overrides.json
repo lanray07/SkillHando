@@ -1,0 +1,78 @@
+{
+  "en-GB": {
+    "paused": "Paused",
+    "observation_required": "Record an observation or reflection before completing this attempt."
+  },
+  "en-US": {
+    "paused": "Paused",
+    "observation_required": "Record an observation or reflection before completing this attempt."
+  },
+  "en-AU": {
+    "paused": "Paused",
+    "observation_required": "Record an observation or reflection before completing this attempt."
+  },
+  "es-ES": {
+    "paused": "En pausa",
+    "observation_required": "Añade una observación o reflexión antes de completar este intento."
+  },
+  "es-419": {
+    "paused": "En pausa",
+    "observation_required": "Agrega una observación o reflexión antes de completar este intento."
+  },
+  "fr-FR": {
+    "paused": "En pause",
+    "observation_required": "Ajoutez une observation ou une réflexion avant de terminer cet essai."
+  },
+  "fr-CA": {
+    "paused": "En pause",
+    "observation_required": "Ajoutez une observation ou une réflexion avant de terminer cet essai."
+  },
+  "de-DE": {
+    "paused": "Pausiert",
+    "observation_required": "Halte eine Beobachtung oder einen Gedanken fest, bevor du diesen Versuch abschließt."
+  },
+  "it-IT": {
+    "paused": "In pausa",
+    "observation_required": "Aggiungi un’osservazione o una riflessione prima di completare questo tentativo."
+  },
+  "pt-BR": {
+    "paused": "Em pausa",
+    "observation_required": "Registre uma observação ou reflexão antes de concluir esta tentativa."
+  },
+  "pt-PT": {
+    "paused": "Em pausa",
+    "observation_required": "Regista uma observação ou reflexão antes de concluíres esta tentativa."
+  },
+  "nl-NL": {
+    "paused": "Gepauzeerd",
+    "observation_required": "Noteer een observatie of reflectie voordat je deze poging afrondt."
+  },
+  "pl-PL": {
+    "paused": "Wstrzymano",
+    "observation_required": "Zapisz obserwację lub refleksję przed zakończeniem tej próby."
+  },
+  "sv-SE": {
+    "paused": "Pausad",
+    "observation_required": "Skriv en observation eller reflektion innan du slutför försöket."
+  },
+  "ja-JP": {
+    "paused": "一時停止中",
+    "observation_required": "この試行を完了する前に、観察したことや振り返りを記録してください。"
+  },
+  "hi-IN": {
+    "paused": "रुका हुआ",
+    "observation_required": "इस प्रयास को पूरा करने से पहले कोई अवलोकन या विचार लिखें।"
+  },
+  "ar": {
+    "paused": "متوقف مؤقتًا",
+    "observation_required": "دوّن ملاحظة أو تأملًا قبل إكمال هذه المحاولة."
+  },
+  "tr-TR": {
+    "paused": "Duraklatıldı",
+    "observation_required": "Bu denemeyi tamamlamadan önce bir gözlemini veya düşünceni yaz."
+  },
+  "id-ID": {
+    "paused": "Dijeda",
+    "observation_required": "Catat pengamatan atau refleksi sebelum menyelesaikan percobaan ini."
+  }
+}

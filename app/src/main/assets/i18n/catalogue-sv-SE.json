@@ -1,0 +1,437 @@
+[
+  {
+    "id": "speaking",
+    "title": "Public talande",
+    "description": "Förklara en idé med en tydlig punkt, ett konkret exempel och ett slut.",
+    "rubric": [
+      "Klarhet",
+      "Packa",
+      "Strukturen"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "En minut introduktion",
+        "objective": "Introduce dig till en ny grupp med en detalj de kan komma ihåg.",
+        "materials": "En timing och tre ord på en anteckning",
+        "steps": [
+          "Skriv ett namn, en anledning att vara där och en specifik detalj.",
+          "Leverera introduktionen en gång och en gång.",
+          "Försök igen med en paus innan minnesvärda detaljer."
+        ],
+        "criterion": "Lyssnarens mål kan upprepas och en detalj kan upprepas inom en minut.",
+        "prompt": "Var har du bråttom eller förlorat din plats?",
+        "experiment": "Håll skriptet och ändra bara längden på pausen.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Förklara det till en nybörjare",
+        "objective": "Gör en bekant process till en kort förklaring som alla kan följa.",
+        "materials": "En bekant punkt och en timing",
+        "steps": [
+          "Ange resultatet först.",
+          "Förklara tre steg och visa ett.",
+          "Be någon att återställa stegen eller återställa dem från minnet efter en paus."
+        ],
+        "criterion": "De tre stegen är i ordning och var och en börjar med en tydlig handling.",
+        "prompt": "Vilket steg skulle en nybörjare be dig att förklara igen?",
+        "experiment": "Swap en abstrakt fras för ett konkret exempel.",
+        "minutes": 10
+      },
+      {
+        "id": "extend",
+        "title": "Svar på en mötesfråga",
+        "objective": "Ge en kortfattad rekommendation och svara på en sannolikt uppföljning.",
+        "materials": "Ett aktuellt beslut och en timing",
+        "steps": [
+          "Skriv beslutet i ett ord.",
+          "Tala i nittio sekunder med hjälp av din rekommendation, bevis och handelsavdrag.",
+          "Svar en plausibel invändning högt utan att upprepa ditt öppnande."
+        ],
+        "criterion": "En lyssnare kan skilja din rekommendation, bevis och handelsavdrag.",
+        "prompt": "Vilken invändning uttryckte ett gap i din förklaring?",
+        "experiment": "Förbered ett annat exempel samtidigt som du håller samma rekommendation.",
+        "minutes": 15
+      }
+    ]
+  },
+  {
+    "id": "communication",
+    "title": "Kommunikation",
+    "description": "Öva lyssnande, tydliga förfrågningar och användbar feedback.",
+    "rubric": [
+      "Specifikation",
+      "Lyssna",
+      "tonen"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Reflektera innan du återspeglar",
+        "objective": "Att noggrant återspegla en annan persons huvudpunkt.",
+        "materials": "En villig partner eller kort talad klippa",
+        "steps": [
+          "Lyssna på ett ögonblick utan att planera ditt svar.",
+          "Samla in huvudpunkten i en enda mening.",
+          "Fråga en neutral fråga och granska din sammanfattning."
+        ],
+        "criterion": "Din andra sammanfattning tar upp en detalj som du missade i början.",
+        "prompt": "Vad antagandet gjorde du innan du ställde frågan?",
+        "experiment": "Håll temat och be om en mer öppen uppföljning.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Gör en tydlig begäran",
+        "objective": "Be om en viss åtgärd med sammanhang och en tidsfrist.",
+        "materials": "Papper eller en anteckningsapp",
+        "steps": [
+          "Välj en liten realistisk begäran.",
+          "Skriv åtgärden, orsaken och timing i separata linjer.",
+          "Läs det högt och ta bort ord som försvinner handlingen."
+        ],
+        "criterion": "Mottagaren kan identifiera åtgärden och bestämma hur man ska svara.",
+        "prompt": "Vad kan någon tolka på två sätt?",
+        "experiment": "Flytta åtgärden till den första meningen och jämföra.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "photo",
+    "title": "Fotografi",
+    "description": "Använd fram och ljus för att göra ämnet lätt att läsa.",
+    "rubric": [
+      "Subject klarhet",
+      "Framework",
+      "Ljuset"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Frame ett enda ämne",
+        "objective": "Använd en avsiktlig bakgrund för att skilja ett ämne.",
+        "materials": "En kamera och ett vardagligt föremål",
+        "steps": [
+          "Gör en första bild på ögons nivå.",
+          "Flytta runt objektet tills bakgrunden förenklar.",
+          "Fånga en annan ram och se båda som småskalor."
+        ],
+        "criterion": "Ämnet är läst i det andra miniatyret.",
+        "prompt": "Vilket bakgrundelement har du tagit bort och vad har förändrats?",
+        "experiment": "Håll exponeringen och framningen stabilt medan du bara ändrar kameran höjd.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Hitta mjuka fönster ljus",
+        "objective": "Jämför direkt och reflekterat ljus på samma objekt.",
+        "materials": "Ett föremål, ett fönster och ett vitt papper",
+        "steps": [
+          "Placera objektet bredvid indirekt fönsterbelysning.",
+          "Fotografera den skuggiga sidan.",
+          "Håll vit papper mot fönstret och upprepa från samma plats."
+        ],
+        "criterion": "Båda ramarna visar vad reflektorn förändrats på skuggan sida.",
+        "prompt": "Vilka detaljer blir lättare att se?",
+        "experiment": "Flytta papperet halvt så långt som möjligt och jämför.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "drawing",
+    "title": "tecknar",
+    "description": "Gör vardagliga föremål kända genom form och proportion.",
+    "rubric": [
+      "Form",
+      "Förhållande",
+      "Linje kontroll"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Byggd av enkla former",
+        "objective": "Skapa ett objekt genom att jämföra dess största former.",
+        "materials": "Papper, penna och en mug",
+        "steps": [
+          "Använd en rektangel och en ellips för att blockera i muggen.",
+          "Jämför bredden med dess höjd innan du lägger till handtaget.",
+          "Skapa en andra version med samma synpunkt."
+        ],
+        "criterion": "Din handtag ansluter sig till muggen på två avsiktliga punkter.",
+        "prompt": "Vilken proportion förändras mellan ritningar?",
+        "experiment": "Använd rymdbredden som enheten för varje annan mätning.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Skapa den negativa rymden",
+        "objective": "Använd utrymmen runt ett objekt för att kontrollera proportioner.",
+        "materials": "Papper, penna och en stol",
+        "steps": [
+          "Skär den yttre konturen från ett perspektiv.",
+          "Skär utrymmen mellan benen och under sätet.",
+          "Jämför dessa utrymmen mot stolen och gransk två linjer."
+        ],
+        "criterion": "Avbrott mellan benen har en avsiktlig form och relativ storlek.",
+        "prompt": "Vilken utrymme hjälpte dig att korrigera objektet mest?",
+        "experiment": "Kolla den största gapet först innan du ritar några detaljer.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "cooking",
+    "title": "Köksbaserade grundläggande",
+    "description": "Organisera ingredienser och öva smakbalansen med ingen matlagning övningar.",
+    "rubric": [
+      "Förberedelser",
+      "Konsistens",
+      "Flaska balans"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Ställ in en kall snack station",
+        "objective": "Ordna ingredienser och verktyg i ordningen du behöver dem.",
+        "materials": "En tvättbar yta, rena verktyg och färdiga ingredienser",
+        "steps": [
+          "Tvätta händerna och rengöra arbetsytan.",
+          "Lägg ingredienser i den ordning du kommer att använda dem.",
+          "Samla en liten snack och anteckna varje gång du måste sluta för en saknad objekt."
+        ],
+        "criterion": "Nästa försök kan köra utan att leta efter en ingrediens.",
+        "prompt": "Vilken avbrott kan du ta bort med en bättre layout?",
+        "experiment": "Flytta den vanligaste ingrediensen närmast dig.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Jämför två enkla klänningar",
+        "objective": "Taste hur varierande en ingrediens förändrar balansen.",
+        "materials": "Matsäker bowls, spoon, olja och citronsaft om lämplig för dig",
+        "steps": [
+          "Börja med lika mängder olja i två bollar.",
+          "Lägg till en liten mätad mängd citron till den första och lite mer till den andra.",
+          "Taste separat med rena spön och skriv vad du föredrar."
+        ],
+        "criterion": "Dina anteckningar beskriver skillnaden utan att bara använda ”bättre”.",
+        "prompt": "Vad har förändrat mer syra om smaken?",
+        "experiment": "Använd den föredragna versionen som en baslinje och ändra en ingrediens.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "writing",
+    "title": "Kreativt skrivande",
+    "description": "Använd konkreta detaljer och revisioner för att göra en scen levande.",
+    "rubric": [
+      "Specifikation",
+      "Fokusera på",
+      "Rytm"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Skriv en plats i tre sinnen",
+        "objective": "Låt specifika detaljer fastställa en plats utan att namnge den.",
+        "materials": "Papper eller en anteckningsapp",
+        "steps": [
+          "Välj en verklig eller föreställd plats.",
+          "Skriv tre korta observationer från tre sinnen.",
+          "Ta bort platsnamnet och ersätta en allmän adjektiv med en detalj."
+        ],
+        "criterion": "En läsare kan införa något om layouten från detaljerna.",
+        "prompt": "Vilken detalj är lättast att föreställa sig?",
+        "experiment": "Håll scenen och ersätta en syn detalj med en ljud.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Skär en scen till dess omvändpunkt",
+        "objective": "Se en kort scen runt det ögonblick som något förändras.",
+        "materials": "En uppsättning av ca 150 ord",
+        "steps": [
+          "Det är en ögonblick då en karaktär bestämmer eller upptäcker något.",
+          "Ta bort en mening som försenar det ögonblicket.",
+          "Läs båda versionerna högt och välj den med en tydligare förändring."
+        ],
+        "criterion": "Revisionen gör ändringen identifierbar utan att lägga till förklaring.",
+        "prompt": "Vad har förändrats av skuren på pacing?",
+        "experiment": "Flytta en sensorisk detalj till precis före omvändpunkten.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "digital",
+    "title": "Digital litteratur",
+    "description": "Bygg förtroende för att organisera filer och validera små spreadsheets.",
+    "rubric": [
+      "Hitta möjligheter",
+      "Precision",
+      "Upprepning"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Bygg ett praktiskt filingssystem",
+        "objective": "Skapa en mapp och namnge konvention du kan använda igen.",
+        "materials": "En filhanterare och tre ofarliga provfiler",
+        "steps": [
+          "Gör en mapp som heter Practice och två undermappar per syfte.",
+          "Renammar varje prov med en konsekvent datum och tema mönster.",
+          "Försök att ta en från sökningen och en från den innehållande mappen."
+        ],
+        "criterion": "Alla tre prover är lätta att skilja utan att öppna dem.",
+        "prompt": "Vilket namn skulle fortfarande ha mening sex månader från nu?",
+        "experiment": "Använd en kortare namngivning mönster och upprepa återhämtningsuppgiften.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Kontrollera en total spreadsheet",
+        "objective": "Skapa en enkel tabell och kontrollera resultatet självständigt.",
+        "materials": "En spreadsheet-app och fem fiktiva belopp",
+        "steps": [
+          "Skriv fem siffror bredvid fem etiketter.",
+          "Använd SUM för det totala och verifiera det mentalt eller med en kalkylare.",
+          "Ändra ett belopp och se hur resultatet ändras."
+        ],
+        "criterion": "De totala uppdateringarna genom den exakta ändringen som gjorts till inmatningen.",
+        "prompt": "Vad skulle ditt oberoende check catch göra?",
+        "experiment": "Ange en sjätte rad och kontrollera om formeln innehåller den.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "organisation",
+    "title": "Personlig organisation",
+    "description": "Gör en överflödslista till åtgärder som passar den tid du har.",
+    "rubric": [
+      "Prioritering",
+      "Specifikation",
+      "Fysiskhet"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Välj morgondagens första handlingar",
+        "objective": "Förbered en åtgärd som du kan börja på fem minuter.",
+        "materials": "Papper eller din arbetslista",
+        "steps": [
+          "Skriv tre saker som konkurrerar för din uppmärksamhet.",
+          "Välj den med största konsekvenser om det försenas.",
+          "Beskriv den första synliga åtgärden och bestäm när du ska göra det."
+        ],
+        "criterion": "Du kan börja utan att fatta ett annat beslut.",
+        "prompt": "Vad kan förhindra dig från att börja?",
+        "experiment": "Placera en nödvändig punkt där du kommer att se den.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Jämför uppskattningar med verklighet",
+        "objective": "Förbättra en planeringsbedömning genom att observera den faktiska tiden.",
+        "materials": "En timing och två enkla jobb",
+        "steps": [
+          "Uppskattar varje jobb separat.",
+          "Tids på arbetsplatserna och skriv ner eventuella avbrott.",
+          "Uppdatera din uppskattning och lägga till en buffer för den osäkeraste delen."
+        ],
+        "criterion": "Din reviderade uppskattning förklarar en viss skillnad.",
+        "prompt": "Var det längre tid att uppgiften eller avbrottet tog än förväntat?",
+        "experiment": "Mät uppställningstiden separat under nästa försök.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "diy",
+    "title": "Grundläggande hem DIY",
+    "description": "Bygg säkra mät- och planeringsvanor med hantverksmaterial.",
+    "rubric": [
+      "mätning",
+      "Planera",
+      "Upprepning"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Mätning före skärning",
+        "objective": "Kontrollera en mock-up innan du köper eller matchar något.",
+        "materials": "Kartong, styrare, penna och blunt hantverk skissor",
+        "steps": [
+          "Mät ett litet objekt två gånger från samma referensgräns.",
+          "Markera mätningarna på kartan.",
+          "Skär kartan med blunt skissor och kolla in lämpligheten."
+        ],
+        "criterion": "Kartongmodellen matchar den avsedda storleken inom din markerade tolerans.",
+        "prompt": "Vilken mätning var svårast att upprepa?",
+        "experiment": "Markera referensgränsen innan du mäter.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Gör en avlägsnande layoutplan",
+        "objective": "Jämför arrangemang innan du flyttar något tungt.",
+        "materials": "Papper, en regissör och penna",
+        "steps": [
+          "Skapa en tablett som en rektangel.",
+          "Skär pappersformar för att representera tre lätta föremål.",
+          "Försök två layouter och identifiera den som lämnar det tydligaste arbetsområdet."
+        ],
+        "criterion": "Din plan förbättrar tillgången till minst ett regelbundet använt objekt.",
+        "prompt": "Vilket objekt gjorde layouten svår?",
+        "experiment": "Prova en annan position för det objektet och jämföra återstående utrymme.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "problem",
+    "title": "Dagliga problemlösningar",
+    "description": "Testa en förklaring på en gång och jämföra de observerbara resultaten.",
+    "rubric": [
+      "Definitionen",
+      "Testdesign",
+      "Bevis"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Testar en förändring",
+        "objective": "Definiera en liten återkommande störning och testa en möjlig orsak.",
+        "materials": "En bärbar dator och ett lågrisk vardagsproblem",
+        "steps": [
+          "Beskriv när problemet händer och vad du observerar.",
+          "Förteckna två möjliga orsaker och välj en för att testa.",
+          "Ändra en sak och jämföra resultatet med det vanliga mönstret."
+        ],
+        "criterion": "Din rekord skiljer vad du observerade från vad du infaller.",
+        "prompt": "Vad kan förklara resultatet?",
+        "experiment": "Upprepa samma test innan du byter en annan variabel.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Jämför två alternativ rätt",
+        "objective": "Använd konsekventa kriterier för att välja mellan två praktiska alternativ.",
+        "materials": "Papper och vardagliga val",
+        "steps": [
+          "Lista två möjliga alternativ.",
+          "Välj tre kriterier innan du betalar något av alternativen.",
+          "Scordera både alternativ och identifiera vilket kriterium som kan ändra ditt beslut."
+        ],
+        "criterion": "Varje poäng har en kort skäl och samma skala används för båda alternativen.",
+        "prompt": "Vilket resultat beror på de svagaste bevisen?",
+        "experiment": "Samla en sak som kan ändra den svagaste poängen.",
+        "minutes": 10
+      }
+    ]
+  }
+]

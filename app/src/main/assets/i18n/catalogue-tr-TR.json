@@ -1,0 +1,437 @@
+[
+  {
+    "id": "speaking",
+    "title": "Halk konuşması",
+    "description": "Bir fikri açık bir nokta, belirli bir örnek ve bir sonu ile açıklayın.",
+    "rubric": [
+      "Açıkçası",
+      "paketleme",
+      "Yapı"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "1 dakikalık tanıtım",
+        "objective": "Kendinizi hatırlayabilecekleri bir ayrıntıyla yeni bir gruba girin.",
+        "materials": "Bir notta bir zamanlama ve üç kelime",
+        "steps": [
+          "Bir isim yazın, orada kalmanın bir nedeni ve belirli bir ayrıntı.",
+          "Bir kez ve bir kez giriş yaptırın.",
+          "Bu ayrıntıdan önce bir mola ile tekrar deneyin."
+        ],
+        "criterion": "Dinleyici, bir dakika içinde amacınızı ve bir ayrıntıyı tekrarlayabilir.",
+        "prompt": "Nereye gidiyorsun ya da yerini kaybetiyorsun?",
+        "experiment": "Senaryoyu tutun ve sadece mola süresini değiştirin.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Bir başlangıçtan bahsetmek",
+        "objective": "Bir süreçte tanıdık bir süreci kısa bir açıklama haline getirin, herkes takip edebilir.",
+        "materials": "Bir öğe ve bir saat",
+        "steps": [
+          "Sonuçları öncelikle belirleyin.",
+          "3 adımını göster ve 1 adımını göster.",
+          "Birini adımları geri çekmek veya bir mola sonrası hafızadan geri çekmek isteyin."
+        ],
+        "criterion": "Üç adımda bir adım var ve her biri açık bir eylemle başlar.",
+        "prompt": "Bir başlangıçtan sonra hangi adımları tekrar açıklamanızı ister misiniz?",
+        "experiment": "Bir abstrak cümleyi belirli bir örnek için değiştirin.",
+        "minutes": 10
+      },
+      {
+        "id": "extend",
+        "title": "Toplantı sorusuna cevap verin",
+        "objective": "Kısa bir öneride bulun ve olası bir takip için cevap verin.",
+        "materials": "Bir zamanlama ve bir zamanlama",
+        "steps": [
+          "Kararınızı tek bir cümleyle yazın.",
+          "90 saniye boyunca tavsiyeleriniz, kanıtlarınız ve ticaretinizle konuşun.",
+          "Açıldığınızda tekrarlamadan bir güvenilir itirazı yüksek sesle cevaplayın."
+        ],
+        "criterion": "Bir dinleyici tavsiyelerinizi, kanıtlarınızı ve ticaretini ayırabilir.",
+        "prompt": "Hangi itiraz, açıklamasında bir boşluk ortaya çıkardı?",
+        "experiment": "Aynı öneriyi tutarken farklı bir örnek hazırlayın.",
+        "minutes": 15
+      }
+    ]
+  },
+  {
+    "id": "communication",
+    "title": "İletişim",
+    "description": "Dinleme, açık talepler ve yararlı geribildirim uygulayın.",
+    "rubric": [
+      "Özelliği",
+      "dinleme",
+      "tonu"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Yorum yapmadan önce yansıma",
+        "objective": "Başka bir kişinin ana noktasını doğru bir şekilde yansıtın.",
+        "materials": "Bir partner veya kısa konuşulan klip",
+        "steps": [
+          "1 dakika dinleyin, cevabınızı planlamadan.",
+          "Başlıkları tek bir cümleyle özetleyin.",
+          "Neutral bir soru sor ve özetinizi inceleyin."
+        ],
+        "criterion": "İkinci özetiniz, başlangıçta kaçırdığınız bir ayrıntıyı yakalar.",
+        "prompt": "Bu soruyu sormadan önce ne yapıyorsunuz?",
+        "experiment": "Konuyu tutun ve daha açık bir takip isteyin.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Açık bir talep yapın",
+        "objective": "Konteyner ve bir tarih ile belirli bir eylem isteyin.",
+        "materials": "Notlar veya notlar uygulaması",
+        "steps": [
+          "Küçük bir gerçekçi talep seçin.",
+          "Aksiyon, mantık ve zamanlama ayrı çizgilerde yazın.",
+          "Okumaya devam et ve eylemi gizleyen kelimeleri kaldırın."
+        ],
+        "criterion": "Alıcı eylemi tanımlayabilir ve nasıl cevap vereceğine karar verebilir.",
+        "prompt": "Birisi iki şekilde neyi yorumlayabilir?",
+        "experiment": "İlk cümleye doğru hareket et ve karşılaştır.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "photo",
+    "title": "Fotoğrafçılık",
+    "description": "Konuyu kolayca okumanızı sağlamak için çerçeve ve ışık kullanın.",
+    "rubric": [
+      "Konu açık",
+      "çerçeve",
+      "Işık"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Tek bir konu oluşturmak",
+        "objective": "Bir konu ayırmak için kasıtlı bir arka plan kullanın.",
+        "materials": "Bir kamera ve günlük bir nesne",
+        "steps": [
+          "İlk fotoğrafı göz düzeyinde yapın.",
+          "Arka plan basitleşene kadar nesneyi çevirin.",
+          "Bir başka çerçeveyi yakalayın ve her ikisini de küçük boyutlar olarak görün."
+        ],
+        "criterion": "Konu ikinci bölümde okunabilir kalır.",
+        "prompt": "Hangi arka plan öğesini kaldırdınız ve ne değişti?",
+        "experiment": "Ekstraksiyonu ve çerçeveyi sabit tutun, ancak kameranın yüksekliğini değiştirin.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Yumuşak pencere ışığı",
+        "objective": "Aynı nesneye doğrudan ve yansıtıcı ışık karşılaştırın.",
+        "materials": "Bir nesne, bir pencere ve beyaz kağıt",
+        "steps": [
+          "nesneyi dolaylı pencere ışığı yanında yerleştirin.",
+          "Gölge tarafını fotoğraflayın.",
+          "Beyaz kağıt pencereden karşıya tutun ve aynı noktadan tekrarlayın."
+        ],
+        "criterion": "Her iki çerçeve de yansıtıcı tarafta ne değiştiğini gösterir.",
+        "prompt": "Hangi detaylar daha kolay görülebilir?",
+        "experiment": "Kağıtları yarıya doğru hareket ettirin ve karşılaştırın.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "drawing",
+    "title": "Çizim",
+    "description": "Günlük nesneleri şekil ve oran yoluyla tanımlayabilir hale getirin.",
+    "rubric": [
+      "Şekil",
+      "oranları",
+      "Line kontrolü"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Basit şekillerden yapılmış",
+        "objective": "Bir nesneyi en büyük şekillerini karşılaştırarak çizin.",
+        "materials": "Kağıt, kalem ve bir kalem",
+        "steps": [
+          "Bir düz açı ve bir elips kullanarak, mug'da kilitlenir.",
+          "Eldeyi eklemeden önce genişliğini yüksekliğe kıyaslayın.",
+          "Aynı bakış açısıyla ikinci bir versiyonu çalın."
+        ],
+        "criterion": "Eliniz iki amaçlı noktada mug'a bağlanır.",
+        "prompt": "Çizimler arasındaki oran ne değişiyor?",
+        "experiment": "Her ölçüm için birim olarak çubuk genişliği kullanın.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "negatif alanı çeker",
+        "objective": "Bir nesneyi kontrol etmek için bir uzay kullanın.",
+        "materials": "Kağıt, kalem ve sandalye",
+        "steps": [
+          "Bir bakış açısıyla dış çevreyi kaydırın.",
+          "Ayaklar arasındaki ve koltuk altındaki alanları çizin.",
+          "O koltuk karşısında bu alanları karşılaştırın ve iki çizgi inceleyin."
+        ],
+        "criterion": "Ayaklar arasındaki boşluklar, kasıtlı bir şekil ve nispeten büyüklükte bulunur.",
+        "prompt": "Hangi alanı en çok nesneyi düzeltmeye yardımcı oldu?",
+        "experiment": "Herhangi bir ayrıntıyı çizmeden önce en büyük boşluğu kontrol edin.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "cooking",
+    "title": "Yemek Temel",
+    "description": "Malzemeleri düzenleyin ve lezzet dengesini pişirme egzersizleri ile uygulayın.",
+    "rubric": [
+      "Hazırlık",
+      "tutarlılık",
+      "Flask dengesi"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Soğuk yemek istasyonu kurun",
+        "objective": "İhtiyacınız olan malzemeleri ve malzemeleri düzenleyin.",
+        "materials": "Yıkanabilir bir yüzey, temiz aletler ve yemek için hazır malzemeler",
+        "steps": [
+          "Elinizi yıkayın ve çalışma yüzeyini temizleyin.",
+          "İçeriği, bunları kullanacağınız şekilde yapıştırın.",
+          "Bir küçük yemek yemeyi bir araya getirin ve eksik bir öğe için durmanız gerektiği her seferinde not edin."
+        ],
+        "criterion": "Bir sonraki denemesi bir bileşen arama olmadan çalışabilir.",
+        "prompt": "Hangi kesintileri daha iyi bir düzenle kaldırabilirsin?",
+        "experiment": "En sık kullanılan malzemeyi size en yakın şekilde hareket ettirin.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "İki basit kıyafet karşılaştırın",
+        "objective": "Bir bileşenin nasıl değişeceğini deneyin, dengesini değiştirin.",
+        "materials": "Gıda güvenli çilekler, çilekler, yağ ve limon suyu sizin için uygunsa",
+        "steps": [
+          "İki tekerlekte aynı miktarda yağ ile başlayın.",
+          "Birincisine küçük bir miktar limon ekleyin ve ikincisine biraz daha fazla ekleyin.",
+          "Temiz çubuklarla ayrı ayrı tadını çıkarın ve tercih ettiğiniz şeyi yazın."
+        ],
+        "criterion": "Notlarınız farkı sadece “daha iyi” kullanmadan anlatır.",
+        "prompt": "Peki, tadı hakkında daha fazla asit değişikliği nedir?",
+        "experiment": "Bir temel olarak tercih edilen versiyonu kullanın ve bir bileşeni değiştirin.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "writing",
+    "title": "Yaratıcı Yazı",
+    "description": "Bir sahneyi canlı hale getirmek için ayrıntılı ayrıntıları ve revizyonları kullanın.",
+    "rubric": [
+      "Özelliği",
+      "odaklanma",
+      "Rhythm"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "3 anlamda bir yer yazın",
+        "objective": "Belirli ayrıntılar, adını vermeden bir yer belirlemesine izin verin.",
+        "materials": "Notlar veya notlar uygulaması",
+        "steps": [
+          "Gerçek veya hayal edilen bir yer seçin.",
+          "3 anlamdan üç kısa gözlem yazın.",
+          "Yer adı kaldırın ve genel bir adjektif ayrıntıyla değiştirin."
+        ],
+        "criterion": "Bir okuyucu ayrıntılardan bir şey bulabilir.",
+        "prompt": "Hangi detayı hayal etmek en kolaydır?",
+        "experiment": "Sahneyi tutun ve bir bakış ayrıntıyı bir sesle değiştirin.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Bir sahneyi dönüş noktasına kesin",
+        "objective": "Bir anın etrafında kısa bir sahneyi inceleyin, bir şey değişir.",
+        "materials": "150 kelime ile ilgili bir yazı",
+        "steps": [
+          "Bir karakterin bir şeyin kararını veya keşfini anında anlatır.",
+          "Bu anı geciktiren bir cümleyi kaldırın.",
+          "Her iki versiyonu da okumanız ve daha açık bir değişiklikle seçin."
+        ],
+        "criterion": "Değişim, değişimleri açıklama yapmadan tanımlanabilir hale getirir.",
+        "prompt": "Peki, bu kaza ile ilgili değişiklikler nelerdir?",
+        "experiment": "Bir sensör ayrıntıyı döner noktadan hemen önce hareket edin.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "digital",
+    "title": "Digiturk edebiyatı",
+    "description": "Dosyaları düzenlemek ve küçük spreadsheets doğrulamak için güven oluşturun.",
+    "rubric": [
+      "Bulmaca",
+      "Doğruluk",
+      "tekrarlanabilirlik"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Uygulama sistemini oluşturmak",
+        "objective": "Bir klasör oluşturun ve tekrar kullanabileceğiniz bir konvansiyonun adını verin.",
+        "materials": "Bir dosya yöneticisi ve üç zararsız örnek dosyası",
+        "steps": [
+          "Uygulama adı verilen bir klasör ve amaçlı iki alt klasör oluşturun.",
+          "Her örnek bir tarih ve konu örneği kullanarak yeniden adlandırılır.",
+          "Arama alanından birini ve içeren klasörden birini almayı deneyin."
+        ],
+        "criterion": "Üç örnek, açılmadan ayırt etmek kolaydır.",
+        "prompt": "Hangi filename 6 ay sonra anlamlı olacak?",
+        "experiment": "Daha kısa bir isimleme örneği kullanın ve geri çekilme görevi tekrarlayın.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Tüm bir spreadsheet kontrol edin",
+        "objective": "Basit bir tablo oluşturun ve sonuçları bağımsız olarak kontrol edin.",
+        "materials": "Bir spreadsheet uygulaması ve beş fikri miktar",
+        "steps": [
+          "5 etiketle birlikte 5 sayı girin.",
+          "Toplam için SUM kullanın ve zihinsel olarak veya bir hesaplayıcıyla kontrol edin.",
+          "Bir miktarı değiştirin ve sonuçların nasıl değiştiğini kontrol edin."
+        ],
+        "criterion": "Tüm güncellemeler, giriş için yapılan tam değişiklikle gerçekleşir.",
+        "prompt": "Bağımsız kontrolünüz ne hatası olurdu?",
+        "experiment": "6. sırada yerleştirin ve formülün içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip içerip iç",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "organisation",
+    "title": "Kişisel Organizasyon",
+    "description": "Bir kalabalık listeyi, sahip olduğunuz zaman için uygun eylemlere dönüştürün.",
+    "rubric": [
+      "Öncelikler",
+      "Özelliği",
+      "Yaptırılabilirlik"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Yarının ilk eylemini seçin",
+        "objective": "5 dakika içinde başlayabileceğiniz bir eylem hazırlayın.",
+        "materials": "Kâğıt veya görev listesi",
+        "steps": [
+          "Dikkatiniz için rekabet eden üç şey yazın.",
+          "En büyük sonuçları olan birini seçin, gecikme durumunda.",
+          "İlk görülebilir eylemi tanımlayın ve ne zaman yapılacağına karar verin."
+        ],
+        "criterion": "Başka bir karar vermeden başlayabilirsiniz.",
+        "prompt": "Başlamaktan ne engel olabilir?",
+        "experiment": "İhtiyacınız olan bir öğeyi, onu göreceğiniz bir yerde yerleştirin.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Değerlendirmeleri Gerçeklikle Karşılaştırın",
+        "objective": "Gerçek zamanın gözlemlenmesiyle planlama tahminini geliştirin.",
+        "materials": "Bir zamanlama ve iki basit iş",
+        "steps": [
+          "Her birini ayrı ayrı değerlendirin.",
+          "İşleri zamanlayın ve herhangi bir kesintiyi yazın.",
+          "Tahmini güncelleyin ve belirsiz kısmı için bir buffer ekleyin."
+        ],
+        "criterion": "Değiştirilmiş tahminleriniz belirli bir fark açıklıyor.",
+        "prompt": "Görev veya duraklama beklenenden daha uzun sürüyor mu?",
+        "experiment": "Bir sonraki denemede ayrı ayar zamanını ölçün.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "diy",
+    "title": "Temel Ev DIY",
+    "description": "Güvenli ölçüm ve planlama alışkanlıkları yapay malzemelerle oluşturun.",
+    "rubric": [
+      "ölçüm",
+      "Planlama",
+      "tekrarlanabilirlik"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Kesmeden Önce Ölçüm",
+        "objective": "Her şeyi satın almadan veya uygun hale getirmeden önce bir mock-up kontrol edin.",
+        "materials": "Karton, yönetici, kalem ve karışık iş yapımı parçaları",
+        "steps": [
+          "Aynı referans kenarından iki kez küçük bir nesne ölçün.",
+          "Kartta ölçümler işaretleyin.",
+          "Kartonunuzu çamurlu parçalarla kesin ve uygun olanı kontrol edin."
+        ],
+        "criterion": "Karton modeli, belirli toleransınızın içinde istenen boyutla eşleşir.",
+        "prompt": "Hangi ölçümleri tekrarlamak en zordu?",
+        "experiment": "ölçmeden önce referans kenarı işaretleyin.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Çekilebilir bir layout planı oluşturun",
+        "objective": "Her şeyi ağırlaştırmadan önce düzenlemeleri karşılaştırın.",
+        "materials": "Kağıt, bir hükümdar ve bir kalem",
+        "steps": [
+          "Bir tabletin düz bir açı olarak yapıştırın.",
+          "Kağıt şekilleri üç hafif nesneyi temsil etmek için kesilir.",
+          "İki düzenlemeyi deneyin ve en açık çalışma alanını terk eden birini belirleyin."
+        ],
+        "criterion": "Planınız, en az bir öğeye erişimi düzenli olarak kullanan öğeye daha iyi hale getirir.",
+        "prompt": "Hangi öğe, düzenin zorlaştırılması için yapılır?",
+        "experiment": "Bu öğe için farklı bir pozisyon deneyin ve kalan alanı karşılaştırın.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "problem",
+    "title": "Günlük Sorun Çözme",
+    "description": "Tek bir açıklama test edin ve gözlemlenebilir sonuçları karşılaştırın.",
+    "rubric": [
+      "Değişimi",
+      "Test Tasarımı",
+      "kanıtlar"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "1 Değişim Testleri",
+        "objective": "Küçük bir tekrarlayan rahatsızlık tanımlayın ve olası bir nedeni test edin.",
+        "materials": "Bir dizüstü bilgisayar ve düşük riskli günlük sorun",
+        "steps": [
+          "Sorunun ne zaman gerçekleştiğini ve neyi gözlemlediğinizi anlatın.",
+          "İki olası neden listelenir ve test etmek için birini seçin.",
+          "Bir şeyi değiştirin ve sonuçları normal desenle karşılaştırın."
+        ],
+        "criterion": "Kayıtlarınız, gözlemlediğinizden, sonuçladığınızdan ayırt eder.",
+        "prompt": "Sonuçları başka ne açıklayabilir?",
+        "experiment": "Diğer değişkenleri değiştirmeden önce aynı testleri tekrarlayın.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "İki seçeneği doğru bir şekilde karşılaştırın",
+        "objective": "İki pratik seçenek arasında seçim yapmak için tutarlı kriterler kullanın.",
+        "materials": "Günlük bir seçim ve günlük bir seçim",
+        "steps": [
+          "İki seçenek listesi.",
+          "Her seçeneği puanlamadan önce üç kriter seçin.",
+          "Her iki seçeneği de puanlayın ve hangi kriter kararınızı değiştirebileceğini belirleyin."
+        ],
+        "criterion": "Her puan kısa bir neden vardır ve aynı ölçek her iki seçeneğe de uygulanır.",
+        "prompt": "Hangi puan en zayıf kanıtlara bağlıdır?",
+        "experiment": "En zayıf puanını değiştirebilecek bir gerçek toplayın.",
+        "minutes": 10
+      }
+    ]
+  }
+]

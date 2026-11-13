@@ -1,0 +1,33 @@
+{
+  "appTitle": "SkillHando Praktyczne umiejętności praktyczne",
+  "shortDescription": "Zbuduj praktyczne umiejętności z prowadzonymi wyzwaniami, samoceny i prywatnym portfelem praktyk.",
+  "longDescription": "Wybierz praktyczne umiejętności i pracować przez krótki wyzwanie prowadzone. Spróbuj wyraźnego wprowadzenia mówienia, ćwiczyć ramy zdjęć lub zorganizować zestaw plików. Zapisz to, co próbowałeś i co obserwowałeś, a następnie wróć do tego samego ćwiczenia, aby porównać swoje próby. Twój lokalny trener praktyki sugeruje ćwiczenie do powtórzenia lub nowy, aby spróbować. Przeglądaj złożone wyzwania, trzymaj notatki praktyki i śledź swój postęp offline. Mówione wskazówki i polecenia głosowe zależą od usług mówienia dostępne na urządzeniu.",
+  "featureBullets": [
+    "Praktykuj z 21 wyzwaniami prowadzonymi w dziesięciu praktycznych umiejętnościach.",
+    "Porównaj samoceny i obserwacje z powtarzających się prób.",
+    "Utrzymuj zdjęcia, nagrania audio i refleksje w prywatnym portfelu urządzeń.",
+    "Zestaw celów tygodniowych i użyj czasu praktycznego.",
+    "Wykorzystaj katalog i zalecenia dotyczące lokalnej praktyki offline."
+  ],
+  "keywords": [
+    "Praktyczne umiejętności",
+    "Praktyka mówienia publicznego",
+    "Skład praktyki Tracker",
+    "Wyzwania offline",
+    "Praktyczne godziny",
+    "Cele uczenia się",
+    "Praktyczne portfolio"
+  ],
+  "releaseNotes": "Pierwsza edycja z praktyką prowadzoną, samooceną i prywatnym portfelem.",
+  "screenshotHeadlines": [
+    "Naucz się praktycznych umiejętności",
+    "Zmiany w planie, aby spróbować",
+    "Znajdź następne wyzwanie",
+    "Dostęp do głosowych instrukcji",
+    "Porównaj swoje próby",
+    "Utrzymuj dowody praktyki",
+    "Zrób swoje wyzwania offline",
+    "Praktykuj w swoim tempie"
+  ],
+  "status": "Draft pending native review and store verification"
+}

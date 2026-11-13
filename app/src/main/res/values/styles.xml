@@ -1,0 +1,6 @@
+<resources>
+    <style name="SkillHandoTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">#303A72</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

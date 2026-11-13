@@ -1,0 +1,437 @@
+[
+  {
+    "id": "speaking",
+    "title": "Public speaking",
+    "description": "Verduidelijk een idee met een duidelijk punt, een concrete voorbeeld en een einde.",
+    "rubric": [
+      "Clariteit",
+      "Packen",
+      "structuur"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Een minuut introductie",
+        "objective": "Introduceer jezelf in een nieuwe groep met een detail die ze kunnen onthouden.",
+        "materials": "Een timer en drie woorden op een notitie",
+        "steps": [
+          "Schrijf een naam, een reden om er te zijn en een specifieke detail.",
+          "Geef de introductie een keer en tijd.",
+          "Probeer nogmaals met een pauze voor de memorabele details."
+        ],
+        "criterion": "De luister kan uw doel en een detail binnen een minuut herhalen.",
+        "prompt": "Waar heb je je plaats verloren of weggehaald?",
+        "experiment": "Houd het script vast en verander alleen de lengte van de pauze.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Verduidelijk het aan een beginner",
+        "objective": "Maak een bekende proces een korte verklaring die iedereen kan volgen.",
+        "materials": "Een bekende item en een timer",
+        "steps": [
+          "Stel het resultaat eerst.",
+          "3 stappen uitleggen en één laten zien.",
+          "Vraag iemand om de stappen te vervangen of ze uit het geheugen te vervangen na een pauze."
+        ],
+        "criterion": "De drie stappen zijn in orde en elk begint met een duidelijke actie.",
+        "prompt": "Welke stap zou een beginner u vragen om opnieuw te verklaren?",
+        "experiment": "Schakelt een abstract woord voor een concrete voorbeeld.",
+        "minutes": 10
+      },
+      {
+        "id": "extend",
+        "title": "Antwoord op een vergaderingspraak",
+        "objective": "Geef een kort aanbeveling en antwoord op een waarschijnlijke follow-up.",
+        "materials": "Een huidige beslissing en een timer",
+        "steps": [
+          "Schrijf de beslissing in één zin.",
+          "Spreek negentien seconden met behulp van uw aanbeveling, bewijzen en trade-off.",
+          "Antwoord een plausible bezwaar met een houdheid zonder je opening te herhalen."
+        ],
+        "criterion": "Een luister kan uw aanbeveling, bewijzen en trade-off scheiden.",
+        "prompt": "Welke bezwaar heeft een kloof in je verklaring uitgelegd?",
+        "experiment": "Maak een ander voorbeeld en volg dezelfde aanbeveling.",
+        "minutes": 15
+      }
+    ]
+  },
+  {
+    "id": "communication",
+    "title": "Communicatie",
+    "description": "Praat luisteren, duidelijke verzoeken en nuttige feedback.",
+    "rubric": [
+      "Specificiteit",
+      "luisteren",
+      "Tone"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Reflectie voordat we reageren",
+        "objective": "Het is een goed beeld van het belangrijkste punt van een ander.",
+        "materials": "Een wilige partner of een korte gesproken clip",
+        "steps": [
+          "Luister een minuut zonder je antwoord te plannen.",
+          "Samenvattend het belangrijkste punt in één zin.",
+          "Vraag een neutraal vraag en herzien uw samenvatting."
+        ],
+        "criterion": "Uw tweede samenvatting vult een detail op die u aanvankelijk ontbreekt.",
+        "prompt": "Wat voor aanname maakte u voordat u de vraag stelde?",
+        "experiment": "Houd het onderwerp vast en vraag een meer open follow-up.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Een duidelijke aanvraag maken",
+        "objective": "Vraag een specifieke actie met context en een deadline.",
+        "materials": "Papier of een notitie app",
+        "steps": [
+          "Kies een kleine, realistische vraag.",
+          "Schrijf de actie, reden en tijd in afzonderlijke lijnen.",
+          "Lees het luid en verwijder woorden die de actie verwarren."
+        ],
+        "criterion": "De ontvanger kan de actie identificeren en besluiten hoe hij moet reageren.",
+        "prompt": "Wat kan iemand nog op twee manieren interpreteren?",
+        "experiment": "Verplaats de actie naar de eerste zin en vergelijk.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "photo",
+    "title": "Fotografie",
+    "description": "Gebruik frame en licht om het onderwerp gemakkelijk te lezen te maken.",
+    "rubric": [
+      "Subject duidelijkheid",
+      "Frameer",
+      "Licht"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Frame een enkel onderwerp",
+        "objective": "Gebruik een gewilde achtergrond om een onderwerp te scheiden.",
+        "materials": "Een camera en een dagelijkse object",
+        "steps": [
+          "Maak een eerste foto op oogniveau.",
+          "Verplaats het object rond totdat de achtergrond vereenvoudigt.",
+          "Neem een andere frame en kijk beide als miniatures."
+        ],
+        "criterion": "Het onderwerp blijft in het tweede thumbnail leesbaar.",
+        "prompt": "Welke achtergrondelementen heb je verwijderd en wat is veranderd?",
+        "experiment": "Houd de blootstelling en frame stabiel terwijl je alleen de camerahoogte verandert.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Vind zachte vensterlicht",
+        "objective": "Vergelijk direct en reflecterend licht op hetzelfde object.",
+        "materials": "Een object, een raam en een wit papier",
+        "steps": [
+          "Plaats het object naast het indirecte raam licht.",
+          "Foto's van de schaduwzijde.",
+          "Houd het witte papier tegenover het raam en herhaal het vanaf dezelfde plaats."
+        ],
+        "criterion": "Beide ramen tonen wat de reflector op de schaduwzijde veranderd.",
+        "prompt": "Welke details zijn gemakkelijker te zien?",
+        "experiment": "Verplaats het papier zo ver en vergelijk het.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "drawing",
+    "title": "ontwerpen",
+    "description": "Maak dagelijkse objecten herkennen door vorm en verhouding.",
+    "rubric": [
+      "vorm",
+      "Verhoudingen",
+      "Lijncontrole"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Gebouwd uit eenvoudige vormen",
+        "objective": "Een object ontwerpen door de grootste vormen te vergelijken.",
+        "materials": "Papier, pen en een mug",
+        "steps": [
+          "Gebruik een rectangle en een ellipse om in de mug te blokkeren.",
+          "Vergelijk de breedte met de hoogte voordat u de handdoek toevoegt.",
+          "Een tweede versie maken met dezelfde uitzicht."
+        ],
+        "criterion": "Uw handdoek sluit de mug bij twee gewilde punten.",
+        "prompt": "Welke verhouding is er veranderd tussen de tekeningen?",
+        "experiment": "Gebruik de rimpbreedte als eenheid voor elke andere meting.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "De negatieve ruimte ontwerpen",
+        "objective": "Gebruik ruimte rond een object om de proporties te controleren.",
+        "materials": "Papier, pen en een stoel",
+        "steps": [
+          "Sketch de buitencontoor vanuit één perspectief.",
+          "Draai de ruimtes tussen de benen en onder de zitplaats.",
+          "Vergelijk deze ruimtes tegenover de stoel en herzien twee lijnen."
+        ],
+        "criterion": "De vlekken tussen de benen hebben een bewuste vorm en relatieve grootte.",
+        "prompt": "Welke ruimte heeft u het object het meeste geholpen?",
+        "experiment": "Bekijk eerst de grootste kloof voordat u details plaatst.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "cooking",
+    "title": "De basiskook",
+    "description": "Organiseer ingrediënten en oefenen smaakbalans met no-cook oefeningen.",
+    "rubric": [
+      "Voorbereiding",
+      "consistentie",
+      "Flavonoïde balans"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Een koude snack station opzetten",
+        "objective": "Maak de ingrediënten en gereedschappen in de volgorde die je nodig hebt.",
+        "materials": "Een wassen oppervlak, schoon gereedschap en gereed voor het eten ingrediënten",
+        "steps": [
+          "Wassen van je handen en schoonmaken van de werkoppervlakte.",
+          "Verwijder de ingrediënten in de volgorde die u ze gebruikt.",
+          "Samen een kleine snack en noteer elke keer dat je moet stoppen voor een ontbrekende item."
+        ],
+        "criterion": "De volgende poging kan worden uitgevoerd zonder een ingrediënt te zoeken.",
+        "prompt": "Welke afbreuk kun je verwijderen met een betere layout?",
+        "experiment": "Verplaats het meest gebruikte ingrediënt dicht bij je.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Vergelijk twee eenvoudige kledingstukken",
+        "objective": "Probeer hoe het verschillen van één ingrediënt het evenwicht verandert.",
+        "materials": "Voedselveilig bowls, spoons, olie en citroensap als geschikt voor u",
+        "steps": [
+          "Begin met dezelfde hoeveelheid olie in twee bowls.",
+          "Voeg een kleine gemeten hoeveelheid citroen toe aan de eerste en een beetje meer aan de tweede.",
+          "Geef afzonderlijk een stukje met een schone spoon en schrijf wat je liever wilt."
+        ],
+        "criterion": "Uw notities beschrijven het verschil zonder alleen ‘betere’ te gebruiken.",
+        "prompt": "Wat heeft meer zuur veranderd over de smaak?",
+        "experiment": "Gebruik de voorkeursversie als basislijn en verander één ingrediënt.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "writing",
+    "title": "Creatieve schrijven",
+    "description": "Gebruik concrete details en herziening om een scène levend te maken.",
+    "rubric": [
+      "Specificiteit",
+      "Focus",
+      "Rhythm"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Schrijf een plaats in drie zintuigen",
+        "objective": "Laat specifieke details een plaats vaststellen zonder dat ze wordt genoemd.",
+        "materials": "Papier of een notitie app",
+        "steps": [
+          "Kies een echte of verbeeldde plek.",
+          "Schrijf drie korte waarnemingen uit drie zintuigen.",
+          "Verwijder de plaatsnaam en vervang een algemene adjectief met een detail."
+        ],
+        "criterion": "Een lezer kan iets over de setting uit de details afleggen.",
+        "prompt": "Welke details waren het gemakkelijker om te voorstellen?",
+        "experiment": "Houd de scène vast en vervang een zicht detail met een geluid.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Een scène tot zijn omkeerpunt",
+        "objective": "Een korte scène rond het moment dat iets verandert.",
+        "materials": "Een ontwerp van ongeveer 150 woorden",
+        "steps": [
+          "Het moment dat een personage besluit of iets ontdekken.",
+          "Verwijder een zin die dat moment vertraagt.",
+          "Lees beide versies luid en kies de ene met een duidelijker verandering."
+        ],
+        "criterion": "De herziening maakt de wijziging identificerbaar zonder toegevoegde uitleg.",
+        "prompt": "Wat heeft de snijden veranderd over de pacing?",
+        "experiment": "Verplaats een sensoriele detail direct voor het omkeerpunt.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "digital",
+    "title": "Digitale literatuur",
+    "description": "Bouw vertrouwen in het organiseren van bestanden en valideren van kleine spreadsheets.",
+    "rubric": [
+      "Vindbaarheid",
+      "Precieze",
+      "herhaling"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Een praktisch bestellingssysteem opzetten",
+        "objective": "Creëer een map en benoem de conventie die u opnieuw kunt gebruiken.",
+        "materials": "Een bestandmanager en drie onschadelijke proefbestanden",
+        "steps": [
+          "Maak een map genaamd Practice en twee subfolders per doel.",
+          "Hernoemen van elk monster met een consistente datum en thema patroon.",
+          "Probeer een van de zoekopdrachten te halen en een van de inhoud van de map."
+        ],
+        "criterion": "Alle drie monsters zijn gemakkelijk te onderscheiden zonder ze te openen.",
+        "prompt": "Welke filename zou nu nog zes maanden van mening zijn?",
+        "experiment": "Gebruik een kortere naampatroon en herhaal de terugvinding.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Controleer een spreadsheet totaal",
+        "objective": "Maak een eenvoudige tabel en controleer het resultaat onafhankelijk.",
+        "materials": "Een spreadsheet-app en vijf fictieve hoeveelheden",
+        "steps": [
+          "Voer vijf cijfers naast vijf etiketten in.",
+          "Gebruik SUM voor het totaal en controleer het geestelijk of met een calculator.",
+          "Verander een bedrag en controleer hoe het resultaat verandert."
+        ],
+        "criterion": "De totale updates door de exacte wijziging die is gemaakt aan de invoer.",
+        "prompt": "Wat is er mis met je onafhankelijke check?",
+        "experiment": "Voer een zesde rij in en controleer of de formule ervan bevat.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "organisation",
+    "title": "Persoonlijke organisatie",
+    "description": "Maak een overvloedige lijst van acties die passen aan de tijd die je hebt.",
+    "rubric": [
+      "Prioriteit",
+      "Specificiteit",
+      "Feasbaarheid"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Kies de eerste actie van morgen",
+        "objective": "Maak een actie voor die je binnen vijf minuten kunt beginnen.",
+        "materials": "Papier of uw taaklijst",
+        "steps": [
+          "Schrijf drie dingen die concurreren voor je aandacht.",
+          "Kies de met de grootste gevolgen, als het vertraagd is.",
+          "Beschrijf de eerste zichtbare actie en beslist wanneer het moet worden gedaan."
+        ],
+        "criterion": "Je kunt beginnen zonder een andere beslissing te nemen.",
+        "prompt": "Wat kan je voorkomen dat je begint?",
+        "experiment": "Plaats een vereiste item waar je het ziet.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Vergelijk schattingen met de werkelijkheid",
+        "objective": "Verbeter een planning schatting door de werkelijke tijd te observeren.",
+        "materials": "Een timer en twee eenvoudige functies",
+        "steps": [
+          "Beoordel elke functie afzonderlijk.",
+          "Tijd de functies en schrijf alle onderbrekingen af.",
+          "Update uw schatting en voeg een buffer toe voor het onzekerde deel."
+        ],
+        "criterion": "Uw herziene schatting legt een specifieke verschil uit.",
+        "prompt": "Heeft de taak of de onderbreking langer dan verwacht?",
+        "experiment": "Meten de set-time afzonderlijk tijdens het volgende poging.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "diy",
+    "title": "Home DIY Basic",
+    "description": "Bouw veilige meting en planning gewoonten met ambachtelijke materialen.",
+    "rubric": [
+      "meting",
+      "Planning",
+      "herhaling"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Meer voordat het snijden",
+        "objective": "Controleer een mock-up voordat u iets koopt of aanpakt.",
+        "materials": "Cardboard, ruler, pencil en blunt craft scissors",
+        "steps": [
+          "Een klein object twee keer met dezelfde referentiegebied.",
+          "Mark de metingen op de kaart.",
+          "Snij de kaart met blunt scissors en controleer de fit."
+        ],
+        "criterion": "Het kaartje model voldoet aan de bedoelde grootte binnen uw gemarkeerde tolerantie.",
+        "prompt": "Welke meting was het moeilijkste om te herhalen?",
+        "experiment": "Mark de referentiegebied voordat u meten.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Maak een verwijderbaar layoutplan",
+        "objective": "Vergelijk de arrangementen voordat je iets zwaar gaat bewegen.",
+        "materials": "Papier, een koning en een pencil",
+        "steps": [
+          "Sketch een tabletop als rectangle.",
+          "Knoot papiervorm om drie lichtgewicht objecten te vertegenwoordigen.",
+          "Probeer twee layouts en identificeer de die het duidelijkste werkgebied verlaat."
+        ],
+        "criterion": "Uw plan verbetert de toegang tot ten minste één regelmatig gebruikte item.",
+        "prompt": "Welke items maakten de layout moeilijk?",
+        "experiment": "Probeer een andere positie voor dat item en vergelijk de resterende ruimte.",
+        "minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "problem",
+    "title": "Dagelijks probleemoplossingen",
+    "description": "Probeer één verklaring op een gegeven moment en vergelijk de waarnemende resultaten.",
+    "rubric": [
+      "Definitie",
+      "Test ontwerp",
+      "Bewijs"
+    ],
+    "challenges": [
+      {
+        "id": "baseline",
+        "title": "Test een verandering",
+        "objective": "Definieer een kleine herhaalde onrust en test een mogelijke oorzaak.",
+        "materials": "Een notebook en een lage risico dagelijkse probleem",
+        "steps": [
+          "Beschrijf wanneer het probleem gebeurt en wat je observeert.",
+          "Lijst twee mogelijke oorzaken en kies een om te testen.",
+          "Verander één ding en vergelijk het resultaat met het gebruikelijke patroon."
+        ],
+        "criterion": "Uw record onderscheidt wat u waarneemt van wat u heeft afgesloten.",
+        "prompt": "Wat kan het resultaat nog verklaren?",
+        "experiment": "Herhaal hetzelfde test voordat je een andere variabele verandert.",
+        "minutes": 5
+      },
+      {
+        "id": "build",
+        "title": "Vergelijk twee opties redelijkerwijs",
+        "objective": "Gebruik consistente criteria om te kiezen tussen twee praktische opties.",
+        "materials": "Een dagelijkse keuze en een dagelijkse keuze",
+        "steps": [
+          "Lijst twee haalbare opties.",
+          "Kies drie criteria voordat je een van de opties scoren.",
+          "Score beide opties en identificeer welke criterium uw beslissing kan veranderen."
+        ],
+        "criterion": "Elke score heeft een korte reden en dezelfde schaal wordt gebruikt voor beide opties.",
+        "prompt": "Welke score is afhankelijk van de zwakste bewijzen?",
+        "experiment": "Samen een feit dat het zwakste score kan veranderen.",
+        "minutes": 10
+      }
+    ]
+  }
+]
