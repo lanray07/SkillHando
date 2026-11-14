@@ -19,7 +19,7 @@
 | Amazon Live App Testing | PASS | The Fire HD 10 installed the private beta from Amazon Appstore. A fresh purchase after the tester entitlement reset activated Premium in the same session without using Restore purchases. A separate restore test also verified the LAT receipt. |
 | Private audio, photo, reminders, exports and deletion UI | NOT TESTED | Feature implementations require device-level verification. Optional app lock and encrypted backup are absent |
 | Store screenshots | PASS | Amazon's production draft retained 88 distinct Fire tablet screenshots after reload, eight for each of the 11 media locales offered by the console. The repository also contains captures for four additional text locales and compact layouts. Native language review and physical phone compatibility remain pending. |
-| Submission readiness | BLOCKED | The Amazon review page requires a target age group, a public privacy policy URL with the data disclosure, and export compliance certification. The privacy policy and disclosure worksheet are prepared for owner review. |
+| Submission readiness | BLOCKED | The production draft has the public GitHub Pages privacy policy and completed privacy questionnaire saved for review. The Amazon review page still requires a target age group and export compliance certification. The production app and Premium entitlement remain unsubmitted. |
 
 The physical tablet reports 1200 × 1920 pixels at 240 dpi. The build uses app-private storage, disables Android backup and cleartext traffic, and requests microphone access on demand. These decisions have not undergone a full security review. No Amazon Console submission or production purchase occurred.
 

@@ -1,14 +1,15 @@
-# Amazon privacy disclosure worksheet
+# Amazon privacy disclosure
 
-Answer **Yes** to whether the app collects user data or transfers it to third parties. Amazon requires a public privacy policy URL and a completed questionnaire for this answer. The policy draft is in `deliverables/store-assets/privacy-policy.md`.
+The Amazon production draft has **Yes** selected for user data collection or third-party transfer. The [public privacy policy](https://lanray07.github.io/SkillHando/privacy/) and its [data deletion request section](https://lanray07.github.io/SkillHando/privacy/#support-and-requests) are saved in the draft. Amazon displays the completed answers as **Saved for review** until submission.
 
 | Amazon data type | Collected | Third-party transfer | Purpose |
 | --- | --- | --- | --- |
-| User IDs | Yes | Yes, Amazon purchase verification | App functionality |
-| Purchase history | Yes, Amazon receipt identifiers and entitlement status | Yes, Amazon purchase verification | App functionality |
-| Device or other IDs | Yes, connecting IP for verifier throttling | Cloudflare acts as the verifier's service provider | Security and fraud prevention |
-| Voice or sound recordings | Yes, when the user invokes a speech engine that processes voice online | Yes for provider-dependent online recognition | App functionality |
+| User IDs | Yes | Yes, Amazon receipt verification | App functionality |
+| Purchase history | Yes | Yes, Amazon receipt verification | App functionality |
+| Device or other ID | Yes, connecting IP for verifier throttling | No; Cloudflare processes the IP for the verifier | Fraud Prevention, Security and Compliance |
+| Voice or sound recordings | Yes, when the chosen speech engine processes commands online | No under Amazon’s exception for a user-initiated action with prominent disclosure next to the microphone control | App functionality |
+| Other user-generated content | Yes, active goal labels can be sent to the selected text-to-speech engine | Yes, if a network voice processes the text | App functionality |
 
-Practice notes, photos, locally recorded evidence and other private practice records stay on-device. The user can explicitly export files or share them through Android. The app receives no payment instrument details and includes no ads or developer analytics. There is no SkillHando account. Users can delete practice records and attachments from **More → Privacy settings**. Amazon administers the separate Amazon account and purchase history.
+There is no SkillHando account. The app can remove its local practice records and attachments in **More → Privacy settings**. The policy identifies the contact for deletion requests. Practice notes, photos, and recorded evidence stay on the device unless the user chooses to export them. The app receives no payment instrument details and includes no ads or developer analytics.
 
-Before publishing the policy, confirm the publisher identity, support email handling and retention, and which speech providers are supported. Review the answers against the live Amazon questionnaire, especially its service-provider and user-initiated-transfer exceptions. [Amazon Appstore privacy labels](https://developer.amazon.com/docs/app-submission/appstore-privacy-labels.html)
+[Amazon Appstore privacy labels and definitions](https://developer.amazon.com/docs/app-submission/appstore-privacy-labels.html)
