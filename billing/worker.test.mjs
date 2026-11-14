@@ -43,9 +43,12 @@ test("production verifier grants only matching, uncanceled production receipts",
     env.SKILLHANDO_LIVE_APP_TEST = "true";
     amazon = Response.json({ ...receipt });
     assert.deepEqual(await (await verify()).json(), { valid: false });
-    amazon = Response.json({ ...receipt, productId: "com.skillhando.app.premium.lat",
-        testTransaction: true, betaProduct: true });
+    const betaReceipt = { ...receipt, productId: "com.skillhando.app.premium.lat",
+        testTransaction: false, betaProduct: true };
+    amazon = Response.json(betaReceipt);
     assert.deepEqual(await (await verify()).json(), { valid: true });
+    amazon = Response.json({ ...betaReceipt, testTransaction: true, betaProduct: false });
+    assert.deepEqual(await (await verify()).json(), { valid: false });
     env.VERIFY_RATE_LIMIT.limit = async () => ({ success: false });
     assert.equal((await verify()).status, 429);
 });

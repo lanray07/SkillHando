@@ -74,7 +74,7 @@ export default {
             return decision(200, receipt?.productId === sku && receipt.productType === "ENTITLED" &&
                 receipt.receiptId === receiptId && receipt.cancelDate === null &&
                 (liveAppTest
-                    ? receipt.testTransaction === true && receipt.betaProduct === true
+                    ? receipt.betaProduct === true
                     : receipt.testTransaction === false && receipt.betaProduct !== true));
         } catch {
             return decision(503);
