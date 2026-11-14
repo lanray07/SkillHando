@@ -1,0 +1,6 @@
+<resources>
+    <string name="reminder_title">该练习一会儿了</string>
+    <string name="reminder_body">打开 SkillHando，接着上次的进度练习。</string>
+    <string name="reminder_channel">练习提醒</string>
+    <string name="snooze">一小时后提醒</string>
+</resources>

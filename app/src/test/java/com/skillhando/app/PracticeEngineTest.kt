@@ -58,6 +58,26 @@ class PracticeEngineTest {
         assertNull(VoiceCommands.parse("erase my data", Locale.UK))
     }
 
+    @Test fun chineseSystemLocalesRespectScriptAndManualChoice() {
+        val available = listOf("en-GB", "ko-KR", "zh-CN", "zh-TW")
+        fun resolve(system: String, selected: String? = null) =
+            Localisation.resolveTag(selected, Locale.forLanguageTag(system), available)
+
+        assertEquals("zh-TW", resolve("zh-HK"))
+        assertEquals("zh-TW", resolve("zh-Hant"))
+        assertEquals("zh-CN", resolve("zh-SG"))
+        assertEquals("zh-CN", resolve("zh-Hans-HK"))
+        assertEquals("ko-KR", resolve("ko"))
+        assertEquals("en-GB", resolve("en-AU"))
+        assertEquals("zh-CN", resolve("zh-TW", "zh-CN"))
+    }
+
+    @Test fun eastAsianCommandExamplesSelectTheExpectedIntent() {
+        assertEquals(VoiceIntent.READ, VoiceCommands.parse("오늘의 과제 읽어 줘!", Locale.KOREA))
+        assertEquals(VoiceIntent.PAUSE, VoiceCommands.parse("暂停计时器。", Locale.SIMPLIFIED_CHINESE))
+        assertEquals(VoiceIntent.GOALS, VoiceCommands.parse("讀出我的學習目標。", Locale.forLanguageTag("zh-HK")))
+    }
+
     @Test fun csvCellsQuoteUserDataAndNeutraliseSpreadsheetFormulas() {
         assertEquals("\"'=1+2\"", ReportWriter.csv("=1+2"))
         assertEquals("\"She said \"\"hello\"\", then left\"", ReportWriter.csv("She said \"hello\", then left"))

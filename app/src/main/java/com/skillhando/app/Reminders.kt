@@ -44,7 +44,7 @@ class SnoozeReminder : BroadcastReceiver() {
 
 class ReminderWorker(context: Context, params: WorkerParameters) : Worker(context, params) {
     override fun doWork(): Result {
-        val context = applicationContext
+        val context = Localisation.configuredContext(applicationContext)
         val hour = LocalTime.now().hour
         if (hour < 8 || hour >= 21) {
             Reminders.snooze(context, if (hour < 8) (8 - hour) * 60L else (32 - hour) * 60L)

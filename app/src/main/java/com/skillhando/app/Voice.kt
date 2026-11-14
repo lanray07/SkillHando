@@ -89,10 +89,14 @@ object VoiceCommands {
         "hi" to listOf("मेरी प्रगति दिखाओ", "आज का अभ्यास पढ़ो", "टाइमर रोक दो", "अभ्यास जारी रखो", "अब मैं क्या अभ्यास करूँ", "मेरे लक्ष्य पढ़ो", "यह अभ्यास पूरा करो"),
         "ar" to listOf("اعرض تقدمي", "اقرأ تحدي اليوم", "أوقف المؤقت مؤقتا", "استأنف التدريب", "ماذا أتدرب بعد ذلك", "اقرأ أهدافي", "أكمل هذا التمرين"),
         "tr" to listOf("ilerlememi göster", "bugünün alıştırmasını oku", "zamanlayıcıyı duraklat", "alıştırmaya devam et", "sırada neyi çalışmalıyım", "öğrenme hedeflerimi oku", "bu alıştırmayı tamamla"),
-        "id" to listOf("tampilkan kemajuan saya", "bacakan tantangan hari ini", "jeda pewaktu", "lanjutkan latihan", "apa yang perlu saya latih berikutnya", "bacakan tujuan belajar saya", "selesaikan latihan ini")
+        "id" to listOf("tampilkan kemajuan saya", "bacakan tantangan hari ini", "jeda pewaktu", "lanjutkan latihan", "apa yang perlu saya latih berikutnya", "bacakan tujuan belajar saya", "selesaikan latihan ini"),
+        "ko" to listOf("진행 상황 보여 줘", "오늘의 과제 읽어 줘", "타이머 일시 정지", "연습 재개", "다음에 뭘 연습할까", "학습 목표 읽어 줘", "이 연습 완료"),
+        "zh-CN" to listOf("查看我的进度", "读出今天的挑战", "暂停计时器", "继续练习", "接下来练什么", "读出我的学习目标", "完成这项练习"),
+        "zh-TW" to listOf("查看我的進度", "讀出今天的挑戰", "暫停計時器", "繼續練習", "接下來練什麼", "讀出我的學習目標", "完成這項練習")
     )
 
-    fun examples(locale: Locale) = phrases[locale.language] ?: phrases.getValue("en")
+    fun examples(locale: Locale) =
+        phrases[Localisation.chineseTag(locale) ?: locale.language] ?: phrases.getValue("en")
 
     fun parse(text: String, locale: Locale): VoiceIntent? {
         val normalized = text.lowercase(locale).trim().trim('¿', '؟', '?', '.', '!', '。', '？', '！')

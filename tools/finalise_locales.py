@@ -20,26 +20,38 @@ strings = {
     "ar": ("حان وقت التدريب", "افتح تطبيق SkillHando لمتابعة التدريب.", "تذكيرات التدريب", "التأجيل لمدة ساعة"),
     "tr": ("Biraz pratik yapma zamanı", "Kaldığın yerden devam etmek için SkillHando’yu aç.", "Pratik hatırlatıcıları", "Bir saat ertele"),
     "id": ("Waktunya berlatih sebentar", "Buka SkillHando untuk melanjutkan latihan.", "Pengingat latihan", "Tunda satu jam"),
+    "ko": ("잠깐 연습할 시간이에요", "SkillHando를 열어 하던 연습을 이어 가세요.", "연습 알림", "한 시간 후 다시 알림"),
+    "zh-CN": ("该练习一会儿了", "打开 SkillHando，接着上次的进度练习。", "练习提醒", "一小时后提醒"),
+    "zh-TW": ("該練習一下了", "開啟 SkillHando，接著上次的進度練習。", "練習提醒", "一小時後提醒"),
 }
 
+overrides = read(ROOT / "tools/locale-overrides.json")
+regional_resources = {"zh-CN": ("b+zh+Hans", "zh-rCN"), "zh-TW": ("b+zh+Hant", "zh-rTW")}
 available = [tag for tag in LOCALES if tag == "en-GB" or (ASSETS / "i18n" / f"{tag}.json").is_file()]
 for tag in available:
     target = ASSETS / "i18n" / f"{tag}.json"
     if target.exists():
         draft = read(target)
-        draft.update(read(ROOT / "tools/locale-overrides.json")[tag])
+        draft.update(overrides.get(tag, {}))
         target.write_text(json.dumps(draft, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     lang = tag.split("-")[0]
     if lang == "en":
         continue
-    dest = resources / ("values-" + lang)
-    dest.mkdir(exist_ok=True)
     keys = ("reminder_title", "reminder_body", "reminder_channel", "snooze")
-    entries = "\n".join(f'    <string name="{key}">{escape(value)}</string>' for key, value in zip(keys, strings[lang]))
-    (dest / "notifications.xml").write_text(f"<resources>\n{entries}\n</resources>\n", encoding="utf-8")
+    labels = strings[tag] if tag in strings else strings[lang]
+    entries = "\n".join(f'    <string name="{key}">{escape(value)}</string>' for key, value in zip(keys, labels))
+    for qualifier in regional_resources.get(tag, (lang,)):
+        dest = resources / ("values-" + qualifier)
+        dest.mkdir(exist_ok=True)
+        (dest / "notifications.xml").write_text(f"<resources>\n{entries}\n</resources>\n", encoding="utf-8")
 
-storefront_aliases = {"en-IN": "en-GB", "es-MX": "es-419"}
-declared = available + [tag for tag, content in storefront_aliases.items() if content in available]
+declared = []
+for tag in available:
+    declared.append(tag)
+    if tag == "en-AU":
+        declared.append("en-IN")
+    elif tag == "es-419":
+        declared.append("es-MX")
 entries = "\n".join(f'    <locale android:name="{tag}" />' for tag in declared)
 (resources / "xml/locales.xml").write_text(
     '<locale-config xmlns:android="http://schemas.android.com/apk/res/android">\n' + entries + "\n</locale-config>\n", encoding="utf-8")

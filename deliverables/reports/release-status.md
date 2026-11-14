@@ -15,13 +15,17 @@
 | Store metadata | PASS | 15 editable storefront drafts exist, pending native and publisher review |
 | Amazon App Tester purchase and restore | PASS | Fire HD 10 activated Premium on the first check after a fresh checkout (1.8 seconds) and passed a separate restore test after clearing the entitlement cache. Both used Amazon RVS Cloud Sandbox. |
 | Amazon production pricing and verifier | CONFIGURED | £4.99 draft base price with Amazon conversion. The deployed Cloudflare verifier reached Amazon production RVS, rejected a synthetic receipt and returned HTTP 429 when rate-limited. |
-| Amazon DevTest and real production purchasing | PENDING | The listing and entitlement remain drafts. DevTest requires a live in-app item and a registered signing certificate and tester. Verification of a valid SkillHando production receipt remains pending. |
+| Amazon DevTest and real production purchasing | PENDING | Amazon accepted the app submission and approved the production entitlement. Verification of a valid production receipt remains pending. |
 | Amazon Live App Testing | PASS | The Fire HD 10 installed the private beta from Amazon Appstore. A fresh purchase after the tester entitlement reset activated Premium in the same session without using Restore purchases. A separate restore test also verified the LAT receipt. |
 | Private audio, photo, reminders, exports and deletion UI | NOT TESTED | Feature implementations require device-level verification. Optional app lock and encrypted backup are absent |
 | Store screenshots | PASS | Amazon's production draft retained 88 distinct Fire tablet screenshots after reload, eight for each of the 11 media locales offered by the console. The repository also contains captures for four additional text locales and compact layouts. Native language review and physical phone compatibility remain pending. |
-| Submission readiness | BLOCKED | The production draft has the public GitHub Pages privacy policy and completed privacy questionnaire saved for review. The Amazon review page still requires a target age group and export compliance certification. The production app and Premium entitlement remain unsubmitted. |
+| Amazon submission | SUBMITTED | Amazon confirmed receipt of version 1.0.0 on Nov 14, 2026. The app showed Under Review and the production Premium SKU `com.skillhando.app.premium` showed Approved. |
 
-The physical tablet reports 1200 × 1920 pixels at 240 dpi. The build uses app-private storage, disables Android backup and cleartext traffic, and requests microphone access on demand. These decisions have not undergone a full security review. No Amazon Console submission or production purchase occurred.
+The physical tablet reports 1200 × 1920 pixels at 240 dpi. The build uses app-private storage, disables Android backup and cleartext traffic, and requests microphone access on demand. These decisions have not undergone a full security review. Production purchase testing is pending.
+
+## Next update
+
+Version 1.0.1 (code 2) adds Korean (`ko-KR`), Simplified Chinese (`zh-CN`) and Traditional Chinese (`zh-TW`). Each locale covers 277 interface strings, 21 challenges, reminder notifications and seven command phrases, with matching store copy and eight screenshots per layout. Native-language review of the full app copy and testing with installed speech engines remain pending. In the next Amazon submission, list Korean and Chinese in Language Support. Amazon's storefront localization settings do not offer these variants for listing copy or images. [Amazon international distribution](https://developer.amazon.com/docs/app-submission/distribute-your-app-internationally.html)
 
 ## Commands
 

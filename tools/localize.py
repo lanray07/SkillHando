@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "app/src/main/assets"
 OUT = ASSETS / "i18n"
 REPORT = ROOT / "deliverables/localization"
-LOCALES = ("en-GB en-US en-AU es-ES es-419 fr-FR fr-CA de-DE it-IT pt-BR pt-PT nl-NL pl-PL sv-SE ja-JP hi-IN ar tr-TR id-ID").split()
+LOCALES = ("en-GB en-US en-AU es-ES es-419 fr-FR fr-CA de-DE it-IT pt-BR pt-PT nl-NL pl-PL sv-SE ja-JP hi-IN ar tr-TR id-ID ko-KR zh-CN zh-TW").split()
 PUBLIC = ("title", "description", "rubric", "objective", "materials", "steps", "criterion", "prompt", "experiment")
 BRANDS = re.compile(r"SkillHando|Amazon|%[0-9]+\$[ds]|\{[a-z0-9_]+\}|\b(?:CSV|PDF)\b")
 
@@ -38,6 +38,14 @@ def validate(ui, content, target_ui, target_content):
     def shape(rows):
         return [(skill["id"], len(skill["rubric"]), [(c["id"], c["minutes"], len(c["steps"])) for c in skill["challenges"]]) for skill in rows]
     assert shape(content) == shape(target_content), "Catalogue identifiers, instructions or timings changed"
+    def copy_strings(rows):
+        strings = []
+        catalogue(rows, lambda text: strings.append(text) or text)
+        return strings
+
+    for source, target in zip(copy_strings(content), copy_strings(target_content), strict=True):
+        assert target.strip() and sorted(BRANDS.findall(source)) == sorted(BRANDS.findall(target)), \
+            f"Empty catalogue translation or damaged placeholder: {source}"
 
 
 def run(args):
@@ -59,9 +67,8 @@ def run(args):
         path = OUT / f"{tag}.json"
         content_path = OUT / f"catalogue-{tag}.json"
         if args.validate:
-            if not path.exists() and tag != "en-GB":
-                report[tag] = {"status": "missing", "interface": 0}
-                continue
+            if tag != "en-GB" and not (path.is_file() and content_path.is_file()):
+                raise SystemExit(f"Missing interface or catalogue for {tag}")
         elif lang == "en":
             def regional(text):
                 if tag != "en-US":
@@ -99,6 +106,14 @@ def run(args):
                     parts.extend((apply(text[start:match.start()]), match.group()))
                     start = match.end()
                 return "".join(parts) + apply(text[start:])
+            if lang == "zh":
+                from opencc import OpenCC
+
+                convert = OpenCC("s2twp" if tag == "zh-TW" else "t2s").convert
+                translate_draft = translate
+
+                def translate(text):
+                    return convert(translate_draft(text))
             candidate_ui = {key: translate(value) for key, value in ui.items()}
             candidate_content = catalogue(content, translate)
             validate(ui, content, candidate_ui, candidate_content)

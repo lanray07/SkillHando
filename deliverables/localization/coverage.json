@@ -131,5 +131,26 @@
     "changed": 275,
     "skills": 10,
     "challenges": 21
+  },
+  "ko-KR": {
+    "status": "draft_pending_native_review",
+    "interface": 277,
+    "changed": 277,
+    "skills": 10,
+    "challenges": 21
+  },
+  "zh-CN": {
+    "status": "draft_pending_native_review",
+    "interface": 277,
+    "changed": 277,
+    "skills": 10,
+    "challenges": 21
+  },
+  "zh-TW": {
+    "status": "draft_pending_native_review",
+    "interface": 277,
+    "changed": 277,
+    "skills": 10,
+    "challenges": 21
   }
 }

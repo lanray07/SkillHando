@@ -1,0 +1,6 @@
+<resources>
+    <string name="reminder_title">잠깐 연습할 시간이에요</string>
+    <string name="reminder_body">SkillHando를 열어 하던 연습을 이어 가세요.</string>
+    <string name="reminder_channel">연습 알림</string>
+    <string name="snooze">한 시간 후 다시 알림</string>
+</resources>

@@ -1,7 +1,7 @@
 param(
     [Parameter(Mandatory=$true)][string]$Adb,
     [Parameter(Mandatory=$true)][string]$Serial,
-    [string[]]$Locales = @("en-GB","en-AU","en-IN","en-US","de-DE","es-ES","es-MX","fr-FR","it-IT","ja-JP","nl-NL","pl-PL","pt-BR","pt-PT","sv-SE"),
+    [string[]]$Locales = @("en-GB","en-AU","en-IN","en-US","de-DE","es-ES","es-MX","fr-FR","it-IT","ja-JP","nl-NL","pl-PL","pt-BR","pt-PT","sv-SE","ko-KR","zh-CN","zh-TW"),
     [ValidateSet("fire-hd10","phone-layout")][string]$Profile = "fire-hd10",
     [string]$JapaneseFont
 )
@@ -19,6 +19,11 @@ $originalDensity = @(& $Adb @adbArgs shell wm density) -match '^Override density
 $keepAwake = (& $Adb @adbArgs shell settings get global stay_on_while_plugged_in).Trim()
 & $Adb @adbArgs shell settings put global stay_on_while_plugged_in 7
 $failed = @()
+$localeFonts = @{
+    "ko-KR" = "C:/Windows/Fonts/malgunbd.ttf"
+    "zh-CN" = "C:/Windows/Fonts/msyhbd.ttc"
+    "zh-TW" = "C:/Windows/Fonts/msjhbd.ttc"
+}
 try {
     if ($Profile -eq "phone-layout") {
         & $Adb @adbArgs shell wm size 1080x1920
@@ -41,6 +46,8 @@ try {
         if ($locale -eq "ja-JP") {
             if (!$JapaneseFont) { throw "Specify -JapaneseFont for Japanese headlines." }
             $font = @("--font", $JapaneseFont)
+        } elseif ($localeFonts.ContainsKey($locale)) {
+            $font = @("--font", $localeFonts[$locale])
         }
         python tools/compose_screenshots.py $raw --locale $locale --device $Profile @font
         if ($LASTEXITCODE -ne 0) { throw "Could not compose $locale screenshots." }

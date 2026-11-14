@@ -20,7 +20,7 @@ Compose screens observe the Room store through a lifecycle-aware view model. The
 
 ## Localisation
 
-The language control loads locale-specific interface and catalogue data, with regional English fallback. `tools/localize.py` generates and structurally checks machine translation drafts. Use a local CTranslate2-compatible M2M100 model and tokenizer or supply reviewed JSON dictionaries with the same schema. See the coverage report for generated files. Runtime voice availability varies with the installed Android recognizer and TTS voice. Command mappings cover the 14 base languages represented by the 19 interface locales. Physical device support and regional dictation need verification.
+The app uses the device language by default and lets the user override it. The 22 interface and catalogue bundles include Korean, Simplified Chinese and Traditional Chinese. For Chinese, device script takes priority, with Taiwan, Hong Kong and Macao using Traditional Chinese when the device does not specify a script. Unsupported languages fall back to British English. `tools/localize.py` structurally checks the locale bundles and can generate drafts from a local CTranslate2-compatible M2M100 model and tokenizer. The Chinese generation option also uses OpenCC. Runtime speech recognition and spoken feedback depend on the installed speech services. The localized command phrases also work as typed commands.
 
 ## Amazon purchasing
 
@@ -43,6 +43,8 @@ Run an isolated build with `.\gradlew.bat -PskillhandoBillingSandbox=true :app:a
 ### Store screenshots
 
 Build the isolated screenshot APK and its test APK with `.\gradlew.bat -PskillhandoScreenshotBuild=true :app:assembleDebug :app:assembleDebugAndroidTest`. Install both and run `tools/capture_store_screens.ps1` with the ADB path, Fire tablet serial and Japanese font path. Use `python tools/validate_store_screens.py` to regenerate the combined manifest. The phone-layout option uses temporary display overrides on the Fire tablet.
+
+The next update's Korean, Simplified Chinese and Traditional Chinese copy and screenshot sets are under `deliverables/store-assets`. Amazon currently offers Korean and Chinese as supported app languages, while its storefront listing options omit these locales. [Amazon international distribution](https://developer.amazon.com/docs/app-submission/distribute-your-app-internationally.html)
 
 ## Release scope
 
