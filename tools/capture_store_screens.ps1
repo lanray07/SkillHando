@@ -33,7 +33,7 @@ try {
         if ($locale -notmatch '^[a-z]{2}-[A-Z]{2}$') { throw "Invalid locale $locale" }
         $raw = "deliverables/store-assets/device-captures/$locale/$Profile"
         New-Item -ItemType Directory -Force $raw | Out-Null
-        $result = & $Adb @adbArgs shell am instrument -w -r -e locale $locale -e class com.skillhando.app.StoreScreenshotTest "${package}.test/androidx.test.runner.AndroidJUnitRunner" 2>&1
+        $result = & $Adb @adbArgs shell am instrument -w -r -e locale $locale -e class 'com.skillhando.app.StoreScreenshotTest#renderStoreScreens' "${package}.test/androidx.test.runner.AndroidJUnitRunner" 2>&1
         $result | Set-Content -Encoding utf8NoBOM "$logs/store-$Profile-$locale.txt"
         if (($result -join "`n") -notmatch 'OK \(1 test\)') {
             Write-Output "FAIL $Profile $locale"

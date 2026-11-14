@@ -25,7 +25,11 @@ The physical tablet reports 1200 × 1920 pixels at 240 dpi. The build uses app-p
 
 ## Next update
 
-Version 1.0.1 (code 2) adds Korean (`ko-KR`), Simplified Chinese (`zh-CN`) and Traditional Chinese (`zh-TW`). Each locale covers 277 interface strings, 21 challenges, reminder notifications and seven command phrases, with matching store copy and eight screenshots per layout. Native-language review of the full app copy and testing with installed speech engines remain pending. In the next Amazon submission, list Korean and Chinese in Language Support. Amazon's storefront localization settings do not offer these variants for listing copy or images. [Amazon international distribution](https://developer.amazon.com/docs/app-submission/distribute-your-app-internationally.html)
+Version 1.0.1 (code 2) adds Korean (`ko-KR`), Simplified Chinese (`zh-CN`) and Traditional Chinese (`zh-TW`). Each locale covers 277 interface strings, 21 challenges, reminder notifications and seven command phrases, with matching store copy and eight screenshots per layout. Native-language editorial review of the full app copy remains pending. In the next Amazon submission, list Korean and Chinese in Language Support. Amazon's storefront localization settings do not offer these variants for listing copy or images. [Amazon international distribution](https://developer.amazon.com/docs/app-submission/distribute-your-app-internationally.html)
+
+On the Fire HD 10 (Fire OS 7), all three locale runs passed. The app loaded the selected language, ran the localized typed command to read a challenge, and displayed the translated challenge and voice fallback messages. The tablet advertised no Android speech recognizer. Its default synthesizer and both installed engines, IVONA and Pico, returned `LANG_NOT_SUPPORTED` for all three locales, so audio output was unavailable on this device. The test logs are named `voice-fire-hd10-<locale>.txt` under `deliverables/android/build-logs`.
+
+The signed Amazon APK is `deliverables/android/release/SkillHando-1.0.1-amazon.apk`. It matches the 1.0.0 signing certificate and passed signature, alignment, version, production billing configuration and locale asset verification. Version 1.0.1 was prepared locally and has not been uploaded or submitted. The Amazon Console showed 1.0.0 Under Review with a Nov 19, 2026 estimate at 07:00 PST.
 
 ## Commands
 
