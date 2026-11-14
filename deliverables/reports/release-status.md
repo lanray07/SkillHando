@@ -18,8 +18,8 @@
 | Amazon DevTest and real production purchasing | PENDING | The listing and entitlement remain drafts. DevTest requires a live in-app item and a registered signing certificate and tester. Verification of a valid SkillHando production receipt remains pending. |
 | Amazon Live App Testing | PASS | The Fire HD 10 installed the private beta from Amazon Appstore. A fresh purchase after the tester entitlement reset activated Premium in the same session without using Restore purchases. A separate restore test also verified the LAT receipt. |
 | Private audio, photo, reminders, exports and deletion UI | NOT TESTED | Feature implementations require device-level verification. Optional app lock and encrypted backup are absent |
-| Store screenshots | PASS | Eight screenshots for each of 15 storefront locales on physical Fire HD 10 and eight per locale at a compact display size on the same tablet. Native language review and physical phone compatibility remain pending. |
-| Submission readiness | BLOCKED | Complete outstanding device testing, production monetisation, native translation review and publisher checks before release |
+| Store screenshots | PASS | Amazon's production draft retained 88 distinct Fire tablet screenshots after reload, eight for each of the 11 media locales offered by the console. The repository also contains captures for four additional text locales and compact layouts. Native language review and physical phone compatibility remain pending. |
+| Submission readiness | BLOCKED | The Amazon review page requires a target age group, a public privacy policy URL with the data disclosure, and export compliance certification. The privacy policy and disclosure worksheet are prepared for owner review. |
 
 The physical tablet reports 1200 × 1920 pixels at 240 dpi. The build uses app-private storage, disables Android backup and cleartext traffic, and requests microphone access on demand. These decisions have not undergone a full security review. No Amazon Console submission or production purchase occurred.
 
