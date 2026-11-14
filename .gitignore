@@ -7,6 +7,8 @@
 local.properties
 *.jks
 *.keystore
+*.p12
+*.dpapi
 .env
 !*.env.example
 app/src/main/assets/AppstoreAuthenticationKey.pem

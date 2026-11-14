@@ -1,0 +1,23 @@
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): true
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: CN=SkillHando Android Release
+Signer #1 certificate SHA-256 digest: 87ef49dafe5448ff63f70fa4f3f2ec6bc793607e7b22bed8cef45b01b6042fba
+Signer #1 certificate SHA-1 digest: 1b781f6076cd0970e32b7db16894b7f5009deacf
+Signer #1 certificate MD5 digest: fdc613e5a7fd2f562b32c2df84c985a1
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 3072
+Signer #1 public key SHA-256 digest: 58d533af035aad5886a76f9781e7f7c1c20021ed230f34bb9773c6441992150d
+Signer #1 public key SHA-1 digest: ce845a2c7770c316391959de0d48b3185ba16008
+Signer #1 public key MD5 digest: 44b4bf51f0ee03592c081a286ce56e8c
+SHA256 3817AA814DC0F72B68E9F20F105F0967D7E8CCFA12015B400D3A8D21248CFFCE
+PASS Android SDK zipalign 16 KiB page alignment
+PASS app ID com.skillhando.app v1.0.0 code 1, API 26 minimum, target 35
+PASS listing PEM byte match, production SKU and verifier, sandbox settings excluded
+PASS Gradle release build, vital lint and eight release unit tests
+PASS Amazon accepted the replacement APK in the unsubmitted production draft

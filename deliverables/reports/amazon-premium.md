@@ -21,4 +21,9 @@
 
 - The dedicated Cloudflare Worker calls Amazon’s production RVS endpoint for the production SKU. The Amazon developer account’s shared key was installed in Cloudflare secret storage. The app and repository contain only the public HTTPS endpoint and product SKU.
 - The deployed Worker returned HTTP 204 for readiness, HTTP 400 for a malformed request, and HTTP 200 with `valid: false` for a synthetic receipt checked with Amazon production RVS. A live rate-limit probe observed HTTP 429. A local test exercised successful verification with a fixture and rejection of canceled, mismatched and test receipts.
-- A valid receipt from a real SkillHando production purchase remains untested. The production-configured unsigned APK is for release preparation and still needs Amazon packaging and signing.
+- The signed APK embeds SkillHando’s Amazon Appstore public key, the production SKU and HTTPS endpoint. APK alignment and signature schemes v2 and v3 passed. Amazon accepted the replacement APK in the production draft as version code 1. The production entitlement remained Ready to Submit.
+
+## Live App Testing
+
+- The private test draft contains a separately signed APK with the test SKU and verifier. The deployed test verifier reached Amazon production RVS and rejected a synthetic receipt. Fixture tests cover valid test receipts and rejection of production receipts by the test verifier.
+- Amazon requires export compliance certification and the tester rights, consent and age attestation before the private test can run. Creation of the separate test entitlement did not complete in the console. A real SkillHando receipt remains unverified. [Private SkillHando test draft](https://developer.amazon.com/apps-and-games/console/app/amzn1.devportal.mobileapp.075fedf359ae487d90214effe438def2/beta-release/amzn1.devportal.apprelease.8fbb1a5de74047259ebaeb9d5aeff74a/submit)

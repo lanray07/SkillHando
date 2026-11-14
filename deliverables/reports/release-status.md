@@ -3,6 +3,7 @@
 | Area | Status | Evidence |
 | --- | --- | --- |
 | Debug APK, unsigned release APK and instrumentation APK | PASS | Gradle build and release vital lint logs |
+| Amazon signed production APK | PASS | Version 1.0.0, code 1. Package listing key, production billing settings, alignment and signatures checked. Amazon accepted the signed APK in the app draft. |
 | Practice engine logic | PASS | Eight JVM tests cover repeat and advance recommendations, comparable attempts, tie-breaking, elapsed time, voice phrase matching and CSV escaping |
 | Room on Fire HD 10 (2021), KFTRWI, Fire OS 7 / API 28 | PASS | Two device tests verify reopen persistence, attempt and evidence transaction, cascade deletion and pathway capacity |
 | Offline practice journey on Fire HD 10 | PASS | In airplane mode with no active network, the Compose test saved and compared two attempts, checked a next challenge, used a typed voice command and saved a weekly goal. The rendered Skills screen was checked separately using ADB capture |
@@ -15,6 +16,7 @@
 | Amazon App Tester purchase and restore | PASS | Fire HD 10 activated Premium on the first check after a fresh checkout (1.8 seconds) and passed a separate restore test after clearing the entitlement cache. Both used Amazon RVS Cloud Sandbox. |
 | Amazon production pricing and verifier | CONFIGURED | £4.99 draft base price with Amazon conversion. The deployed Cloudflare verifier reached Amazon production RVS, rejected a synthetic receipt and returned HTTP 429 when rate-limited. |
 | Amazon DevTest and real production purchasing | PENDING | The listing and entitlement remain drafts. DevTest requires a live in-app item and a registered signing certificate and tester. Verification of a valid SkillHando production receipt remains pending. |
+| Amazon Live App Testing | PENDING | Separate signed beta and verifier prepared. The private test awaits certification, a tester and the test entitlement. |
 | Private audio, photo, reminders, exports and deletion UI | NOT TESTED | Feature implementations require device-level verification. Optional app lock and encrypted backup are absent |
 | Store screenshots | PASS | Eight screenshots for each of 15 storefront locales on physical Fire HD 10 and eight per locale at a compact display size on the same tablet. Native language review and physical phone compatibility remain pending. |
 | Submission readiness | BLOCKED | Complete outstanding device testing, production monetisation, native translation review and publisher checks before release |

@@ -5,6 +5,17 @@ plugins {
     id("org.jetbrains.kotlin.kapt") version "2.1.20"
 }
 
+abstract class CopyAmazonKey : DefaultTask() {
+    @get:InputFile abstract val publicKey: RegularFileProperty
+    @get:OutputDirectory abstract val assetsDir: DirectoryProperty
+
+    @TaskAction
+    fun copyKey() {
+        val destination = assetsDir.file("AppstoreAuthenticationKey.pem").get().asFile
+        publicKey.get().asFile.copyTo(destination, overwrite = true)
+    }
+}
+
 android {
     namespace = "com.skillhando.app"
     compileSdk = 35
@@ -51,13 +62,15 @@ android {
     }
     kotlinOptions { jvmTarget = "17" }
     packaging { resources.excludes += "/META-INF/{AL2.0,LGPL2.1}" }
-    val amazonKey = providers.gradleProperty("skillhandoAmazonAuthFile")
-    if (amazonKey.isPresent) {
-        val copyAmazonKey = tasks.register<Sync>("copyAmazonKey") {
-            from(amazonKey.get()) { rename { "AppstoreAuthenticationKey.pem" } }
-            into(layout.buildDirectory.dir("generated/amazonAssets"))
+}
+
+providers.gradleProperty("skillhandoAmazonAuthFile").orNull?.let { path ->
+    val publicKeyFile = layout.projectDirectory.file(path)
+    androidComponents.onVariants { variant ->
+        val copyKey = tasks.register<CopyAmazonKey>("copyAmazonKeyFor${variant.name.replaceFirstChar { it.uppercaseChar() }}") {
+            publicKey.set(publicKeyFile)
         }
-        sourceSets.getByName("main").assets.srcDir(copyAmazonKey)
+        requireNotNull(variant.sources.assets).addGeneratedSourceDirectory(copyKey, CopyAmazonKey::assetsDir)
     }
 }
 

@@ -9,5 +9,16 @@
     "name": "VERIFY_RATE_LIMIT",
     "namespace_id": "185491307624812",
     "simple": { "limit": 20, "period": 60 }
-  }]
+  }],
+  "env": {
+    "lat": {
+      "name": "skillhando-receipt-verifier-lat",
+      "vars": { "SKILLHANDO_LIVE_APP_TEST": "true" },
+      "ratelimits": [{
+        "name": "VERIFY_RATE_LIMIT",
+        "namespace_id": "185491307624813",
+        "simple": { "limit": 20, "period": 60 }
+      }]
+    }
+  }
 }

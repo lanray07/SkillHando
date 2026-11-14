@@ -1,4 +1,5 @@
-const sku = "com.skillhando.app.premium";
+const productionSku = "com.skillhando.app.premium";
+const testSku = "com.skillhando.app.premium.lat";
 const amazonUrl = "https://appstore-sdk.amazon.com/version/1.0/verifyReceiptId";
 const token = /^[A-Za-z0-9_\-+/=.:]{1,1024}$/;
 const responseHeaders = { "Cache-Control": "no-store" };
@@ -36,6 +37,8 @@ async function readRequest(request) {
 
 export default {
     async fetch(request, env) {
+        const liveAppTest = env.SKILLHANDO_LIVE_APP_TEST === "true";
+        const sku = liveAppTest ? testSku : productionSku;
         const { protocol, pathname: path } = new URL(request.url);
         if (protocol !== "https:") return decision(426);
         if (path === "/health" && request.method === "GET") {
@@ -70,7 +73,9 @@ export default {
             const receipt = await result.json();
             return decision(200, receipt?.productId === sku && receipt.productType === "ENTITLED" &&
                 receipt.receiptId === receiptId && receipt.cancelDate === null &&
-                receipt.testTransaction === false && receipt.betaProduct !== true);
+                (liveAppTest
+                    ? receipt.testTransaction === true && receipt.betaProduct === true
+                    : receipt.testTransaction === false && receipt.betaProduct !== true));
         } catch {
             return decision(503);
         }
