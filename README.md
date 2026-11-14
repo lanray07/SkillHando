@@ -24,11 +24,17 @@ The language control loads locale-specific interface and catalogue data, with re
 
 ## Amazon purchasing
 
-Pass `-PskillhandoAmazonSku=<entitled-sku>`, `-PskillhandoVerifierUrl=https://your-host/verify` and, when required, `-PskillhandoAmazonAuthFile=<path-to-AppstoreAuthenticationKey.pem>`. The app receives the formatted price from Amazon, handles restore, and grants Premium after successful server verification. See `.env.example` for server settings. Run `python billing/server.py` behind a rate-limited HTTPS reverse proxy and use the matching Amazon receipt environment. Keep the RVS shared secret server-side. Verify purchase, cancellation, refund and restore on App Tester or Live App Testing before release.
+The production SKU is `com.skillhando.app.premium`. Build the production-configured unsigned APK with:
+
+```powershell
+.\gradlew.bat -PskillhandoAmazonSku=com.skillhando.app.premium -PskillhandoVerifierUrl=https://skillhando-receipt-verifier.lanraybanks.workers.dev/verify :app:assembleRelease
+```
+
+For Amazon packaging, supply the listing’s Appstore public key with `-PskillhandoAmazonAuthFile=<path-to-AppstoreAuthenticationKey.pem>`. The app receives the formatted price from Amazon and grants Premium after server verification. Cloudflare runs the production verifier in `billing/worker.mjs`. Deploy changes with `npx wrangler@4.156.0 deploy --config billing/wrangler.jsonc` and keep the account’s Amazon RVS shared key in the Worker’s `SKILLHANDO_RVS_SECRET` secret binding. The Worker checks the production SKU, entitlement type, receipt ID, cancellation and Amazon test flags. Use the isolated setup below for App Tester and a separate verifier environment for any future Live App Testing receipt checks. [Amazon production RVS](https://developer.amazon.com/docs/in-app-purchasing/iap-rvs-for-android-apps.html)
 
 ### App Tester on a Fire tablet
 
-Run an isolated build with `.\gradlew.bat -PskillhandoBillingSandbox=true :app:assembleDebug`. This produces the `com.skillhando.app.billingtest` package. Start `billing/server.py` on loopback port 18744 using `SKILLHANDO_RVS_MODE=sandbox`, `SKILLHANDO_RVS_PRODUCT=com.skillhando.testing.premium`, and any nonempty sandbox secret. The PowerShell helper `tools/billing_sandbox.ps1` temporarily merges the test SKU into App Tester, switches its mode, and forwards the verifier port over USB. Run `tools/check_sandbox_purchase.py` in its check block with the appropriate stage. Use **open** for fresh test checkout, **verify** to check the post-checkout screen, and **restore** after closing the isolated app and clearing only its cached entitlement. [Amazon RVS Cloud Sandbox](https://developer.amazon.com/docs/in-app-purchasing/rvs-cloud-sandbox.html)
+Run an isolated build with `.\gradlew.bat -PskillhandoBillingSandbox=true :app:assembleDebug`. This produces the `com.skillhando.app.billingtest` package. Start `billing/server.py` on loopback port 18744 using `SKILLHANDO_RVS_MODE=sandbox`, `SKILLHANDO_RVS_PRODUCT=com.skillhando.testing.premium`, and any nonempty sandbox secret. The PowerShell helper `tools/billing_sandbox.ps1` temporarily merges the test SKU into App Tester, switches its mode, and forwards the verifier port over USB. Before a fresh run, delete only the SkillHando test transaction from App Tester and clear the isolated app’s cached entitlement. Run `tools/check_sandbox_purchase.py --stage checkout` inside the helper’s check block, with the ADB path and tablet serial, to check activation in the same app session. Use **restore** to test the explicit restore action after clearing the isolated app’s cached entitlement and relaunching. [Amazon RVS Cloud Sandbox](https://developer.amazon.com/docs/in-app-purchasing/rvs-cloud-sandbox.html)
 
 ### Store screenshots
 

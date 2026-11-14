@@ -12,8 +12,9 @@
 | Translation structure | PASS | 19 interface locales have structurally validated drafts with 277 keys and all 21 challenges. Source locale is en-GB |
 | Language, regional terminology, RTL and accessibility | PARTIAL | Storefront locale rendering was checked on Fire HD 10. Native review, pluralisation, RTL and accessibility checks remain |
 | Store metadata | PASS | 15 editable storefront drafts exist, pending native and publisher review |
-| Amazon App Tester purchase and restore | PASS | Fire HD 10 completed a sandbox order. After the entitlement cache was cleared, Restore purchases verified the receipt with Amazon RVS Cloud Sandbox and reactivated Premium. |
-| Amazon DevTest and production purchasing | BLOCKED | SkillHando and its Premium SKU exist as drafts. DevTest requires a live in-app item and a registered signing certificate and tester. The production verifier and pricing remain unconfigured. |
+| Amazon App Tester purchase and restore | PASS | Fire HD 10 activated Premium on the first check after a fresh checkout (1.8 seconds) and passed a separate restore test after clearing the entitlement cache. Both used Amazon RVS Cloud Sandbox. |
+| Amazon production pricing and verifier | CONFIGURED | £4.99 draft base price with Amazon conversion. The deployed Cloudflare verifier reached Amazon production RVS, rejected a synthetic receipt and returned HTTP 429 when rate-limited. |
+| Amazon DevTest and real production purchasing | PENDING | The listing and entitlement remain drafts. DevTest requires a live in-app item and a registered signing certificate and tester. Verification of a valid SkillHando production receipt remains pending. |
 | Private audio, photo, reminders, exports and deletion UI | NOT TESTED | Feature implementations require device-level verification. Optional app lock and encrypted backup are absent |
 | Store screenshots | PASS | Eight screenshots for each of 15 storefront locales on physical Fire HD 10 and eight per locale at a compact display size on the same tablet. Native language review and physical phone compatibility remain pending. |
 | Submission readiness | BLOCKED | Complete outstanding device testing, production monetisation, native translation review and publisher checks before release |

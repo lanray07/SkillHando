@@ -4,7 +4,7 @@ SkillHando stores practice notes, ratings, photos, audio, learning goals and pre
 
 The selected speech engine may process microphone input online. The app requests microphone access when you choose to speak a command or make an audio recording. SkillHando does not save recordings of voice commands. Audio evidence is stored locally. The data deletion control in More removes the practice database records and private attachments. Exports are saved or shared only at your direction. You control those copies.
 
-When Amazon purchasing is enabled, Amazon handles checkout. The receipt verifier processes the receipt identifier and Amazon user identifier to check the entitlement. The verifier does not receive practice records or attachments. Configure retention, processor and support contact details before using this as a published disclosure.
+When Amazon purchasing is enabled, Amazon handles checkout. The verifier runs on Cloudflare Workers and forwards the receipt identifier and Amazon user identifier to Amazon to check the entitlement. Cloudflare provides the request IP address for rate limiting. The verifier has no receipt database, and Worker observability is disabled. It does not receive practice records or attachments. Review provider retention and support contact details before publishing this disclosure.
 
 ## Release checklist
 

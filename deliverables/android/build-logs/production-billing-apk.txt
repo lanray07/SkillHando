@@ -1,0 +1,4 @@
+PASS unsigned APK contains production endpoint and SKU and excludes sandbox billing configuration
+SHA256 36defbf2bcde9b1daf5eac45022a1ef1017f75c429decd856bc8918532c5fc3d
+<testsuite name="com.skillhando.app.PracticeEngineTest" tests="8" skipped="0" failures="0" errors="0"
+PASS Gradle assembleRelease, lintVitalRelease and testReleaseUnitTest

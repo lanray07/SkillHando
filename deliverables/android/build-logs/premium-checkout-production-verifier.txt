@@ -1,0 +1,4 @@
+PASS same-session activation: Premium inactive before purchase and active on first observation 1.8 seconds after closing checkout.
+PASS App Tester Cloud Sandbox: one HTTP 200 valid receipt; no charge, relaunch or restore action.
+PASS deployed production verifier: HTTPS 204 readiness, malformed input HTTP 400, synthetic Amazon RVS receipt HTTP 200 valid=false, rate limiting HTTP 429.
+PASS Node verifier test and three Python sandbox tests.

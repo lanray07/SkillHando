@@ -66,14 +66,16 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--adb", required=True)
     parser.add_argument("--serial", required=True)
-    parser.add_argument("--stage", choices=["open", "verify", "restore"], required=True)
+    parser.add_argument("--stage", choices=["open", "checkout", "verify", "restore"], required=True)
     options = parser.parse_args()
     adb = [options.adb, "-s", options.serial]
     if run(adb, "shell", "getprop", "debug.amazon.sandboxmode").strip() != "debug":
         raise RuntimeError("Amazon App Tester sandbox mode is required")
-    if options.stage == "open":
+    if options.stage in ("open", "checkout"):
         show_premium(adb)
         price = wait_for(adb, r"^Buy Premium · \S", 35)
+        if any(node.get("text") == "Premium is active" for node in surface(adb)):
+            raise RuntimeError("Premium must be inactive before the test order")
         tap(adb, price)
         item = wait_for(adb, "^Get Item$")
         if item.get("package") != "com.amazon.sdktestclient":
@@ -84,6 +86,13 @@ def main():
             raise RuntimeError("Checkout completion must come from Amazon App Tester")
         tap(adb, wait_for(adb, "^Close$"))
         print("PASS checkout: Amazon App Tester displayed a price and completed the sandbox order", flush=True)
+        if options.stage == "open":
+            return
+        started = time.monotonic()
+        active = wait_for(adb, "^Premium is active$", 30)
+        if active.get("package") != PACKAGE:
+            raise RuntimeError("Premium activation must appear in the SkillHando app")
+        print(f"PASS immediate activation: first observed {time.monotonic() - started:.1f}s after closing checkout, without relaunch or restore")
         return
     if options.stage == "restore":
         show_premium(adb)
