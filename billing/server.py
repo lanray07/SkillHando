@@ -1,6 +1,7 @@
 """Amazon RVS verifier behind a TLS reverse proxy. Rate-limit POST /verify at that proxy."""
 import json
 import os
+import logging
 import re
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.error import HTTPError, URLError
@@ -22,6 +23,8 @@ class Verify(BaseHTTPRequestHandler):
         pass
 
     def reply(self, status, valid=False):
+        if MODE == "sandbox":
+            logging.info("sandbox verifier response status=%s valid=%s", status, valid)
         body = json.dumps({"valid": valid}).encode()
         self.send_response(status)
         self.send_header("Content-Type", "application/json")
@@ -57,6 +60,7 @@ class Verify(BaseHTTPRequestHandler):
 
 
 if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)
     if not SECRET or not PRODUCT or MODE not in ENDPOINTS:
         raise SystemExit("Set SKILLHANDO_RVS_SECRET, SKILLHANDO_RVS_PRODUCT and a valid SKILLHANDO_RVS_MODE.")
     ThreadingHTTPServer(("127.0.0.1", int(os.environ.get("SKILLHANDO_RVS_PORT", "8080"))), Verify).serve_forever()

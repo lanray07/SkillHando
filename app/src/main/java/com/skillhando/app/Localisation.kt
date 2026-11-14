@@ -10,15 +10,21 @@ object Localisation {
     private var translated = JSONObject()
     var locale: Locale = Locale.UK
         private set
-    private val targets = listOf("en-GB", "en-US", "en-AU", "es-ES", "es-419", "fr-FR", "fr-CA", "de-DE",
+    private val targets = listOf("en-GB", "en-US", "en-AU", "en-IN", "es-ES", "es-419", "es-MX", "fr-FR", "fr-CA", "de-DE",
         "it-IT", "pt-BR", "pt-PT", "nl-NL", "pl-PL", "sv-SE", "ja-JP", "hi-IN", "ar", "tr-TR", "id-ID")
 
     var supported = listOf("en-GB")
         private set
 
+    fun contentTag(tag: String) = when (tag) {
+        "en-IN" -> "en-GB"
+        "es-MX" -> "es-419"
+        else -> tag
+    }
+
     fun configuredContext(context: Context): Context {
         val bundled = context.assets.list("i18n").orEmpty().toSet()
-        supported = targets.filter { it == "en-GB" || "$it.json" in bundled }
+        supported = targets.filter { it == "en-GB" || "${contentTag(it)}.json" in bundled }
         val selected = context.getSharedPreferences("settings", 0).getString("language", null)
         val system = context.resources.configuration.locales[0]
         val tag = selected?.takeIf { it in supported }
@@ -32,7 +38,7 @@ object Localisation {
         val config = configuredContext(context)
         locale = config.resources.configuration.locales[0]
         fallback = JSONObject(config.assets.open("ui-en.json").bufferedReader().use { it.readText() })
-        translated = runCatching { JSONObject(config.assets.open("i18n/${locale.toLanguageTag()}.json").bufferedReader().use { it.readText() }) }
+        translated = runCatching { JSONObject(config.assets.open("i18n/${contentTag(locale.toLanguageTag())}.json").bufferedReader().use { it.readText() }) }
             .getOrDefault(JSONObject())
     }
 

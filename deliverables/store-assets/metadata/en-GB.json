@@ -9,8 +9,25 @@
     "Set weekly goals and use a practice timer.",
     "Use the bundled catalogue and local practice recommendations offline."
   ],
-  "keywords": ["practical skills", "public speaking practice", "skill practice tracker", "offline learning challenges", "practice timer", "learning goals", "practice portfolio"],
+  "keywords": [
+    "practical skills",
+    "public speaking practice",
+    "skill practice tracker",
+    "offline learning challenges",
+    "practice timer",
+    "learning goals",
+    "practice portfolio"
+  ],
   "releaseNotes": "First release with guided practice, self-assessment and a private portfolio.",
-  "screenshotHeadlines": ["Learn practical skills", "Plan one change to try", "Find your next challenge", "Use voice or keyboard commands", "Compare your attempts", "Review your practice history", "Take your challenges offline", "Practise at your own pace"],
+  "screenshotHeadlines": [
+    "Learn practical skills",
+    "Plan one change to try",
+    "Find your next challenge",
+    "Use voice or keyboard commands",
+    "Compare your attempts",
+    "Review your practice history",
+    "Take your challenges offline",
+    "Practise at your own pace"
+  ],
   "status": "Draft for Fire tablet listing"
 }

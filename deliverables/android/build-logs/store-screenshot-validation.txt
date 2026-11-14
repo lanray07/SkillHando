@@ -1,0 +1,3 @@
+fire-hd10: 15/15 storefront locales; pending none
+phone-layout: 15/15 storefront locales; pending none
+240 PNGs validated

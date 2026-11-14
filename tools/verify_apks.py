@@ -16,6 +16,9 @@ for apk in apks:
         assert len([name for name in files if name.startswith("classes") and name.endswith(".dex")]) >= 1
         assert "AndroidManifest.xml" in files
         assert "assets/AppstoreAuthenticationKey.pem" not in files
+        assert "res/xml/billing_sandbox_network.xml" not in files
+        assert not any(b"http://127.0.0.1:18744/verify" in package.read(name)
+                       for name in files if name.startswith("classes") and name.endswith(".dex"))
         assert all(f"assets/i18n/{tag}.json" in files and f"assets/i18n/catalogue-{tag}.json" in files for tag in loc)
         assert len(json.loads(package.read("assets/catalogue.json"))) == 10
         assert package.testzip() is None

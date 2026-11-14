@@ -4,7 +4,7 @@ import android.content.Context
 import org.json.JSONArray
 
 class Catalogue(context: Context) {
-    val skills = (runCatching { context.assets.open("i18n/catalogue-" + Localisation.locale.toLanguageTag() + ".json") }.getOrNull() ?: context.assets.open("catalogue.json")).bufferedReader().use { reader ->
+    val skills = (runCatching { context.assets.open("i18n/catalogue-" + Localisation.contentTag(Localisation.locale.toLanguageTag()) + ".json") }.getOrNull() ?: context.assets.open("catalogue.json")).bufferedReader().use { reader ->
         val data = JSONArray(reader.readText())
         List(data.length()) { index ->
             val item = data.getJSONObject(index)

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.skillhando.app.PracticeEngineTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-11-13T21:29:01.383Z" hostname="DESKTOP-MAKK9CA" time="0.109">
+<testsuite name="com.skillhando.app.PracticeEngineTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-11-14T03:00:23.194Z" hostname="DESKTOP-MAKK9CA" time="0.112">
   <properties/>
-  <testcase name="advancesWhenAllCriteriaReachThreshold" classname="com.skillhando.app.PracticeEngineTest" time="0.077"/>
+  <testcase name="advancesWhenAllCriteriaReachThreshold" classname="com.skillhando.app.PracticeEngineTest" time="0.079"/>
   <testcase name="weakCriterionRecommendsSameChallenge" classname="com.skillhando.app.PracticeEngineTest" time="0.001"/>
   <testcase name="tiedWeakCriteriaPreferTheOneThatDeclined" classname="com.skillhando.app.PracticeEngineTest" time="0.0"/>
-  <testcase name="typedCommandsNormalisePunctuation" classname="com.skillhando.app.PracticeEngineTest" time="0.015"/>
-  <testcase name="runningTimerIsMonotonicAndDoesNotInventPostRebootTime" classname="com.skillhando.app.PracticeEngineTest" time="0.004"/>
+  <testcase name="typedCommandsNormalisePunctuation" classname="com.skillhando.app.PracticeEngineTest" time="0.017"/>
+  <testcase name="runningTimerIsMonotonicAndDoesNotInventPostRebootTime" classname="com.skillhando.app.PracticeEngineTest" time="0.005"/>
   <testcase name="incompleteAttemptDoesNotReplaceBaseline" classname="com.skillhando.app.PracticeEngineTest" time="0.001"/>
   <testcase name="csvCellsQuoteUserDataAndNeutraliseSpreadsheetFormulas" classname="com.skillhando.app.PracticeEngineTest" time="0.007"/>
   <testcase name="comparisonOnlyUsesEarlierCompleteAttemptAtSameChallenge" classname="com.skillhando.app.PracticeEngineTest" time="0.001"/>

@@ -1,0 +1,3 @@
+PASS checkout: Amazon App Tester displayed a test-only US$4.99 price and confirmed the order.
+Local Premium cache cleared before relaunch and explicit Restore purchases action.
+PASS restore: server verified receipt and Premium is active

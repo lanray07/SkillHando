@@ -15,6 +15,7 @@ def generate(model, tokenizer):
     engine = ctranslate2.Translator(str(model), device="cpu", compute_type="int8", intra_threads=2)
     sp = sentencepiece.SentencePieceProcessor(model_file=str(tokenizer))
     source = read(DEST / "en-GB.json")
+    headlines = read(ROOT / "tools/store_screenshot_headlines.json")
     originals = set()
     for field in FIELDS:
         strings = source[field] if isinstance(source[field], list) else [source[field]]
@@ -55,6 +56,8 @@ def generate(model, tokenizer):
                    else translate(source[field]) for field in FIELDS}
         assert len(listing["shortDescription"].encode()) <= 2000 and len(listing["longDescription"]) <= 4000
         assert len(listing["featureBullets"]) in range(3, 6)
+        if tag in headlines:
+            listing["screenshotHeadlines"] = headlines[tag]
         assert len(listing["screenshotHeadlines"]) == 8
         listing["status"] = "Draft pending native review and store verification"
         write(DEST / f"{tag}.json", listing)

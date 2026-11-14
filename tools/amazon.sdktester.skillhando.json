@@ -1,0 +1,8 @@
+{
+  "com.skillhando.testing.premium": {
+    "itemType": "ENTITLED",
+    "price": 4.99,
+    "title": "SkillHando Premium (sandbox)",
+    "description": "Test-only one-time entitlement"
+  }
+}

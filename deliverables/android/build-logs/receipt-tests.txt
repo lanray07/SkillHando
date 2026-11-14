@@ -3,6 +3,6 @@ test_rejects_bad_identifier_without_contacting_amazon (test_server.ReceiptVerifi
 test_valid_entitlement_and_sandbox_address (test_server.ReceiptVerificationTest) ... ok
 
 ----------------------------------------------------------------------
-Ran 3 tests in 1.577s
+Ran 3 tests in 1.568s
 
 OK

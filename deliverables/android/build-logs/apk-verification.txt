@@ -1,2 +1,2 @@
-app-debug.apk	12258820	b22bbe6ccb1eaba2d2e1855c9bb499bfd44da0d5e3da6d7707a13dbd866d98b0	19 locale dictionaries and catalogues
-app-release-unsigned.apk	8779643	978d15b3ce4e1d55b4d64db3df79d46fbcff81ec25220ad09a9c9b4e44b7d708	19 locale dictionaries and catalogues
+app-debug.apk	11724012	6a01e4aa7448f5a414b9a9a5851f80d18113a03bde5bf65e8e93622126c43f69	19 locale dictionaries and catalogues
+app-release-unsigned.apk	8779675	be88fb45328995b0c731c3a6034a2fc71092b19b607fe933b7460ec4f40de2dc	19 locale dictionaries and catalogues

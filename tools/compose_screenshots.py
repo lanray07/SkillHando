@@ -40,16 +40,15 @@ if __name__ == "__main__":
     options = parser.parse_args()
     metadata = json.loads((ROOT / "metadata" / f"{options.locale}.json").read_text(encoding="utf-8"))
     output = ROOT / "screenshots" / options.locale / options.device
+    missing = [screen for screen in SCREENS if not (options.captures / f"{screen}.png").is_file()]
+    if missing:
+        raise SystemExit("Incomplete capture set: " + ", ".join(missing))
     rows = []
     for number, (screen, headline) in enumerate(zip(SCREENS, metadata["screenshotHeadlines"], strict=True), 1):
         source = options.captures / f"{screen}.png"
-        if not source.is_file():
-            continue
         target = output / f"{number:02}-{screen}.png"
         width, height = render(source, headline, target, options.font)
         rows.append((options.locale, options.device, screen, target.name, width, height))
-    if not rows:
-        raise SystemExit("No device captures found")
     with (output / "manifest.csv").open("w", encoding="utf-8", newline="") as stream:
         writer = csv.writer(stream)
         writer.writerow(("locale", "device", "screen", "image", "width", "height"))

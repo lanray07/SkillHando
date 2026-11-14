@@ -8,7 +8,7 @@ import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.MutableStateFlow
 import org.json.JSONObject
 import java.net.URL
-import javax.net.ssl.HttpsURLConnection
+import java.net.HttpURLConnection
 
 data class BillingState(val price: String? = null, val active: Boolean = false, val message: String = "", val working: Boolean = false)
 
@@ -16,7 +16,8 @@ object Billing : PurchasingListener {
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.Main.immediate)
     private val sku = BuildConfig.AMAZON_SKU
     private val endpoint = BuildConfig.VERIFIER_URL
-    val configured = sku.isNotBlank() && endpoint.startsWith("https://")
+    val configured = sku.isNotBlank() && (endpoint.startsWith("https://") ||
+        BuildConfig.BILLING_SANDBOX && endpoint == "http://127.0.0.1:18744/verify")
     val state = MutableStateFlow(BillingState())
     private var registered = false
     private var context: Context? = null
@@ -130,7 +131,7 @@ object Billing : PurchasingListener {
     }
 
     private fun verifyReceipt(user: String, receipt: String): Boolean {
-        val connection = (URL(endpoint).openConnection() as HttpsURLConnection).apply {
+        val connection = (URL(endpoint).openConnection() as HttpURLConnection).apply {
             instanceFollowRedirects = false
             requestMethod = "POST"
             setRequestProperty("Content-Type", "application/json; charset=utf-8")

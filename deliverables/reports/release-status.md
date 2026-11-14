@@ -10,12 +10,13 @@
 | Offline practice coach | PASS | Recommendation unit tests pass. The coach uses deterministic catalogue matching and completed attempts |
 | Remote generative AI | NOT TESTED | Remote coaching is absent from this implementation |
 | Translation structure | PASS | 19 interface locales have structurally validated drafts with 277 keys and all 21 challenges. Source locale is en-GB |
-| Language, regional terminology, RTL and accessibility | NOT TESTED | Native review, pluralisation and rendered locale checks remain |
+| Language, regional terminology, RTL and accessibility | PARTIAL | Storefront locale rendering was checked on Fire HD 10. Native review, pluralisation, RTL and accessibility checks remain |
 | Store metadata | PASS | 15 editable storefront drafts exist, pending native and publisher review |
-| Amazon purchasing | BLOCKED | Amazon SDK and RVS verifier source are present. Three local verifier tests passed with canned Amazon responses. Actual entitlement SKU, authentication material, deployed HTTPS verifier and a configured test environment are required |
+| Amazon App Tester purchase and restore | PASS | Fire HD 10 completed a sandbox order. After the entitlement cache was cleared, Restore purchases verified the receipt with Amazon RVS Cloud Sandbox and reactivated Premium. |
+| Amazon DevTest and production purchasing | BLOCKED | SkillHando and its Premium SKU exist as drafts. DevTest requires a live in-app item and a registered signing certificate and tester. The production verifier and pricing remain unconfigured. |
 | Private audio, photo, reminders, exports and deletion UI | NOT TESTED | Feature implementations require device-level verification. Optional app lock and encrypted backup are absent |
-| Store screenshots | PASS | Eight en-GB landscape drafts from real Fire HD 10 screens, checked visually and exported at 1920 × 1080. Other storefront locales and phone variants remain outstanding |
-| Submission readiness | BLOCKED | Complete device testing, monetisation, translation review, asset validation and publisher submission steps before authorising a release |
+| Store screenshots | PASS | Eight screenshots for each of 15 storefront locales on physical Fire HD 10 and eight per locale at a compact display size on the same tablet. Native language review and physical phone compatibility remain pending. |
+| Submission readiness | BLOCKED | Complete outstanding device testing, production monetisation, native translation review and publisher checks before release |
 
 The physical tablet reports 1200 × 1920 pixels at 240 dpi. The build uses app-private storage, disables Android backup and cleartext traffic, and requests microphone access on demand. These decisions have not undergone a full security review. No Amazon Console submission or production purchase occurred.
 

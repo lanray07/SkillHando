@@ -38,7 +38,9 @@ for tag in available:
     entries = "\n".join(f'    <string name="{key}">{escape(value)}</string>' for key, value in zip(keys, strings[lang]))
     (dest / "notifications.xml").write_text(f"<resources>\n{entries}\n</resources>\n", encoding="utf-8")
 
-entries = "\n".join(f'    <locale android:name="{tag}" />' for tag in available)
+storefront_aliases = {"en-IN": "en-GB", "es-MX": "es-419"}
+declared = available + [tag for tag, content in storefront_aliases.items() if content in available]
+entries = "\n".join(f'    <locale android:name="{tag}" />' for tag in declared)
 (resources / "xml/locales.xml").write_text(
     '<locale-config xmlns:android="http://schemas.android.com/apk/res/android">\n' + entries + "\n</locale-config>\n", encoding="utf-8")
 print(f"Generated locale declaration for {len(available)} locales and {len(set(tag.split('-')[0] for tag in available) - {'en'})} notification resource sets.")

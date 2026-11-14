@@ -24,6 +24,26 @@ android {
         buildConfigField("String", "VERIFIER_URL", "\"$verifier\"")
     }
 
+    defaultConfig { buildConfigField("boolean", "BILLING_SANDBOX", "false") }
+    val billingSandbox = providers.gradleProperty("skillhandoBillingSandbox").orNull == "true"
+    val screenshotBuild = providers.gradleProperty("skillhandoScreenshotBuild").orNull == "true"
+    require(!(billingSandbox && screenshotBuild))
+    buildTypes.getByName("debug") {
+        if (billingSandbox) {
+            applicationIdSuffix = ".billingtest"
+            buildConfigField("boolean", "BILLING_SANDBOX", "true")
+            buildConfigField("String", "AMAZON_SKU", "\"com.skillhando.testing.premium\"")
+            buildConfigField("String", "VERIFIER_URL", "\"http://127.0.0.1:18744/verify\"")
+        }
+        if (screenshotBuild) {
+            applicationIdSuffix = ".screenshots"
+        }
+    }
+
+    if (billingSandbox) {
+        sourceSets.getByName("debug").manifest.srcFile("src/billingSandbox/AndroidManifest.xml")
+        sourceSets.getByName("debug").res.srcDir("src/billingSandbox/res")
+    }
     buildFeatures { compose = true; buildConfig = true }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
